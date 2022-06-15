@@ -15,7 +15,7 @@ Participants' names must consist of at least 1 and no more than 20 lowercase let
 Participants may have the same name.
 </p>
 
-## 입출력 예
+## in/out example 
 
 |participant	                |completion             |return     |
 |:---                           |:---                   |:---       |
@@ -23,14 +23,14 @@ Participants may have the same name.
 |["marina", "josipa", "nikola", "vinko", "filipa"]|	["josipa", "filipa", "marina", "nikola"]	|"vinko"|
 |["mislav", "stanko", "mislav", "ana"]| ["stanko", "ana", "mislav"]	| "mislav" |
 
-## 입출력 예 설명
-### 예제 #1
+## in/out example explanation
+### example #1
 "leo" is on the roster of participants, but not on the runners list, so he didn't finish.
 
-### 예제 #2
+### example #2
 "vinko" was on the roster of participants, but not on the runners list, so she didn't finish.
 
-### 예제 #3
+### example #3
 "mislav" has two on the list of participants, but only one on the list of finishers, so one didn't finish.
 
 
