@@ -42,15 +42,29 @@ git commit -m "{commit_message}" #commit to local repo
 git push #push to origin 
 ```
 
-## 2. git submodule get
+## 2. git submodule update 
 
 ```bash
 git submodule init
 git submodule update 
 ```
 
+## 3. git submodule clone from main repo
 
+```bash
+git clone --recurse-submodules {project_url}
+```
 
+## warnning 
+
+if you clone main repo, then first clone main repo and then, child submodule get.
+if you push main repo, then child submodule repo push and then, parent main repo push.  
+<p>
+There is one thing to note when applying submodules to a project. If changes are made to a submodule, you must push or pull before the main project. If you push/pull the main project and push/pull the submodule, an unexpected error may occur. This is because the main project does not have submodules as they are, but only stores path, url, and commit information.
+</p>
+
+site 
+[Git-Tools-Submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules "submodule")
 
 
 
