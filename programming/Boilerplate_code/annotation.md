@@ -21,7 +21,7 @@ Runtime에 Java VM에 의해 유지되어 리플렉션에 의해 읽어 낼 수�
     - javac의 일부이므로 모든 처리가 run time보다는 compile time에 발생. 
 2. No Use [Reflection](#reflection)
     - 자바의 리플렉션은 런타임에 많은 예외를 발생시킵니다. 어느 누구도 예외처리를 많이 하는것을 원치는 않습니다. 또한 리플렉션을 비용이 큰 작업이며, Annotation Processor는 리플렉션이 없이 프로그램의 의미 구조를 알수 있게 해줍니다.
-3. [Boilerplate code](boilerpate_code.md)를 생성해줍니다. 
+3. [Boilerplate code](boilerplate_code.md)를 생성해줍니다. 
     - Annotation Processor를 사용하는 가장 큰 이유이자 유용한 기능은 바로 보일러플레이트 코드 생성입니다. ButterKnife, Room, Retrofit등 많은 라이브러리들이 반복되는 지루한 코드로부터 벗어나고자 애노테이션을 사용하고 있습니다.
 
 
@@ -43,4 +43,4 @@ Console.WriteLine(type);
 ```
 출력은 `System.Int32` 입니다. 
 
-출처: [microsoft](https://docs.microsoft.com/ko-kr/dotnet/csharp/programming-guide/concepts/reflection "reflection")
+참고사이트/출처: [microsoft](https://docs.microsoft.com/ko-kr/dotnet/csharp/programming-guide/concepts/reflection "reflection")
