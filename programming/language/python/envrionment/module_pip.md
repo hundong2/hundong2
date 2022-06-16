@@ -23,7 +23,7 @@ pip list
 ```bash
 pip show [pakage name]
 ```
-
+W
 ## installed package upgrade 
 ```bash
 pip install --upgrade [pakage name]
@@ -32,4 +32,25 @@ pip install --upgrade [pakage name]
 ## remove installed package 
 ```bash
 pip uninstall [package name]
+```
+## Check current python library path 
+```bash
+>>> import sys
+>>> sys.path
+```
+
+## Add python pacakge ( semi-permanent )
+```bash
+import sys
+sys.path.append("[add path]") #add path
+sys.path #confirm path
+```
+## Add python pacakge ( everasting )
+
+### Window
+- In the folder where python is installed, open site-packages in the Lib folder, create [file name].pth in the folder, and write the path to be added.
+
+### Linux/mac
+```bash
+export PYTHONPATH="${PYTHONPATH}:[path name]"
 ```
