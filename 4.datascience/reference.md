@@ -10,7 +10,8 @@
 * [datascience 경진대회 모음](https://theorydb.github.io/dev/2019/06/23/dev-competition-list/ "datascience competition")  
 * [data science roadmap](https://medium.com/@ArtisOne/data-science-roadmap-2020-b256fb948404 "roadmap")  
 * [data analytics vidya](https://datahack.analyticsvidhya.com/ "dataanalytic")  
-
+* [160 Data Science and Machine Learning Projects Solved and Explained](https://amankharwal.medium.com/160-data-science-and-machine-learning-projects-solved-and-explained-cc92f401a995 "site")  
+* 
 
 
 ## certificate 
