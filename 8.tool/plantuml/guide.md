@@ -20,4 +20,6 @@ https://raw.githubusercontent.com/:owner/:repo/:branch/:file_path
 :file_path 자리에 puml 파일 경로
 
 ### make result plantUML example 
-![class-diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/hundong2/dailyStudy/9.images/plantuml/example.puml)
+
+![class-diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/hundong2/dailyStudy/master/9.images/plantuml/example.puml)  
+
