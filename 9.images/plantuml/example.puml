@@ -1,0 +1,14 @@
+@startuml
+'https://plantuml.com
+actor User1
+database DB1
+actor User2
+
+User1 -> DB1 : BEGIN
+User1 -> DB1 : UPDATE [value name]
+User2 -> DB1 : SELET FROM [name]
+DB1 -> DB1 : UNDO
+User2 <- DB1 : [value]
+User1 -> DB1 : Commit
+
+@enduml
