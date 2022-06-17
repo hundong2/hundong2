@@ -21,5 +21,5 @@ https://raw.githubusercontent.com/:owner/:repo/:branch/:file_path
 
 ### make result plantUML example 
 
-![class-diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/hundong2/dailyStudy/master/9.images/plantuml/example.puml)  
+![class-diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/hundong2/plantUML/master/umlfile/test1.puml)  
 
