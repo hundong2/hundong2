@@ -1,6 +1,9 @@
-# code 
+# code  
+
 `Problem category`
-<p>
+
+---
+
 Athletes who did not finish
 
 Problem Description
@@ -8,34 +11,45 @@ Many marathon runners took part in the marathon. All but one runner completed th
 
 Write a solution function to return the names of the runners who did not finish when an array containing the names of the participants who participated in the marathon and an array containing the names of the runners who completed the marathon are given.
 
-restrictions
-The number of runners participating in the marathon is at least 1 and not more than 100,000.
-The length of completion is 1 less than the length of the participant.
-Participants' names must consist of at least 1 and no more than 20 lowercase letters of the alphabet.
-Participants may have the same name.
-</p>
+## restrictions  
 
-## in/out example 
+The number of runners participating in the marathon is at least 1 and not more than 100,000.  
 
-|participant	                |completion             |return     |
+The length of completion is 1 less than the length of the participant.  
+
+Participants' names must consist of at least 1 and no more than 20 lowercase letters of the alphabet.  
+
+Participants may have the same name.  
+
+---
+
+
+## in/out example
+
+|participant                 |completion             |return     |
 |:---                           |:---                   |:---       |
 |["leo", "kiki", "eden"]        |["eden", "kiki"]       |"leo"      |
-|["marina", "josipa", "nikola", "vinko", "filipa"]|	["josipa", "filipa", "marina", "nikola"]	|"vinko"|
-|["mislav", "stanko", "mislav", "ana"]| ["stanko", "ana", "mislav"]	| "mislav" |
+|["marina", "josipa", "nikola", "vinko", "filipa"]| ["josipa", "filipa", "marina", "nikola"] |"vinko"|
+|["mislav", "stanko", "mislav", "ana"]| ["stanko", "ana", "mislav"] | "mislav" |
 
 ## in/out example explanation
+
 ### example #1
+
 "leo" is on the roster of participants, but not on the runners list, so he didn't finish.
 
 ### example #2
+
 "vinko" was on the roster of participants, but not on the runners list, so she didn't finish.
 
 ### example #3
+
 "mislav" has two on the list of participants, but only one on the list of finishers, so one didn't finish.
 
+## Problem solving
 
-## Problem solving 
-# C++ 
+# C++
+
 ```c++
 #include <string>
 #include <vector>
@@ -58,6 +72,7 @@ string solution(vector<string> participant, vector<string> completion) {
 ```
 
 ## JAVA (HASH)
+
 ```java
 import java.util.HashMap;
 
@@ -79,6 +94,7 @@ class Solution {
 ```
 
 ## Python
+
 ```python
 import collections
 
@@ -88,10 +104,13 @@ def solution(participant, completion):
 ```
 
 ## javascript
+
 ```javascript
 var solution=(_,$)=>_.find(_=>!$[_]--,$.map(_=>$[_]=($[_]|0)+1))
 ```
-### same means 
+
+### same means
+
 ```javascript
 var solution=(participant,completion)=>participant.find(name=>!completion[name]--,completion.map(name=>completion[name]=(completion[name]|0)+1))
 ```
@@ -108,7 +127,7 @@ var solution=(participant,completion)=>participant.find(name=>!completion[name]-
 
 [collection Counter](../language/python/collection/counter.md)
 
-# Site 
+# Site
 
 [Programmers](https://programmers.co.kr/learn/courses/30/lessons/42576 "42576")
 
