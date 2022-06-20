@@ -81,6 +81,8 @@ int main()
 ```
 
 ### site 
+[C++20 for_each](for_each(c++20).md)   
+ 
 [std::ranges::for_each, std::ranges::for_each_result](https://en.cppreference.com/w/cpp/algorithm/ranges/for_each "range for_each")
 
 [std::for_each_n](https://en.cppreference.com/w/cpp/algorithm/for_each_n "for_each_n")
