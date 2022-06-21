@@ -87,4 +87,6 @@ int main()
 
 [std::for_each_n](https://en.cppreference.com/w/cpp/algorithm/for_each_n "for_each_n")
 
-[std::transform](https://en.cppreference.com/w/cpp/algorithm/transform "transfor")
+[std::transform](https://en.cppreference.com/w/cpp/algorithm/transform "transfor")  
+
+[hwan blog](https://hwan-shell.tistory.com/88)  
