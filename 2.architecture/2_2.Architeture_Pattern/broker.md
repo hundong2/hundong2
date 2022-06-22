@@ -12,7 +12,7 @@
 
 ## Diagram
 ```mermaid
-graph TD
+flowchart TD
     Client <--> A[Broker]
     A <--> Server1
     A <--> Server2
