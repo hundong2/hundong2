@@ -16,3 +16,8 @@
 > 9. blackboard pattern ( 블랙보드 패턴 ) 
 > 10. interperter pattern ( 인터프리터 패턴 )
 
+```mermaid
+graph TD;
+    A -->B;
+```
+
