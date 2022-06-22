@@ -17,3 +17,6 @@ graph TD
 ```bash
 ls -al | grep -rn 
 ```
+- 비밀번호 암호화
+- web application 신원 검증
+
