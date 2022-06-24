@@ -12,5 +12,6 @@
 [std::span](https://en.cppreference.com/w/cpp/container/span)  
 [std::dynamic_extent](https://en.cppreference.com/w/cpp/container/span/dynamic_extent)  
 [find](https://kamang-it.tistory.com/437)  
-[TR1 information ](https://www.aristeia.com/EC3E/TR1_info.html)  
+[TR1 information ](https://www.aristeia.com/EC3E/TR1_info.html)
+[wiki TR1](https://en.wikipedia.org/wiki/C%2B%2B_Technical_Report_1)  
 
