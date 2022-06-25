@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=300&section=header&text=welcome&fontSize=90&animation=fadeIn&fontAlignY=38&desc=Donghun2%20GitHub%20Profile&descAlignY=51&descAlign=62)  
+![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=300&section=header&text=welcome&fontSize=90&animation=fadeIn&fontAlignY=38&desc=hundong2%20GitHub%20Profile&descAlignY=51&descAlign=62)  
 
 <p align="center">
     <Strong>SNS list</Strong><br><br>
@@ -104,9 +104,10 @@ I'm software engineer<br>
 
 <br>
 
-# <p align="center">github information</p>
+# <p align="center">github information
 
 [![trophy](https://github-profile-trophy.vercel.app/?username=hundong2&row=1)](https://github.com/ryo-ma/github-profile-trophy)
+</p>
 <br>
 <br>
 
@@ -128,6 +129,6 @@ I'm software engineer<br>
 - [마이크로서비스 아키텍처:패턴과 핵심기술](20.images/certicifate/muticampus/microarchitecture.pdf)  
 - [BigNetworkDesign](20.images/certicifate/muticampus/bignetwork.pdf)  
 - [쉽게배우는 javascript알고리즘 입문](20.images/certicifate/muticampus/javascript.pdf)  
-- [Tensorflow2.0 활용한 인공 신경망 구현](20.images/certicifate/muticampus/tensorflow.pdf)  ../../../../dailyStudy
+- [Tensorflow2.0 활용한 인공 신경망 구현](20.images/certicifate/muticampus/tensorflow.pdf)
 - [git,gitlab의 이해와 실무활용](20.images/certicifate/muticampus/git_gitlab.pdf)  
 - [AWS로 시작하는 클라우드 컴퓨팅](20.images/certicifate/muticampus/AWS.pdf)  
