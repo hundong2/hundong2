@@ -118,16 +118,16 @@ I'm software engineer<br>
 # lecture certificate
 
 ## kaggle
-![kaggle start](../../../20.images/certicifate/kaggle/hundong2_certificate.png)
+![kaggle start](20.images/certicifate/kaggle/hundong2_certificate.png)
 
 ## multicampus
 
-- [텐서플로우딥러닝](../../../../dailyStudy/20.images/certicifate/muticampus/tensorflow_2.pdf)  
-- [탐욕적 문제해결 전략](../../../../dailyStudy/20.images/certicifate/muticampus/algorithm.pdf)  
-- [파이썬을 활용한 데이터 분석 및 시각화](../../../../dailyStudy/20.images/certicifate/muticampus/data.pdf)  
-- [마이크로서비스 아키텍처:패턴과 핵심기술](../../../../dailyStudy/20.images/certicifate/muticampus/microarchitecture.pdf)  
-- [BigNetworkDesign](../../../../dailyStudy/20.images/certicifate/muticampus/bignetwork.pdf)  
-- [쉽게배우는 javascript알고리즘 입문](../../../../dailyStudy/20.images/certicifate/muticampus/javascript.pdf)  
-- [Tensorflow2.0 활용한 인공 신경망 구현](../../../../dailyStudy/20.images/certicifate/muticampus/tensorflow.pdf)  ../../../../dailyStudy
-- [git,gitlab의 이해와 실무활용](../../../../dailyStudy/20.images/certicifate/muticampus/git_gitlab.pdf)  
-- [AWS로 시작하는 클라우드 컴퓨팅](../../../../dailyStudy/20.images/certicifate/muticampus/AWS.pdf)  
+- [텐서플로우딥러닝](20.images/certicifate/muticampus/tensorflow_2.pdf)  
+- [탐욕적 문제해결 전략](20.images/certicifate/muticampus/algorithm.pdf)  
+- [파이썬을 활용한 데이터 분석 및 시각화](20.images/certicifate/muticampus/data.pdf)  
+- [마이크로서비스 아키텍처:패턴과 핵심기술](20.images/certicifate/muticampus/microarchitecture.pdf)  
+- [BigNetworkDesign](20.images/certicifate/muticampus/bignetwork.pdf)  
+- [쉽게배우는 javascript알고리즘 입문](20.images/certicifate/muticampus/javascript.pdf)  
+- [Tensorflow2.0 활용한 인공 신경망 구현](20.images/certicifate/muticampus/tensorflow.pdf)  ../../../../dailyStudy
+- [git,gitlab의 이해와 실무활용](20.images/certicifate/muticampus/git_gitlab.pdf)  
+- [AWS로 시작하는 클라우드 컴퓨팅](20.images/certicifate/muticampus/AWS.pdf)  
