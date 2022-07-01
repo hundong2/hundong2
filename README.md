@@ -120,6 +120,7 @@ I'm software engineer<br>
 
 ## kaggle
 ![kaggle start](20.images/certicifate/kaggle/hundong2_certificate.png)
+![kaggle python](20.images/certicifate/kaggle/hundong2_Python.png)
 
 ## multicampus
 
