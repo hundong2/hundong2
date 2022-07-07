@@ -5,3 +5,5 @@
 * [MLOps란 무엇입니까? - databricks](https://databricks.com/kr/glossary/mlops)  
 * [머신러닝 프로젝트를 '레벨 업'시킬 수 있는 8가지 방법](https://www.ciokorea.com/news/188798)  
 
+* [MIT Machine learning](https://ocw.mit.edu/courses/6-034-artificial-intelligence-fall-2010/pages/syllabus/)  
+
