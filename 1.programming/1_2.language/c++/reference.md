@@ -9,3 +9,6 @@
 [c++ 카루의 프로그래밍연구소](https://karupro.tistory.com/category/C%2B%2B/%EC%B9%B4%EB%A3%A8%EC%9D%98%20C%2B%2B%20%EA%B0%95%EC%A2%8C)  
 [c++20 Key feature](https://www.slideshare.net/utilforever/c20-key-features-summary)  
 
+[win32 Opensource library 100](https://wikidocs.net/book/6606)  
+
+
