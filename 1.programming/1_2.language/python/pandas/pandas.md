@@ -1,6 +1,9 @@
 # pandas 
 
-## import command
+## List 
+- [List](#list)
+
+### 1. import command
 
 - import pandas
 
@@ -14,9 +17,9 @@ import pandas as pd
 pd.read_csv([file path])
 ```
 
-## kaggle Exercise
+#### kaggle Exercise
 
-### Exercise: Explore Your Data
+#### Exercise: Explore Your Data
 
 ```python 
 from datetime import date
