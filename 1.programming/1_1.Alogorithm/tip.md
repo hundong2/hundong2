@@ -41,3 +41,36 @@ class Solution:
         return return_val
 ```
 
+## 03. dictionary value 값에 따라 sort 
+
+[leetcode 1338 Reduce Array Size to The Half](https://leetcode.com/problems/reduce-array-size-to-the-half/)  
+
+```python
+class Solution:
+    def test(self, arr):
+        if len(arr) == len(set(arr)):
+            return False
+        else:
+            return True
+    def minSetSize(self, arr: List[int]) -> int:
+        #exception handling last time limited 
+        if not self.test(arr):
+            print("check OK")
+            return (int)(len(arr)/2)
+        set_val = {}
+        print(len(arr))
+        for _ in set(arr):
+            set_val[_] = arr.count(_)
+        sorted_dic = sorted(set_val.items(), key = lambda item: item[1], reverse = True)
+        
+        count_val = 0
+        sum_val = 0
+        for k, v in sorted_dic:
+            count_val += 1
+            sum_val += v
+            #print(count_val, sum_val, v, (int)(len(arr)/2), len(arr) - sum_val)
+            if len(arr) - sum_val <= (int)(len(arr)/2):
+                return count_val
+        return 0
+    ```
+
