@@ -14,6 +14,8 @@ def func_example(self, s: str):
 
 ### leetcode example 2373. Largest Local Values in a Matrix
 
+[2373. Lorgest Local Values in a Matrix](https://leetcode.com/problems/largest-local-values-in-a-matrix/)  
+
 ```python
 value = [(-1,-1), (-1,0),(1,0) ,(-1,1), (0,-1), (1,-1), (0,1), (1,1), (0,0)]
 class Solution:
