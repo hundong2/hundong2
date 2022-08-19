@@ -72,5 +72,21 @@ class Solution:
             if len(arr) - sum_val <= (int)(len(arr)/2):
                 return count_val
         return 0
-    ```
+```
+
+## 04. for loop 
+
+### 4.1 for range
+
+```python
+for _ in range(0, n):
+    print(_) #print integer value ( 0 ~ n - 1 )
+```
+
+### 4.2 for reversed range
+
+```python
+for _ in reversed(range(0, n)):
+    print(_) # print integer value ( n - 1 ~ 0 )
+```
 
