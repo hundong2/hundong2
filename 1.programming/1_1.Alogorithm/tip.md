@@ -1,5 +1,23 @@
 # programming TIP
 
+- [programming TIP](#programming-tip)
+  - [01. string, list 중복 제거 ( 정렬 없이 그대로 )](#01-string-list-중복-제거--정렬-없이-그대로-)
+  - [02. array 2차원 초기화](#02-array-2차원-초기화)
+    - [leetcode example 2373. Largest Local Values in a Matrix](#leetcode-example-2373-largest-local-values-in-a-matrix)
+  - [03. dictionary value 값에 따라 sort](#03-dictionary-value-값에-따라-sort)
+  - [04. for loop](#04-for-loop)
+    - [4.1 for range](#41-for-range)
+    - [4.2 for reversed range](#42-for-reversed-range)
+  - [05. List](#05-list)
+    - [5.1 List strint to integer convert](#51-list-strint-to-integer-convert)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+ 
+
+<style type="text/css">
+    ol { list-style-type: upper-alpha; }
+</style>
+
 ## 01. string, list 중복 제거 ( 정렬 없이 그대로 )
 
 - set만 사용하면 정렬 한 값이 output  
@@ -89,4 +107,15 @@ for _ in range(0, n):
 for _ in reversed(range(0, n)):
     print(_) # print integer value ( n - 1 ~ 0 )
 ```
+
+## 05. List
+
+### 5.1 List strint to integer convert 
+
+```python 
+# list_val = ["1","2","3","4","5"] to convert list_val = [1,2,3,4,5] 
+list_val = map(int,list_val) #python2
+list_val = list(map(int,list_val))
+```
+
 
