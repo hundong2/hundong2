@@ -12,3 +12,7 @@
 ## Lecture  
 
 * [Stanford CS230:Deep Learning](https://www.youtube.com/watch?v=733m6qBH-jI "stanford")   
+
+## List Update for markdown 
+
+[list maker](http://ecotrust-canada.github.io/markdown-toc/)  
