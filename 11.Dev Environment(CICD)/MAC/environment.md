@@ -34,6 +34,6 @@ brew install boost
 brew install python3 # python3 install 
 pip3 install pandas
 pip3 install numpy
-pip3 install graphviz
+pip3 install graphviz # not to do 
 brew install graphviz # graphviz
 ```
