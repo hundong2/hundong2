@@ -26,3 +26,14 @@ brew install boost
 
 - installed path : /opt/homebrew/Celler/boost
 
+## 2. Machine learning environment 
+
+### 2.1 python
+
+```bash
+brew install python3 # python3 install 
+pip3 install pandas
+pip3 install numpy
+pip3 install graphviz
+brew install graphviz # graphviz
+```
