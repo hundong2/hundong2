@@ -1,5 +1,18 @@
 # MAC OS Development environment setting
 
+
+- [MAC OS Development environment setting](#mac-os-development-environment-setting)
+  - [1. homebrew](#1-homebrew)
+    - [1.1 homebrew install](#11-homebrew-install)
+    - [1.2 homebrew uninstall](#12-homebrew-uninstall)
+    - [2. boost install ( c++ install )](#2-boost-install--c-install-)
+  - [2. Machine learning environment](#2-machine-learning-environment)
+    - [2.1 python](#21-python)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
+
+
 ## 1. homebrew
 
 ### 1.1 homebrew install
