@@ -10,6 +10,8 @@
     - [4.2 for reversed range](#42-for-reversed-range)
   - [05. List](#05-list)
     - [5.1 List strint to integer convert](#51-list-strint-to-integer-convert)
+  - [06. heapq](#06-heapq)
+    - [6.1 heapq algorithm](#61-heapq-algorithm)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
  
@@ -117,5 +119,12 @@ for _ in reversed(range(0, n)):
 list_val = map(int,list_val) #python2
 list_val = list(map(int,list_val))
 ```
+
+## 06. heapq
+
+### 6.1 heapq algorithm 
+
+[heapq algorithm](https://docs.python.org/ko/3/library/heapq.html)  
+
 
 
