@@ -5,6 +5,8 @@
     <a href="https://physicalkingman.tistory.com/" target="_blank"><img src="https://img.shields.io/badge/PhysicalKingman Blog-0B2C4A?style=flat-square&logo=ActiGraph&logoColor=white"/>
     </a>
 </p>
+<a href="https://app.daily.dev/systemalee"><img src="https://api.daily.dev/devcards/d8e370a4fad84bc8b3d891db9cb368d2.png?r=2cn" width="400" alt="Leedonghun's Dev Card"/></a>
+
 <br>
 
 <p align="center">
