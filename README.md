@@ -11,8 +11,6 @@
 
 <br>
 
-[![LeetCode Stats](https://leetcard.jacoblin.cool/hundong2?theme=unicorn&extension=activity)](https://leetcard.jacoblin.cool/hundong2?theme=unicorn&extension=activity)
-
 <p align="center">
 🇰🇷 <br>hello my name is donghun👐<br>
 I'm software engineer<br>
