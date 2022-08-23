@@ -8,10 +8,10 @@
 <p align="center">
 <a href="https://app.daily.dev/systemalee"><img src="https://api.daily.dev/devcards/d8e370a4fad84bc8b3d891db9cb368d2.png?r=2cn" width="200" alt="Leedonghun's Dev Card"/></a>
     </p>
-
-<br>
-
+<p align="center">
 [![LeetCode Stats](https://leetcard.jacoblin.cool/hundong2?theme=unicorn&extension=activity)](https://leetcard.jacoblin.cool/hundong2?theme=unicorn&extension=activity)
+</p>
+<br>
 
 <p align="center">
 🇰🇷 <br>hello my name is donghun👐<br>
