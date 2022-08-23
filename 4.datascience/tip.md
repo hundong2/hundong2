@@ -6,6 +6,7 @@
       - [input](#input)
       - [output](#output)
       - [ndim ( 차원 표시 )](#ndim--차원-표시-)
+    - [1.2 export_graphviz](#12-export_graphviz)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
@@ -51,4 +52,11 @@ print('array1: {:0}차원, array2: {:1}차원, array3: {:2}차원'.format(array1
 #array1: 1차원, array2: 2차원, array3:  2차원
 ```
 
+### 1.2 export_graphviz 
+
+[explanation](../4.datascience/library/sklearn_tree.md#exportgraphviz)  
+  
+```python
+from sklearn.tree import export_graphviz
+```
 
