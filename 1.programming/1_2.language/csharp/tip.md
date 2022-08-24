@@ -18,3 +18,10 @@ Fatal error: "No Target Architecture" in Visual Studio
 [stackoverflow](https://stackoverflow.com/questions/4845198/fatal-error-no-target-architecture-in-visual-studio)  
 [c++ dll using](https://cypsw.tistory.com/entry/C-C-DLL-%EC%9D%84-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0)  
 [clr library using](https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=jackylim&logNo=100119927187)  
+
+## 2. Managed & Unmanaged 
+
+### reference 
+
+[c# 자원관리](https://gammabeta.tistory.com/1538)  
+

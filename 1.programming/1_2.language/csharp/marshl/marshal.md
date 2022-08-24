@@ -35,4 +35,7 @@ mData = Marshal.PtrToStructure<MemoryData>(mPtrdata);
 [c++ image transfer to c#](https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=roboinside&logNo=221178543629)  
 [IntPtr Using C#](https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=nimi315&logNo=50101013158)  
 [Marshal struct input](http://www.todayhumor.co.kr/board/view.php?table=programmer&no=5257)  
+[IntPtr structure from microsoft](https://docs.microsoft.com/ko-kr/dotnet/api/system.intptr?view=net-6.0)  
+
+
 

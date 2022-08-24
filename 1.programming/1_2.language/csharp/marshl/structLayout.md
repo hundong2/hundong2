@@ -9,5 +9,7 @@
 [예제로 배우는 c# 프로그래밍 객체의 메모리 레이아웃](https://www.csharpstudy.com/DevNote/Article/10)  
 
 [Layout Kind information](https://docs.microsoft.com/ko-kr/dotnet/api/system.runtime.interopservices.layoutkind?view=net-6.0)  
- 
- 
+
+[Layout Kind information / windbg 로 확인](https://www.sysnet.pe.kr/2/0/1558)  
+
+
