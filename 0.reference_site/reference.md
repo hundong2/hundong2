@@ -55,3 +55,8 @@ brew install graphviz # graphviz
 
 
 [list maker](http://ecotrust-canada.github.io/markdown-toc/)  
+
+## c# document 
+
+https://dotnet.github.io/docfx/tutorial/docfx.exe_user_manual.html  
+
