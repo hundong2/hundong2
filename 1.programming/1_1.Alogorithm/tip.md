@@ -126,5 +126,81 @@ list_val = list(map(int,list_val))
 
 [heapq algorithm](https://docs.python.org/ko/3/library/heapq.html)  
 
+## 07. string 
+
+#### 7.1 string count 
+
+```python
+strvalue = "abcdef"
+strvalue.count('a') # 1
+
+str = "Hello World"
+>>> str.count('o',0,5)
+1
+```
+
+#### 7.2 removesuffix 
+
+```python
+>>> text = 'Quickly'
+>>> print(text.removesuffix('ly'))
+Quick
+>>> print(text.removesuffix('World'))
+Quickly
+```
+
+#### 7.3 replace 
+
+```python
+>>> list_str = {'Abc.ex', 'Bcd.ex', 'cde.ex', 'def.jpg', 'efg.jpg'}
+>>> new_set = {x.replace('.ex', '').replace('.jpg', '') for x in list_str}
+>>> print(new_set)
+{'Bcd', 'Abc', 'def', 'efg', 'cde'}
+```  
+
+- string.replace('이전값', '새 값', '개수')
+
+```python
+>>> text = "Hello World!"
+>>> x = text.replace("l", "k", 1)
+>>> print(x)
+```
+#### 7.4 Position
+
+```python
+>>> text = 'Welcome to Codetorial'
+>>>
+>>> pos_e = text.index('e')
+>>> print(pos_e)
+1
+
+>>> pos_Code = text.index('Code')
+>>> print(pos_Code)
+11
+>>>
+```
+
+#### 7.5 rfind
+
+```python
+text = 'Welcome to Codetorial'
+
+pos_e_last = text.rfind('e')
+print(pos_e_last)
+
+14
+```
+
+#### 7.6 find
+
+```python
+text = 'Welcome to Codetorial'
+
+pos_e = text.find('e')
+print(pos_e)
+```
+
+
+
 
 
