@@ -1,24 +1,26 @@
 # programming TIP
 
-- [programming TIP](#programming-tip)
-  - [01. string, list 중복 제거 ( 정렬 없이 그대로 )](#01-string-list-중복-제거--정렬-없이-그대로-)
-  - [02. array 2차원 초기화](#02-array-2차원-초기화)
-    - [leetcode example 2373. Largest Local Values in a Matrix](#leetcode-example-2373-largest-local-values-in-a-matrix)
-  - [03. dictionary value 값에 따라 sort](#03-dictionary-value-값에-따라-sort)
-  - [04. for loop](#04-for-loop)
-    - [4.1 for range](#41-for-range)
-    - [4.2 for reversed range](#42-for-reversed-range)
-  - [05. List](#05-list)
-    - [5.1 List strint to integer convert](#51-list-strint-to-integer-convert)
-  - [06. heapq](#06-heapq)
-    - [6.1 heapq algorithm](#61-heapq-algorithm)
+- [01. string, list 중복 제거 ( 정렬 없이 그대로 )](#01-string--list--------------------)
+- [02. array 2차원 초기화](#02-array-2------)
+  * [leetcode example 2373. Largest Local Values in a Matrix](#leetcode-example-2373-largest-local-values-in-a-matrix)
+- [03. dictionary value 값에 따라 sort](#03-dictionary-value-------sort)
+- [04. for loop](#04-for-loop)
+  * [4.1 for range](#41-for-range)
+  * [4.2 for reversed range](#42-for-reversed-range)
+- [05. List](#05-list)
+  * [5.1 List strint to integer convert](#51-list-strint-to-integer-convert)
+- [06. heapq](#06-heapq)
+  * [6.1 heapq algorithm](#61-heapq-algorithm)
+- [07. string](#07-string)
+    + [7.1 string count](#71-string-count)
+    + [7.2 removesuffix](#72-removesuffix)
+    + [7.3 replace](#73-replace)
+    + [7.4 Position](#74-position)
+    + [7.5 rfind](#75-rfind)
+    + [7.6 find](#76-find)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
- 
 
-<style type="text/css">
-    ol { list-style-type: upper-alpha; }
-</style>
 
 ## 01. string, list 중복 제거 ( 정렬 없이 그대로 )
 
@@ -125,6 +127,7 @@ list_val = list(map(int,list_val))
 ### 6.1 heapq algorithm 
 
 [heapq algorithm](https://docs.python.org/ko/3/library/heapq.html)  
+
 
 ## 07. string 
 
