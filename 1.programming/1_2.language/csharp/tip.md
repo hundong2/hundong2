@@ -28,5 +28,6 @@ Fatal error: "No Target Architecture" in Visual Studio
 
 ## 3. Programming conception 
 
-- https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/
+[English version](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/)  
+[Korean version](https://docs.microsoft.com/ko-kr/dotnet/csharp/programming-guide/concepts/)  
 
