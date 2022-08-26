@@ -1,26 +1,32 @@
 # programming TIP
 
-- [01. string, list 중복 제거 ( 정렬 없이 그대로 )](#01-string--list--------------------)
-- [02. array 2차원 초기화](#02-array-2------)
-  * [leetcode example 2373. Largest Local Values in a Matrix](#leetcode-example-2373-largest-local-values-in-a-matrix)
-- [03. dictionary value 값에 따라 sort](#03-dictionary-value-------sort)
-- [04. for loop](#04-for-loop)
-  * [4.1 for range](#41-for-range)
-  * [4.2 for reversed range](#42-for-reversed-range)
-- [05. List](#05-list)
-  * [5.1 List strint to integer convert](#51-list-strint-to-integer-convert)
-- [06. heapq](#06-heapq)
-  * [6.1 heapq algorithm](#61-heapq-algorithm)
-- [07. string](#07-string)
-    + [7.1 string count](#71-string-count)
-    + [7.2 removesuffix](#72-removesuffix)
-    + [7.3 replace](#73-replace)
-    + [7.4 Position](#74-position)
-    + [7.5 rfind](#75-rfind)
-    + [7.6 find](#76-find)
+- [programming TIP](#programming-tip)
+  * [01. string, list 중복 제거 ( 정렬 없이 그대로 )](#01-string--list--------------------)
+  * [02. array 2차원 초기화](#02-array-2------)
+    + [leetcode example 2373. Largest Local Values in a Matrix](#leetcode-example-2373-largest-local-values-in-a-matrix)
+  * [03. dictionary value 값에 따라 sort](#03-dictionary-value-------sort)
+  * [04. for loop](#04-for-loop)
+    + [4.1 for range](#41-for-range)
+    + [4.2 for reversed range](#42-for-reversed-range)
+  * [05. List](#05-list)
+    + [5.1 List strint to integer convert](#51-list-strint-to-integer-convert)
+  * [06. heapq](#06-heapq)
+    + [6.1 heapq algorithm](#61-heapq-algorithm)
+  * [07. string](#07-string)
+      - [7.1 string count](#71-string-count)
+      - [7.2 removesuffix](#72-removesuffix)
+      - [7.3 replace](#73-replace)
+      - [7.4 Position](#74-position)
+      - [7.5 rfind](#75-rfind)
+      - [7.6 find](#76-find)
+  * [08. itertools](#08-itertools)
+    + [8.1 combinations()](#81-combinations--)
+    + [8.2 combinations_with_replacement()](#82-combinations-with-replacement--)
+    + [8.3 product()](#83-product--)
+    + [8.4 permutations()](#84-permutations--)
+    + [reference](#reference)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
-
 
 ## 01. string, list 중복 제거 ( 정렬 없이 그대로 )
 
@@ -202,6 +208,183 @@ text = 'Welcome to Codetorial'
 pos_e = text.find('e')
 print(pos_e)
 ```
+
+
+## 08. itertools 
+
+### 8.1 combinations()
+
+- iterable에서 원소 개수가 n개 인 조합 뽑기
+
+```python
+>>> from itertools import combinations
+>>>
+>>> combi = [1,2,3,4]
+>>> for i in combinations(combi,2):
+...    print(i)
+...
+(1, 2)
+(1, 3)
+(1, 4)
+(2, 3)
+(2, 4)
+(3, 4)
+>>>    
+```
+
+### 8.2 combinations_with_replacement()
+
+- 원소 개수가 r개인 중복 조합 뽑기 
+
+```python
+>>> from itertools import combinations_with_replacement
+>>> iter = ['jisu','jennie', 'lisa', 'rose']
+>>> for i in combinations_with_replacement(iter,2):
+...    print(i)
+...
+('jisu', 'jisu')
+('jisu', 'jennie')
+('jisu', 'lisa')
+('jisu', 'rose')
+('jennie', 'jennie')
+('jennie', 'lisa')
+('jennie', 'rose')
+('lisa', 'lisa')
+('lisa', 'rose')
+('rose', 'rose')
+```
+### 8.3 product()
+
+- 데카르트 곱 
+
+```python
+>>> from itertools import product
+>>> for i in product(iter[0:2],iter[2:],repeat=1):
+...    print(i)
+...
+('jisu', 'lisa')
+('jisu', 'rose')
+('jennie', 'lisa')
+('jennie', 'rose')
+
+
+>>> for i in product(iter[0:2],iter[2:],repeat=3):
+...    print(i)
+...
+('jisu', 'lisa', 'jisu', 'lisa', 'jisu', 'lisa')
+('jisu', 'lisa', 'jisu', 'lisa', 'jisu', 'rose')
+('jisu', 'lisa', 'jisu', 'lisa', 'jennie', 'lisa')
+('jisu', 'lisa', 'jisu', 'lisa', 'jennie', 'rose')
+('jisu', 'lisa', 'jisu', 'rose', 'jisu', 'lisa')
+('jisu', 'lisa', 'jisu', 'rose', 'jisu', 'rose')
+('jisu', 'lisa', 'jisu', 'rose', 'jennie', 'lisa')
+('jisu', 'lisa', 'jisu', 'rose', 'jennie', 'rose')
+('jisu', 'lisa', 'jennie', 'lisa', 'jisu', 'lisa')
+('jisu', 'lisa', 'jennie', 'lisa', 'jisu', 'rose')
+('jisu', 'lisa', 'jennie', 'lisa', 'jennie', 'lisa')
+('jisu', 'lisa', 'jennie', 'lisa', 'jennie', 'rose')
+('jisu', 'lisa', 'jennie', 'rose', 'jisu', 'lisa')
+('jisu', 'lisa', 'jennie', 'rose', 'jisu', 'rose')
+('jisu', 'lisa', 'jennie', 'rose', 'jennie', 'lisa')
+('jisu', 'lisa', 'jennie', 'rose', 'jennie', 'rose')
+('jisu', 'rose', 'jisu', 'lisa', 'jisu', 'lisa')
+('jisu', 'rose', 'jisu', 'lisa', 'jisu', 'rose')
+('jisu', 'rose', 'jisu', 'lisa', 'jennie', 'lisa')
+('jisu', 'rose', 'jisu', 'lisa', 'jennie', 'rose')
+('jisu', 'rose', 'jisu', 'rose', 'jisu', 'lisa')
+('jisu', 'rose', 'jisu', 'rose', 'jisu', 'rose')
+('jisu', 'rose', 'jisu', 'rose', 'jennie', 'lisa')
+('jisu', 'rose', 'jisu', 'rose', 'jennie', 'rose')
+('jisu', 'rose', 'jennie', 'lisa', 'jisu', 'lisa')
+('jisu', 'rose', 'jennie', 'lisa', 'jisu', 'rose')
+('jisu', 'rose', 'jennie', 'lisa', 'jennie', 'lisa')
+('jisu', 'rose', 'jennie', 'lisa', 'jennie', 'rose')
+('jisu', 'rose', 'jennie', 'rose', 'jisu', 'lisa')
+('jisu', 'rose', 'jennie', 'rose', 'jisu', 'rose')
+('jisu', 'rose', 'jennie', 'rose', 'jennie', 'lisa')
+('jisu', 'rose', 'jennie', 'rose', 'jennie', 'rose')
+('jennie', 'lisa', 'jisu', 'lisa', 'jisu', 'lisa')
+('jennie', 'lisa', 'jisu', 'lisa', 'jisu', 'rose')
+('jennie', 'lisa', 'jisu', 'lisa', 'jennie', 'lisa')
+('jennie', 'lisa', 'jisu', 'lisa', 'jennie', 'rose')
+('jennie', 'lisa', 'jisu', 'rose', 'jisu', 'lisa')
+('jennie', 'lisa', 'jisu', 'rose', 'jisu', 'rose')
+('jennie', 'lisa', 'jisu', 'rose', 'jennie', 'lisa')
+('jennie', 'lisa', 'jisu', 'rose', 'jennie', 'rose')
+('jennie', 'lisa', 'jennie', 'lisa', 'jisu', 'lisa')
+('jennie', 'lisa', 'jennie', 'lisa', 'jisu', 'rose')
+('jennie', 'lisa', 'jennie', 'lisa', 'jennie', 'lisa')
+('jennie', 'lisa', 'jennie', 'lisa', 'jennie', 'rose')
+('jennie', 'lisa', 'jennie', 'rose', 'jisu', 'lisa')
+('jennie', 'lisa', 'jennie', 'rose', 'jisu', 'rose')
+('jennie', 'lisa', 'jennie', 'rose', 'jennie', 'lisa')
+('jennie', 'lisa', 'jennie', 'rose', 'jennie', 'rose')
+('jennie', 'rose', 'jisu', 'lisa', 'jisu', 'lisa')
+('jennie', 'rose', 'jisu', 'lisa', 'jisu', 'rose')
+('jennie', 'rose', 'jisu', 'lisa', 'jennie', 'lisa')
+('jennie', 'rose', 'jisu', 'lisa', 'jennie', 'rose')
+('jennie', 'rose', 'jisu', 'rose', 'jisu', 'lisa')
+('jennie', 'rose', 'jisu', 'rose', 'jisu', 'rose')
+('jennie', 'rose', 'jisu', 'rose', 'jennie', 'lisa')
+('jennie', 'rose', 'jisu', 'rose', 'jennie', 'rose')
+('jennie', 'rose', 'jennie', 'lisa', 'jisu', 'lisa')
+('jennie', 'rose', 'jennie', 'lisa', 'jisu', 'rose')
+('jennie', 'rose', 'jennie', 'lisa', 'jennie', 'lisa')
+('jennie', 'rose', 'jennie', 'lisa', 'jennie', 'rose')
+('jennie', 'rose', 'jennie', 'rose', 'jisu', 'lisa')
+('jennie', 'rose', 'jennie', 'rose', 'jisu', 'rose')
+('jennie', 'rose', 'jennie', 'rose', 'jennie', 'lisa')
+('jennie', 'rose', 'jennie', 'rose', 'jennie', 'rose')
+```
+### 8.4 permutations()
+
+- iterable에서 원소개수가 r개인 순열 뽑기 
+
+```python
+>>> from itertools import permutations
+>>> for i in permutations(iter):
+...    print(i)
+...
+('jisu', 'jennie', 'lisa', 'rose')
+('jisu', 'jennie', 'rose', 'lisa')
+('jisu', 'lisa', 'jennie', 'rose')
+('jisu', 'lisa', 'rose', 'jennie')
+('jisu', 'rose', 'jennie', 'lisa')
+('jisu', 'rose', 'lisa', 'jennie')
+('jennie', 'jisu', 'lisa', 'rose')
+('jennie', 'jisu', 'rose', 'lisa')
+('jennie', 'lisa', 'jisu', 'rose')
+('jennie', 'lisa', 'rose', 'jisu')
+('jennie', 'rose', 'jisu', 'lisa')
+('jennie', 'rose', 'lisa', 'jisu')
+('lisa', 'jisu', 'jennie', 'rose')
+('lisa', 'jisu', 'rose', 'jennie')
+('lisa', 'jennie', 'jisu', 'rose')
+('lisa', 'jennie', 'rose', 'jisu')
+('lisa', 'rose', 'jisu', 'jennie')
+('lisa', 'rose', 'jennie', 'jisu')
+('rose', 'jisu', 'jennie', 'lisa')
+('rose', 'jisu', 'lisa', 'jennie')
+('rose', 'jennie', 'jisu', 'lisa')
+('rose', 'jennie', 'lisa', 'jisu')
+('rose', 'lisa', 'jisu', 'jennie')
+('rose', 'lisa', 'jennie', 'jisu')
+```
+
+- leetcode example 869. Reordered Power of 2
+- https://leetcode.com/problems/reordered-power-of-2/
+
+```python
+class Solution:
+    def reorderedPowerOf2(self, n: int) -> bool:
+        return any(cand[0] != '0' and bin(int("".join(cand))).count('1') == 1
+                   for cand in itertools.permutations(str(n)))
+```
+### reference 
+
+[seu11ee.tistory](https://seu11ee.tistory.com/5)  
+
+[itertools — 효율적인 루핑을 위한 이터레이터를 만드는 함수](https://docs.python.org/ko/3.8/library/itertools.html)  
 
 
 
