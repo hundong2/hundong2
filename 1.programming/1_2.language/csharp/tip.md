@@ -25,3 +25,8 @@ Fatal error: "No Target Architecture" in Visual Studio
 
 [c# 자원관리](https://gammabeta.tistory.com/1538)  
 
+
+## 3. Programming conception 
+
+- https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/
+
