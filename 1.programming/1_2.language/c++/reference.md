@@ -11,4 +11,8 @@
 
 [win32 Opensource library 100](https://wikidocs.net/book/6606)  
 
+[SAL 이해](https://docs.microsoft.com/ko-kr/cpp/code-quality/understanding-sal?view=msvc-170)  
+
+[함수 매개 변수 및 반환 값에 주석 추가](https://docs.microsoft.com/ko-kr/cpp/code-quality/annotating-function-parameters-and-return-values?view=msvc-170)  
+
 
