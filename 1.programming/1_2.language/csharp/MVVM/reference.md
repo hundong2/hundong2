@@ -10,4 +10,7 @@ https://docs.microsoft.com/en-us/windows/communitytoolkit/mvvm/ioc?WT.mc_id=DT-M
 [MVVM Lecture set](https://kaki104.tistory.com/631#google_vignette)  
 [MVVM Lecture Day1](file:///C:/Users/73673/Downloads/WPF%20Lecture_Day1.pdf)  
 [MVVM Design Pattern](https://kaki104.tistory.com/531)  
+[MVVM Desing Pattern for MS](https://docs.microsoft.com/ko-kr/archive/msdn-magazine/2009/february/patterns-wpf-apps-with-the-model-view-viewmodel-design-pattern)  
+
+
 
