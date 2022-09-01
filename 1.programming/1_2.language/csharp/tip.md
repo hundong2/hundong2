@@ -31,3 +31,24 @@ Fatal error: "No Target Architecture" in Visual Studio
 [English version](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/)  
 [Korean version](https://docs.microsoft.com/ko-kr/dotnet/csharp/programming-guide/concepts/)  
 
+
+## 3. static new 
+
+- 상속받은 자식노드에서 function을 재정의 할때 헷갈리지 않게 하기 위한 작업. 
+
+```csharp
+class Foo
+{
+    public static void Do() { Console.WriteLine("Foo.Do"); }
+}
+class Bar : Foo // :Foo added
+{
+    public static void Something()
+    {
+        Do();
+    }
+    public static new void Do() { Console.WriteLine("Bar.Do"); }
+}
+```
+[stackoverflow](https://stackoverflow.com/questions/661246/what-is-the-point-of-static-new-modifier-for-a-function)  
+
