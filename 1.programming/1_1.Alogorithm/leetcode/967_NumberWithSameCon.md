@@ -45,14 +45,12 @@ For a number consisting of N digits, we start from the highest digit and walk th
 
 With the DFS strategy, we prioritize the depth over the breadth, i.e. we pick one of the candidates and continue the exploration before moving on to the other candidates that are of the same level.
 
-Algorithm
-
-Intuitively we could implement the DFS algorithm with recursion. Here we define a recursive function DFS(N, num) (in Python) whose goal is to come up the combinations for the remaining N digits, starting from the current num. Note that, the signature of the function is slightly different in our Java implementation. Yet, the semantics of the function remains the same.
 
 ## Algorithm
 
 Intuitively we could implement the DFS algorithm with recursion. Here we define a recursive function DFS(N, num) (in Python) whose goal is to come up the combinations for the remaining N digits, starting from the current num. Note that, the signature of the function is slightly different in our Java implementation. Yet, the semantics of the function remains the same.
 
+![picture](https://leetcode.com/problems/numbers-with-same-consecutive-differences/Figures/967/967_dfs_example.png)  
 For instance, in the previous examples, where N=3 and K=2, and there is a moment we would invoke DFS(1, 13) which is to add another digit to the existing number 13 so that the final number meets the requirements. If the DFS function works properly, we should have the numbers of 135 and 131 as results after the invocation.
 
 We could implement the recursive function in the following steps:
@@ -100,3 +98,9 @@ class Solution:
 
         return list(ans)
 ```
+
+# reference
+
+leecode 
+https://leetcode.com/problems/numbers-with-same-consecutive-differences/
+
