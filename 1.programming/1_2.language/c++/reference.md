@@ -16,3 +16,5 @@
 [함수 매개 변수 및 반환 값에 주석 추가](https://docs.microsoft.com/ko-kr/cpp/code-quality/annotating-function-parameters-and-return-values?view=msvc-170)  
 
 
+[[C++ Core] 함수 개체(function object)와 람다 표현식(lambda expression)](https://haedallog.tistory.com/85)  
+
