@@ -18,3 +18,16 @@
 
 [[C++ Core] 함수 개체(function object)와 람다 표현식(lambda expression)](https://haedallog.tistory.com/85)  
 
+## reference 2022.09
+
+[C/C++ mordern LValue RValue](https://assortrock.com/236)  
+
+[forwarding reference](https://m.blog.naver.com/kirayamato4/221419670890)  
+
+[what is Closure](https://velog.io/@wngud4950/%ED%81%B4%EB%A1%9C%EC%A0%80Closure%EB%9E%80)  
+
+[what is Functor](https://pangtrue.tistory.com/19?category=695894)  
+
+
+[modoocode lambda](https://modoocode.com/196)  
+
