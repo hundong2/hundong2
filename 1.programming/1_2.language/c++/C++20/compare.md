@@ -26,3 +26,6 @@ equivalent
 unordered
 ```
 
+```c++
+auto ret2 = (3.4 <=> 2.1); // NaN => Not A Number
+```
