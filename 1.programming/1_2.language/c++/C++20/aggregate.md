@@ -13,3 +13,12 @@
 
 - 주어진 타입이 "aggregate type" 인지를 조사. 
 
+## designated initialization C++20
+
+- aggregate initialization 을 사용할 때
+"멤버의 이름을 사용해서 초기화" 하는 것.
+
+```c++
+Point3D p(1,2,3); // C++ 20
+Point3D p4 = {.x=1, .y=2, .z = 3}; // C++20
+```
