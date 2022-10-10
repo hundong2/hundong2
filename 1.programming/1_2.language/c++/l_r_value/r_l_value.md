@@ -1,4 +1,5 @@
 # Lvalue 와 Rvalue 정리
+
 c++11 의 기능중에 Rvalue references 을 보다 보니, Lvalue 와 Rvalue 의 판단 기준을 다시 한번 정리해야 할것 같다. 내가 지금까지 이것들을 구분하는 기준은 대입연산자 왼쪽, 오른쪽으로 기준으로 원시적 판단을 했었는데, C++ 의 새로운 기능을 보다보니...머릿속이 헷갈리기 시작한다.
 먼저, 일반적이고 간단한 예를 들어보면 :
 
@@ -182,4 +183,4 @@ External resources
 # reference 
 
 https://jeremyko.blogspot.com/2012/08/lvalue-rvalue.html  
-
+]
