@@ -6,7 +6,7 @@
 
 [WPF Threading](https://techlog.gurucat.net/167)  
 
-[Dispatcher](https://blog.naver.com/PostView.nhn?isHttpsRedirect=true&blogId=ecaface&logNo=140152822078)  
+[Dispatcher 정리](https://blog.naver.com/PostView.nhn?isHttpsRedirect=true&blogId=ecaface&logNo=140152822078)  
 
 [WPF Thread와 Dispatcher를 이용한 멀티스레딩](https://tbtb7-sw.tistory.com/158#toc-Invoke%20/%20BeginInvoke)  
 
