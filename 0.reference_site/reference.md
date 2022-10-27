@@ -60,3 +60,8 @@ brew install graphviz # graphviz
 
 https://dotnet.github.io/docfx/tutorial/docfx.exe_user_manual.html  
 
+
+## freecodecamp
+
+[OOP](https://www.freecodecamp.org/news/crash-course-object-oriented-programming-in-python/)  
+
