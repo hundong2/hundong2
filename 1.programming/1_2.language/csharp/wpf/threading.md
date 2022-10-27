@@ -10,3 +10,4 @@
 
 [WPF Thread와 Dispatcher를 이용한 멀티스레딩](https://tbtb7-sw.tistory.com/158#toc-Invoke%20/%20BeginInvoke)  
 
+[Window Service에서 UI 이용하기](https://blog.naver.com/vactorman)  
