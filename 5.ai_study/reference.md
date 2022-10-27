@@ -11,3 +11,5 @@
 
 * [MMDetection](../5.ai_study/MMDetection/reference.md)  
 
+* [KAIST K-Radar Github](https://github.com/kaist-avelab/K-Radar/blob/main/readme.md)  
+
