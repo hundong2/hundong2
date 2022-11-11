@@ -52,3 +52,9 @@ class Bar : Foo // :Foo added
 ```
 [stackoverflow](https://stackoverflow.com/questions/661246/what-is-the-point-of-static-new-modifier-for-a-function)  
 
+## 4. C# PublishSingleFile Option
+
+### reference 
+
+[C# - PublishSingleFile과 관련된 옵션](https://www.sysnet.pe.kr/2/0/13159?pageno=0)  
+
