@@ -8,6 +8,7 @@
     - [2. boost install ( c++ install )](#2-boost-install--c-install-)
   - [2. Machine learning environment](#2-machine-learning-environment)
     - [2.1 python](#21-python)
+  - [3. VSCODE KOREAN 깨짐 현상](#3-vscode-korean-깨짐-현상)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
@@ -50,3 +51,15 @@ pip3 install numpy
 pip3 install graphviz # not to do 
 brew install graphviz # graphviz
 ```
+
+## 3. VSCODE KOREAN 깨짐 현상
+
+```
+command + shift + p 
+or
+fn + F1
+```
+
+- "Configure Display Language" 에 KR 추가 ( install )
+- restart
+
