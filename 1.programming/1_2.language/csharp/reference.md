@@ -26,6 +26,18 @@
 
 [Microsoft Old Blog git](https://github.com/bstollnitz/old-wpf-blog)  
 
+[Powershell 7.3 (C#)](https://learn.microsoft.com/en-us/powershell/scripting/whats-new/what-s-new-in-powershell-73?view=powershell-7.3)  
+
+## Opensource (github)
+
+### Network
+
+#### reference 
+
+[Networker](https://github.com/markiodev/Networker)  
+
+[NetCoreServer](https://github.com/chronoxor/NetCoreServer)  
+
 
 
 

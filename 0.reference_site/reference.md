@@ -60,3 +60,12 @@ brew install graphviz # graphviz
 
 https://dotnet.github.io/docfx/tutorial/docfx.exe_user_manual.html  
 
+
+## freecodecamp
+
+[OOP](https://www.freecodecamp.org/news/crash-course-object-oriented-programming-in-python/)  
+
+## awstip
+
+[Serverless Architecture For next app](https://awstip.com/serverless-architecture-for-next-app-bda1a195cece)  
+

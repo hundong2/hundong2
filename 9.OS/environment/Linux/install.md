@@ -16,3 +16,9 @@ sudo make install
 cmake --version 
 ```
 
+## 02. aptitude
+
+### reference 
+
+[aptitude - 설치 된 패키지 버전 정보](https://kukuta.tistory.com/381)  
+

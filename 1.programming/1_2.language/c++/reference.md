@@ -31,3 +31,5 @@
 
 [modoocode lambda](https://modoocode.com/196)  
 
+[opensource list from cppreference](https://en.cppreference.com/w/cpp/links/libs)  
+

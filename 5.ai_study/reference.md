@@ -7,3 +7,9 @@
 
 * [MIT Machine learning](https://ocw.mit.edu/courses/6-034-artificial-intelligence-fall-2010/pages/syllabus/)  
 
+* [COCO Data Format](https://comlini8-8.tistory.com/67)  
+
+* [MMDetection](../5.ai_study/MMDetection/reference.md)  
+
+* [KAIST K-Radar Github](https://github.com/kaist-avelab/K-Radar/blob/main/readme.md)  
+
