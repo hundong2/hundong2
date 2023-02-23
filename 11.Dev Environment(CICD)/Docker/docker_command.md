@@ -38,3 +38,16 @@
     ```
 5. docker commit 
     - docker commit [NAES] [REPOSITORY:TAG]
+
+6. docker /bash 실행
+
+- ubuntu22.04 download
+
+```sh
+> docker pull ubuntu:22.04
+> docker run --name ubuntu -v ${pwd}:/shared -it ubuntu:22.04
+> docker commit ubuntu ubuntu:22.04
+```
+
+- reference 
+[Docker로 ndk 바이너리 실행](https://ganadist.github.io/2018_12_29_docker_qemu_user_arm.html)   
