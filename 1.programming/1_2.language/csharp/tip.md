@@ -58,3 +58,16 @@ class Bar : Foo // :Foo added
 
 [C# - PublishSingleFile과 관련된 옵션](https://www.sysnet.pe.kr/2/0/13159?pageno=0)  
 
+## 5. code에서 git정보 가져오기 
+
+```c#
+Console.WriteLine(ThisAssembly.Git.Commit);  
+```
+
+### reference 
+[Github](https://github.com/devlooped/GitInfo)  
+[steven-giesel.com](https://steven-giesel.com/blogPost/b8f685c2-4bdb-4ca4-a129-3fc81a3678c6)  
+
+
+
+
