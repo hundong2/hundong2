@@ -9,3 +9,7 @@
 ## C++ reference 
 
 [CPP KOREA](https://github.com/CppKorea/CppCoreGuidelines)  
+
+## Confluence Lecture Site 
+
+[Software Architect lesstif](https://www.lesstif.com/software-architect/windows-powershell-tip-howto-66715713.html)  
