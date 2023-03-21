@@ -37,4 +37,10 @@
 
 - [툴 팁](https://mainia.tistory.com/6083)  
 - [[C#/.Net] 현재 프로그램 실행 경로 가져오기 (상대 경로 설정)](https://mirwebma.tistory.com/132)  
-- 
+
+
+## CMAKE 
+
+- [CMAKE tutorial](https://blog.curaai.dev/2020/02/28/cmake-gtest.html#cmakeliststxt)  
+- [C++ project setup with CMake & unit tests (google test)](https://raymii.org/s/tutorials/Cpp_project_setup_with_cmake_and_unit_tests.html)  
+
