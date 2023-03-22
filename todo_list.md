@@ -31,10 +31,16 @@
 ## C#
 
 - [Configuration read](https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=csaiur&logNo=220837012550)  
+- [MVVM pattern](1.programming/language/csharp/../../1_2.language/csharp/MVVM/reference.md) 
+- [C#에서 NLog 메세지를 WPF의 TextBox에 출력하는 방법](https://ivorycirrus.github.io/TIL/csharp-nlog-wpf/)  
+- [C# - 배치 파일 실행하고 출력 결과를 얻는 방법](https://www.sysnet.pe.kr/2/0/1810?pageno=0)  
+- [C# 비동기/동기 socket](https://codingcoding.tistory.com/409)  
+- [C# Task 사용방법](https://codingcoding.tistory.com/415)  
+- [C# 비동기 프로세스 제어](https://codingcoding.tistory.com/1020)  
+- [Simple wpf terminal](https://github.com/oriches/Simple.Wpf.Terminal/blob/master/.net%20framework/Simple.Wpf.Terminal/ITerminalEx.cs)  
 - 
 
 ## Visual studio 
 
 - [툴 팁](https://mainia.tistory.com/6083)  
 - [[C#/.Net] 현재 프로그램 실행 경로 가져오기 (상대 경로 설정)](https://mirwebma.tistory.com/132)  
-- 

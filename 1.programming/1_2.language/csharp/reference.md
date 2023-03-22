@@ -44,5 +44,6 @@
 [NetCoreServer](https://github.com/chronoxor/NetCoreServer)  
 
 
+[WPF multi-thread](https://ddka.tistory.com/entry/WPF-multi-thread)  
 
 
