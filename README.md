@@ -1,5 +1,14 @@
 ![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=300&section=header&text=welcome&fontSize=90&animation=fadeIn&fontAlignY=38&desc=hundong2%20GitHub%20Profile&descAlignY=51&descAlign=62)  
 
+# Getting Start 
+## Using Submodule page 
+### 1. Database Study 
+- if you want using latest version 
+```sh
+git submodule init 
+git submodule update 
+```
+
 <p align="center">
     <Strong>SNS list</Strong><br><br>
     <a href="https://physicalkingman.tistory.com/" target="_blank"><img src="https://img.shields.io/badge/PhysicalKingman Blog-0B2C4A?style=flat-square&logo=ActiGraph&logoColor=white"/>

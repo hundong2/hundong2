@@ -1,0 +1,3 @@
+[submodule "4.datascience/DatabaseStudy"]
+	path = 4.datascience/DatabaseStudy
+	url = https://github.com/hundong2/DatabaseStudy.git
