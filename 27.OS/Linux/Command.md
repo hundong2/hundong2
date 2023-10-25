@@ -467,3 +467,7 @@ last -d
 ### reference
 
 [리눅스 로그파일 종료 및 분석](https://blog.naver.com/kdi0373/220522832069)
+
+## 3. SFTP
+
+[SFTP 다루기](https://hippogrammer.tistory.com/306)
