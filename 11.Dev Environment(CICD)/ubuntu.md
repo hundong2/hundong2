@@ -24,6 +24,15 @@
 [Linux systemctl 명령 에러 System has not been booted with systemd as init system (PID 1).](https://parkkingcar.tistory.com/96)  
 [[WSL] 윈도우 하위 리눅스 재부팅, 재시작 방법](https://webisfree.com/2022-11-08/[WSL]-%EC%9C%88%EB%8F%84%EC%9A%B0-%ED%95%98%EC%9C%84-%EB%A6%AC%EB%88%85%EC%8A%A4-%EC%9E%AC%EB%B6%80%ED%8C%85-%EC%9E%AC%EC%8B%9C%EC%9E%91-%EB%B0%A9%EB%B2%95)
 
+### How To Install libicu-dev on Ubuntu 20.04
+
+[How To Install libicu-dev on Ubuntu 20.04](https://installati.one/install-libicu-dev-ubuntu-20-04/)
+
+```sh
+sudo apt-get update
+sudo apt-get -y install libicu-dev
+```
+
 ## c++ update
 
 ```bash
