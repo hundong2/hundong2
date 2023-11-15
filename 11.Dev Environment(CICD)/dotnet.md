@@ -93,6 +93,11 @@ dotnet --version
     build foldername(project) --os win -a x64 -o foldername/bin/Debug/net7.0-win-x64
     ```
 
+## 1.3 build error
+
+- [dotnet error](../23.error/dotnet_error.md)
+-
+
 ## reference
 
 [.NET7 SDK Download site - linux](https://dotnet.microsoft.com/ko-kr/download/dotnet/thank-you/sdk-7.0.403-linux-x64-binaries)  
