@@ -39,3 +39,58 @@ sudo apt-get -y install libicu-dev
 apt-get update
 sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-11 110 --slave /usr/bin/g++ g++ /usr/bin/g++-11
 ```
+
+## dpkg package
+
+### package list
+
+```sh
+dpkg --list
+dpkg --list | grep [program name]
+```
+
+### package purge ( delete package )
+
+```sh
+dpkg --purge [program name]
+```
+
+## sudo: python command not found
+
+- [stack overflow - sudo: python: command not found](https://stackoverflow.com/questions/44726377/sudo-python-command-not-found)
+
+## environment setting
+
+- There should be no spaces on the left or right of =.
+
+### command setting
+
+```sh
+export [name]=[value]
+```
+
+```sh
+env | grep [name]
+```
+
+### bashrc modify
+
+```sh
+vim /etc/bash.bashrc
+or
+vi ~/.bashrc
+```
+
+and
+
+```sh
+source /etc/bash.bashrc
+or
+source ~/.bashrc
+```
+
+### Clear environment variables
+
+```sh
+unset [environment variable name]
+```
