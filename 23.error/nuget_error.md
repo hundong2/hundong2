@@ -3,7 +3,7 @@
 ## Unable to load the service index for source https://api.nuget.org/v3/index.json
 
 ```sh
-apt remove --purge -V ca-certificates
+apt remove --purge -V -y ca-certificates
 apt install ca-certificates -y
 ```
 
