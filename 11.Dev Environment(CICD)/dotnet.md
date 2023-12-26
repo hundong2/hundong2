@@ -121,3 +121,14 @@ sudo apt-get -y install libicu-dev
 
 [libicu-dev install message](https://installati.one/install-libicu-dev-ubuntu-20-04/)
 [dotnet build](https://learn.microsoft.com/ko-kr/dotnet/core/tutorials/with-visual-studio-code?pivots=dotnet-7-0)
+
+### dotnet default nuget path
+
+```sh
+root@3fe18db40a53:/mnt/app/Build# ~/dotnet/dotnet nuget locals all --clear
+Clearing NuGet HTTP cache: /root/.local/share/NuGet/http-cache
+Clearing NuGet global packages folder: /root/.nuget/packages/
+Clearing NuGet Temp cache: /tmp/NuGetScratchroot
+Clearing NuGet plugins cache: /root/.local/share/NuGet/plugin-cache
+Local resources cleared.
+```
