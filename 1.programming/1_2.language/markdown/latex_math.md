@@ -347,38 +347,37 @@ $
 hat	\;\backslash hat{x} : \hat{x} \\	
 widehat \;\backslash widehat{x}:\;	\widehat{x}	\\
 물결 \;\backslash tilde{x} :\;		\tilde{x}	\\
-wide물결	\widetilde{x} \\	
-bar	\bar{x} \\
-overline	\overline{x} \\	
-check	\check{x}	\\
-acute	\acute{x}	\\
-grave	\grave{x}	\\
- 	dot	\dot{x}	\\
-ddot	\ddot{x}	\\
- 	breve	\breve{x}	\\
-vec	\vec{x}	\\
-델,나블라	\nabla	\\
-수직	\perp	\\
- 	평행	\parallel	\\
-부분집합아님	\not\subset\\	
- 	공집합	\emptyset	\\
-가운데 점	\cdot	\\
- 	…	\dots	\\
-가운데 점들	\cdots	\\
- 	세로점들	\vdots	\\
-나누기	\div	\\
- 	물결표	\sim	\\
-플마,마플	\pm, \mp	\\
- \\
- 	겹물결표	\approx	\\
-prime	\prime	\\
- 	무한대	\infty	\\
-적분	\int	\\
- 	편미분	\partial	\\
-한칸띄어	x \, y	\\
- 	두칸	x\;y	\\
-네칸띄어	x \quad y	\\
- 	여덟칸띄어	x \qquad y\\	
+wide물결 \;\backslash widetilde{x} :\;	\widetilde{x} \\	
+bar	\;\backslash bar\{x\}:\;\bar{x} \\
+overline \;\backslash overline\{x\}:\;	\overline{x} \\	
+check	\;\backslash check\{x\}:\;\check{x}	\\
+acute	\;\backslash acute\{x\}:\; \acute{x}	\\
+grave	\;\backslash grave\{x\}:\;\grave{x}	\\
+dot	\;\backslash dot\{x\}:\; \dot{x}	\\
+ddot	\;\backslash ddot\{x\}:\;\ddot{x}	\\
+breve	\;\backslash breve\{x\}:\;\breve{x}	\\
+vec	\;\backslash vec\{x\}:\;\vec{x}	\\
+델,나블라	\;\backslash nabla:\; \nabla	\\
+수직	\;\backslash perp:\; \perp	\\
+평행	\;\backslash parallel:\; \parallel	\\
+부분집합아님	\;\backslash not\backslash subset :\; \not\subset\\	
+공집합	\;\backslash emptyset:\; \emptyset	\\
+가운데 점	\;\backslash cdot:\; \cdot	\\
+…	\;\backslash dots:\; \dots	\\
+가운데 점들	\;\backslash cdots:\; \cdots	\\
+세로점들	\;\backslash vdots:\; \vdots	\\
+나누기	\;\backslash div:\;\div	\\
+물결표	\;\backslash sim:\; \sim	\\
+플마,마플	\;\backslash pm \backslash mp:\; \pm, \mp	\\
+겹물결표	\;\backslash approx:\; \approx	\\
+prime	\;\backslash prime:\; \prime	\\
+무한대	\;\backslash infty:\; \infty	\\
+적분	\;\backslash int:\; \int	\\
+편미분	\;\backslash :\; \partial	\\
+한칸띄어	\;\backslash ,:\; x \, y	\\
+두칸	\;\backslash ;:\; x\;y	\\
+네칸띄어	\;\backslash quad:\; x \quad y	\\
+여덟칸띄어	\;\backslash qquad:\; x \qquad y\\	
 $
 
 ## Reference 
