@@ -274,32 +274,32 @@ $$\overline{SCALAR}$$
 ## Line ( don't )
 
 ## special 
+| 한글    | 그리스 문자 | 영어   | LaTeX  | LaTex 수식 |
+|---------|-------------|--------|--------|------------|
+| 알파    | α           | alpha  | \alpha | $\alpha$ |
+| 크사이  | ξ           | xi     | \xi    | $\xi$    |
+| 베타    | β           | beta   | \beta  | $\beta$  |
+| 오미크론 | ο        | omicron| \omicron      |  $\omicron$      |
+| 감마    | γ           | gamma  | \gamma | $\gamma$ |
+| 파이    | π           | pi     | \pi    | $\pi$    |
+| 델타    | δ           | delta  | \delta | $\delta$ |
+| 로     | ρ           | rho    | \rho   | $\rho$   |
+| 엡실론  | ϵ           | epsilon| \epsilon | $\epsilon$ |
+| 시그마  | σ           | sigma  | \sigma | $\sigma$ |
+| 제타    | ζ           | zeta   | \zeta  | $\zeta$  |
+| 타우    | τ           | tau    | \tau   | $\tau$   |
+| 에타    | η           | eta    | \eta   | $\eta$   |
+| 입실론  | υ           | upsilon| \upsilon | $\upsilon$ |
+| 세타    | θ           | theta  | \theta | $\theta$ |
+| 파이    | ϕ           | phi    | \phi   | $\phi$   |
+| 이오타  | ι           | iota   | \iota  | $\iota$  |
+| 카이    | χ           | chi    | \chi   | $\chi$   |
+| 카파    | κ           | kappa  | \kappa | $\kappa$ |
+| 오메가  | ω           | omega  | \omega | $\omega$ |
+| 람다    | λ           | lambda | \lambda| $\lambda$|
+| 뉴     | ν           | nu     | \nu    | $\nu$    |
+| 뮤     | μ           | mu     | \mu    | $\mu$    |
 
-$$
-알파: alpha\; \alpha \\
-크사이: xi\;	\xi	\\
-베타: beta\;	\beta \\	
-오미크론: omicron\;	\omicron \\	
-감마:	\;gamma\;\gamma	\\
-파이:	\;pi\;\pi \\	
-델타:	\;delta\;\delta \\    \\	
-로 :	\;rho\;\rho	\\
-엡실론:	\;epsilon\;\epsilon	\\
-시그마:	\;sigma\;\sigma	\\
-제타:	\;zeta\;\zeta	\\
-타우:	\;tau	\;\tau	\\
-에타:	\;eta	\;\eta	\\
-입실론:	\;upsilon\;\upsilon\\	
-세타:	\;theta\;\theta	\\
-파이:	\;phi	\;\phi	\\
-이오타:	\;iota\;\iota	\\
-카이:	\;chi	\;\chi	\\
-카파:	\;kappa\;\kappa	\\
-오메가:	\;omega\;\omega	\\
-람다:	\;lamba\;\lambda	\\
-뉴: \;nu\;	\nu	\\
-뮤: \;mu\;	\mu	\\
-$$
 
 $
 합동	    :\;\backslash equiv	\; \equiv	\\
