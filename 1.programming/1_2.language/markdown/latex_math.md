@@ -275,7 +275,7 @@ $$\overline{SCALAR}$$
 
 ## special 
 
-$
+$$
 알파: alpha\; \alpha \\
 크사이: xi\;	\xi	\\
 베타: beta\;	\beta \\	
@@ -299,7 +299,7 @@ $
 람다:	\;lamba\;\lambda	\\
 뉴: \;nu\;	\nu	\\
 뮤: \;mu\;	\mu	\\
-$
+$$
 
 $
 합동	    :\;\backslash equiv	\; \equiv	\\
