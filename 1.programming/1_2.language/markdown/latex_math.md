@@ -300,85 +300,82 @@ $$\overline{SCALAR}$$
 | 뉴     | ν           | nu     | \nu    | $\nu$    |
 | 뮤     | μ           | mu     | \mu    | $\mu$    |
 
+| 항목       | 기호  | LaTeX       | LaTeX (no $$)   |
+|------------|-------|-------------|-----------------|
+| 합동       | ≡     | $\equiv$    | \equiv          |
+| 근사       | ≈     | $\approx$   | \approx         |
+| 비례       | ∝     | $\propto$   | \propto         |
+| 같고 근사  | ≃     | $\simeq$    | \simeq          |
+| 닮음       | ∼     | $\sim$      | \sim            |
+| 같지 않음  | ≠     | $\neq$      | \neq            |
+| 작거나 같음 | ≤     | $\leq$      | \leq            |
+| 크거나 같음 | ≥     | $\geq$      | \geq            |
+| 매우 작음  | ≪     | $\ll$       | \ll             |
+| 매우 큼    | ≫     | $\gg$       | \gg             |
 
-$
-합동	    :\;\backslash equiv	\; \equiv	\\
-근사	    :\;\backslash approx	\; \approx	\\
-비례	    :\;\backslash propto	\; \propto	\\
-같고 근사	:\; \backslash simeq	\;  \simeq	\\
-닮음	    :\;sim	\; \sim	\\
-같지 않음	:\; neq	\;  \neq\\	
-작거나 같음	:\;  leq	\;   \leq \\	
-크거나 같음	:\;  geq	\;   \geq	\\
-매우작음	:\;  ll	\;   \ll	\\
-매우 큼	    :\; gg	\;  \gg	\\
-$
+| 항목       | 기호  | LaTeX       | LaTeX (no $$)   |
+|------------|-------|-------------|-----------------|
+| 불릿       | ∙     | $\bullet$   | \bullet         |
+| 부정       | ≠     | $\neq$      | \neq            |
+| 논리곱     | ∧     | $\wedge$    | \wedge          |
+| 논리합     | ∨     | $\vee$      | \vee            |
+| 배타적논리합 | ⊕   | $\oplus$    | \oplus          |
+| 어떤       | ∃     | $\exists$   | \exists         |
+| 오른쪽 화살표  | → | $\rightarrow$ | \rightarrow    |
+| 왼쪽 화살표    | ← | $\leftarrow$  | \leftarrow      |
+| 왼쪽 큰 화살표 | ⇐ | $\Leftarrow$  | \Leftarrow      |
+| 오른쪽 큰 화살표 | ⇒ | $\Rightarrow$ | \Rightarrow     |
+| 양쪽 큰 화살표   | ⇔ | $\Leftrightarrow$ | \Leftrightarrow |
+| 양쪽 화살표      | ↔ | $\leftrightarrow$ | \leftrightarrow |
+| 모든       | ∀     | $\forall$   | \forall         |
 
-$
-불릿	   : \backslash bullet	\; \bullet	\\
-부정	    :\backslash neq	    \; \neq	\\
-wedge	 :  \backslash wedge	\; \wedge	\\
-vee	       :\backslash vee	    \;\vee	\\
-논리합	   : \backslash  oplus	\; \oplus	\\
-어떤	   : \backslash exists	\; \exists	\\
-오른쪽 </br>화살표	\; \backslash rightarro :\rightarrow	    \\
-왼쪽 <\br>화살표	\; \backslash leftarrow :\leftarrow	\\
-왼쪽 <\br>큰화살표	\; \backslash Leftarrow :\Leftarrow	\\
-오른쪽 <\br>큰화살표\; \backslash  Rightarr	:\Rightarrow	\\
-양쪽 <\br>큰화살표	\; \backslash Leftright :\Leftrightarrow	\\
-양쪽 <\br>화살표	\; \backslash leftarrow :\leftarrow	\\
-모든	            \;\backslash forall	:\forall	
-$
 
-$
-교집합 \;\backslash cap:	    \cap \\	
-합집합 \;\backslash cup:	    \cup	\\
-상위집합 \;\backslash supset:	 \supset \\	
-진상위집합 \;\backslash susseteq:	  \supseteq \\	
-하위집합 \;\backslash subset:	  \subset	\\
-진하위집 \;\backslash subseteq:	  \subseteq	 \\
-부분집합아님 \backslash not\backslash subset:\;	\not\subset \\	
-공집합	       \backslash emptyset, \backslash varnothing :\; \emptyset, \varnothing \\	
-원소	        \backslash in\;: \in	\\
-원소아님	    \backslash notin:\;\notin \\	
-$
+| 항목        | 기호             | LaTeX              | LaTeX (no $$)      |
+|-------------|------------------|--------------------|--------------------|
+| 교집합      | ∩                | $\cap$             | \cap               |
+| 합집합      | ∪                | $\cup$             | \cup               |
+| 상위집합    | ⊃                | $\supset$          | \supset            |
+| 진상위집합  | ⊇                | $\supseteq$        | \supseteq          |
+| 하위집합    | ⊂                | $\subset$          | \subset            |
+| 진하위집합  | ⊆                | $\subseteq$        | \subseteq          |
+| 부분집합아님 |             | $\not\subset$      | \not\subset        |
+| 공집합      | ∅, ∅             | $\emptyset, \varnothing$ | \emptyset, \varnothing |
+| 원소        | ∈                | $\in$              | \in                |
+| 원소아님    |               | $\notin$           | \notin             |
 
-$
-hat	\;\backslash hat{x} : \hat{x} \\	
-widehat \;\backslash widehat{x}:\;	\widehat{x}	\\
-물결 \;\backslash tilde{x} :\;		\tilde{x}	\\
-wide물결 \;\backslash widetilde{x} :\;	\widetilde{x} \\	
-bar	\;\backslash bar\{x\}:\;\bar{x} \\
-overline \;\backslash overline\{x\}:\;	\overline{x} \\	
-check	\;\backslash check\{x\}:\;\check{x}	\\
-acute	\;\backslash acute\{x\}:\; \acute{x}	\\
-grave	\;\backslash grave\{x\}:\;\grave{x}	\\
-dot	\;\backslash dot\{x\}:\; \dot{x}	\\
-ddot	\;\backslash ddot\{x\}:\;\ddot{x}	\\
-breve	\;\backslash breve\{x\}:\;\breve{x}	\\
-vec	\;\backslash vec\{x\}:\;\vec{x}	\\
-델,나블라	\;\backslash nabla:\; \nabla	\\
-수직	\;\backslash perp:\; \perp	\\
-평행	\;\backslash parallel:\; \parallel	\\
-부분집합아님	\;\backslash not\backslash subset :\; \not\subset\\	
-공집합	\;\backslash emptyset:\; \emptyset	\\
-가운데 점	\;\backslash cdot:\; \cdot	\\
-…	\;\backslash dots:\; \dots	\\
-가운데 점들	\;\backslash cdots:\; \cdots	\\
-세로점들	\;\backslash vdots:\; \vdots	\\
-나누기	\;\backslash div:\;\div	\\
-물결표	\;\backslash sim:\; \sim	\\
-플마,마플	\;\backslash pm \backslash mp:\; \pm, \mp	\\
-겹물결표	\;\backslash approx:\; \approx	\\
-prime	\;\backslash prime:\; \prime	\\
-무한대	\;\backslash infty:\; \infty	\\
-적분	\;\backslash int:\; \int	\\
-편미분	\;\backslash :\; \partial	\\
-한칸띄어	\;\backslash ,:\; x \, y	\\
-두칸	\;\backslash ;:\; x\;y	\\
-네칸띄어	\;\backslash quad:\; x \quad y	\\
-여덟칸띄어	\;\backslash qquad:\; x \qquad y\\	
-$
+| 항목                | 기호       | LaTeX             | LaTeX (no $$)   |
+|---------------------|------------|-------------------|-----------------|
+| hat (x에 적용)       | x^         | $\hat{x}$        | \hat{x}         |
+| widehat (x에 적용)   | x          | $\widehat{x}$    | \widehat{x}     |
+| 물결 (x에 적용)      | x~         | $\tilde{x}$      | \tilde{x}       |
+| widetilde (x에 적용) | x          | $\widetilde{x}$  | \widetilde{x}   |
+| bar (x에 적용)       | xˉ         | $\bar{x}$        | \bar{x}         |
+| overline (x에 적용)  | x          | $\overline{x}$   | \overline{x}    |
+| check (x에 적용)     | xˇ         | $\check{x}$      | \check{x}       |
+| acute (x에 적용)     | xˊ         | $\acute{x}$      | \acute{x}       |
+| grave (x에 적용)     | xˋ         | $\grave{x}$      | \grave{x}       |
+| dot (x에 적용)       | x˙         | $\dot{x}$        | \dot{x}         |
+| ddot (x에 적용)      | x¨         | $\ddot{x}$       | \ddot{x}        |
+| breve (x에 적용)     | x˘         | $\breve{x}$      | \breve{x}       |
+| vec (x에 적용)       | x          | $\vec{x}$        | \vec{x}         |
+| 나블라               | ∇          | $\nabla$         | \nabla          |
+| 수직                 | ⊥          | $\perp$          | \perp           |
+| 평행                 | ∥          | $\parallel$      | \parallel       |
+| 부분집합아님       |  ⊂        | $\not\subset$    | \not\subset     |
+| 공집합               | ∅          | $\emptyset$      | \emptyset       |
+| 가운데점            | ⋅          | $\cdot$          | \cdot           |
+| 물결표              | ∼          | $\sim$           | \sim            |
+| 플마,마플           | ±,∓        | $\pm,\mp$        | \pm,\mp         |
+| 겹물결표           | ≈          | $\approx$        | \approx         |
+| prime               | ′          | $\prime$         | \prime          |
+| 무한대              | ∞          | $\infty$         | \infty          |
+| 적분                | ∫          | $\int$           | \int            |
+| 편미분              | ∂          | $\partial$       | \partial        |
+| 한칸 띄어          | :xy        | $x\:y$           | x y             |
+| 두칸 띄어          | ;xy        | $x\;y$           | x y             |
+| 네칸 띄어          | quad:xy    | $x\quad y$       | x y             |
+| 여덟칸 띄어        | qquad:xy   | $x\qquad y$      | x y             |
+
 
 ## Reference 
 
