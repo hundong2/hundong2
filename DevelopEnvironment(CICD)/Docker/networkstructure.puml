@@ -1,0 +1,15 @@
+@startuml
+'docker network diagram
+nwdiag {
+  network LOCAL_PC {
+   local [address = "eth" ]
+   docker0 [address = "docker0" ]
+  }
+  network docker0 {
+   docker0 [address = "docker0" ]
+   container1 [ address = "veth0"]
+   container2 [ address = "veth0"]
+   container3 [ address = "veth0"]
+  }
+}
+@enduml
