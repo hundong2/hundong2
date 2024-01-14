@@ -1,3 +1,12 @@
+---
+title: "Machine Learning (AI) Reference Site information"
+permalink: /posts/ReferenceAI/
+excerpt: "Machine Learning (AI) Reference Site information"
+redirect_from:
+  - /theme-setup/
+toc: true
+---
+
 # reference/site set
 
 * [딥러닝 개발 환경 구축 한방에 끝내기](https://theorydb.github.io/dev/2020/02/14/dev-dl-setting-local-python/ "dev develop")  
