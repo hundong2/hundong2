@@ -13,5 +13,13 @@ $$a_1x_1+a_2x_2+a_3x_3\dots+a_nx_n = b$$
 - 가우스-조단 소거법(Gauss-Jordan elimination method) : 체계화된 절차로 연립선형방정식을 풀이
 
 
+
 ## reference 
+
+- [ ] [linear algebra](https://adioshun.gitbooks.io/linear-algebra/content/01the-geometry-of-linear-equations.html)  
+- [ ] [강화학습](https://velog.io/@webb-c/%EA%B0%95%ED%99%94%ED%95%99%EC%8A%B5-Model-Free-Control)  
+- [ ] [행렬식 Determinant](https://datalabbit.tistory.com/39)  
+- [ ] [선형대수 한양대](https://www.youtube.com/watch?v=HPbWCROEFno&list=PLSN_PltQeOyjDGSghAf92VhdMBeaLZWR3&index=4)  
+
+
 
