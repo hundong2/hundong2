@@ -5,6 +5,11 @@ excerpt: "Machine Learning (AI) Reference Site information"
 redirect_from:
   - /theme-setup/
 toc: true
+categories:
+  - AI
+tags:
+  - AI
+  - Reference
 ---
 
 # reference/site set

@@ -1,4 +1,19 @@
-# reference 
+---
+title: "AI-Linear Algebra Reference"
+permalink: /posts/ReferenceAILA/
+excerpt: "AI-Linear Algebra Reference"
+redirect_from:
+  - /theme-setup/
+toc: true
+categories:
+  - AI
+tags:
+  - AI
+  - Linear
+  - Algebra
+---
+
+# Reference 
 
 - [kowc 성균관대학교 강의](http://www.kocw.net/home/search/kemView.do?kemId=704693)  
 - [선형대수 강의 블로그1](https://bskyvision.com/entry/%EC%84%A0%ED%98%95%EB%8C%80%EC%88%98%ED%95%99-%EA%B3%A0%EC%9C%A0%EA%B0%92eigenvalue%EA%B3%BC-%EA%B3%A0%EC%9C%A0%EB%B2%A1%ED%84%B0eigenvector?category=619292)  
