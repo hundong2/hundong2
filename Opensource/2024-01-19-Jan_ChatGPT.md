@@ -1,3 +1,17 @@
+---
+title: "Jan - 오픈소스 ChatGPT 대체제를 위한 크로스 플랫폼 프레임워크"
+permalink: /posts/Jan/
+excerpt: "오픈소스 ChatGPT 대체제를 위한 크로스 플랫폼 프레임워크"
+redirect_from:
+  - /theme-setup/
+categories:
+  - Opensource
+tags:
+  - Opensource
+  - Jan
+toc: true
+---
+
 # [Jan - 오픈소스 ChatGPT 대체제를 위한 크로스 플랫폼 프레임워크 (github.com/janhq)](https://news.hada.io/topic?id=12836)    
 
 - github repo : https://github.com/janhq/jan  
