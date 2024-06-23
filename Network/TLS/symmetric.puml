@@ -1,0 +1,9 @@
+```plantuml
+@startuml
+state Data
+state Encrypted
+
+Data -> Encrypted : 대칭키
+Encrypted -> Data : 대칭키
+@enduml
+```

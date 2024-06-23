@@ -1,0 +1,26 @@
+```plantuml
+@startuml
+Server -> Server
+note right
+공개키 공개
+end note 
+Client -> Client : Encrypt
+note right
+공개키 + 대칭키 ( Encrypt ) = 암호화문
+end note
+Client -> Server : Send: 암호화문
+Server -> Server : Decrypt
+note left
+암호화문 + 비밀키 ( Decrypt ) = 대칭키
+end note 
+Server -> Client : Encrypted Message Send
+note left
+Original Message + 대칭키 = Encrypted Message
+end note
+Client -> Client : Decrypt
+note right
+Decrypt Message
+Encrypted Message + 대칭키 = Original Message  
+end note 
+@enduml
+```

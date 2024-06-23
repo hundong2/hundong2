@@ -1,0 +1,16 @@
+```plantuml
+@startuml
+actor Client
+actor Server
+participant "Certificate Authority" as CA
+
+Client -> Server: ClientHello
+Server --> Client: ServerHello, Certificate, ServerKeyExchange, CertificateRequest, ServerHelloDone
+Client --> Server: Certificate, ClientKeyExchange, CertificateVerify, ChangeCipherSpec, Finished
+Server --> Client: ChangeCipherSpec, Finished
+
+Client -> CA: Verify Certificate
+CA --> Client: Certificate Verification Result
+
+@enduml
+```
