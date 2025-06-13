@@ -1,310 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Markdown Viewer</title>
-    <style>
-        body { font-family: sans-serif; margin: 0; display: flex; height: 100vh; }
-        #sidebar { width: 350px; border-right: 1px solid #ccc; padding: 20px; overflow-y: auto; background-color: #f9f9f9; box-sizing: border-box; }
-        #content { flex-grow: 1; padding: 20px; overflow-y: auto; box-sizing: border-box; }
-        ul { list-style-type: none; padding-left: 0; }
-        li a { text-decoration: none; color: #0366d6; display: block; padding: 3px 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-        li a:hover { text-decoration: underline; }
-        .dir { font-weight: bold; margin-top: 8px; cursor: pointer; padding: 3px 0; }
-        .dir::before { content: '\25B6'; display: inline-block; margin-right: 6px; transition: transform 0.1s ease-in-out; } /* Right-pointing triangle */
-        .dir.open::before { transform: rotate(90deg); } /* Down-pointing triangle for open directory */
-        .file { padding-left: 20px; }
-        ul ul { padding-left: 20px; display: none; } /* Sub-lists (files/subdirs) are hidden by default */
-        ul ul.visible { display: block; } /* Visible when directory is open */
-    </style>
+  <meta charset="UTF-8">
+  <title>Markdown 리스트와 뷰어</title>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2rem; }
+    #file-list { margin-bottom: 2rem; }
+    .file-link { cursor: pointer; color: blue; text-decoration: underline; }
+    #viewer { border: 1px solid #ccc; padding: 2rem; min-height: 300px; background: #fafafa; }
+  </style>
 </head>
 <body>
-    <div id="sidebar">
-        <h2>Files</h2>
-        <ul id="file-list"></ul>
-    </div>
-    <div id="content">
-        <h1>Welcome</h1>
-        <p>Select a file from the sidebar to view its content. Click on directory names to expand/collapse them.</p>
-    </div>
+  <h1>Markdown 파일 목록</h1>
+  <div id="file-list">로딩 중...</div>
+  <hr>
+  <div id="viewer">파일을 선택하세요.</div>
+  <script>
+    // repo 정보 입력 (아래 두 줄을 반드시 자신의 repo에 맞게 수정)
+    const owner = "hundong2";
+    const repo = "hundong2";
 
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const fileListElement = document.getElementById('file-list');
-        const contentElement = document.getElementById('content');
-        let currentViewingPath = ''; // To store the path of the currently viewed markdown file
-        let markdownFilePaths = []; // To store all known markdown file paths
+    // repo의 루트 내 모든 markdown 파일을 불러오는 함수 (GitHub API 사용)
+    async function fetchMarkdownFiles() {
+      const res = await fetch(`https://api.github.com/repos/${owner}/${repo}/contents`);
+      const files = await res.json();
+      return files.filter(f => f.name.endsWith('.md'));
+    }
 
-        const renderer = new marked.Renderer();
-        const originalLinkRenderer = renderer.link;
-        renderer.link = (href, title, text) => {
-            const currentDir = currentViewingPath.substring(0, currentViewingPath.lastIndexOf('/') + 1);
-            let resolvedPath = '';
-
-            if (href.startsWith('http://') || href.startsWith('https://') || href.startsWith('mailto:') || href.startsWith('#')) {
-                // External link or anchor link
-                return originalLinkRenderer.call(renderer, href, title, text);
-            }
-
-            if (href.startsWith('/')) {
-                // Absolute path from root
-                resolvedPath = href.substring(1); // remove leading slash
-            } else {
-                // Relative path
-                const pathParts = currentDir.split('/').filter(p => p);
-                const hrefParts = href.split('/').filter(p => p);
-                let tempPath = pathParts.slice(); // work with a copy
-
-                for (const part of hrefParts) {
-                    if (part === '.') continue;
-                    if (part === '..') {
-                        if (tempPath.length > 0) tempPath.pop();
-                    } else {
-                        tempPath.push(part);
-                    }
-                }
-                resolvedPath = tempPath.join('/');
-            }
-
-            // Check if the resolved path is a known markdown file
-            const isMarkdownLink = markdownFilePaths.includes('./' + resolvedPath) || markdownFilePaths.includes(resolvedPath);
-
-            if (isMarkdownLink && href.endsWith('.md')) {
-                // It's a link to another markdown file in the repo
-                return `<a href="#" title="${title || ''}" onclick="loadFileContent('./${resolvedPath}'); return false;">${text}</a>`;
-            } else {
-                // Not a known markdown file or not ending with .md, treat as a regular relative link (e.g. to an image or other asset if not caught by image renderer)
-                // Or could be a link to an HTML file etc.
-                // For GitHub pages, ensure it's relative to root if it wasn't absolute already
-                // This part needs to be careful not to break non-MD relative links if they are intended for something else.
-                // Assuming relative links not ending in .md are assets relative to the current MD's directory.
-                if (!href.startsWith('/') && !href.startsWith('http')) {
-                     href = currentDir + href;
-                     // Normalize: remove './' and handle '..'
-                     // Using URL for robust path normalization
-                    try {
-                        const baseUrl = new URL(currentViewingPath, 'file://localhost/'); // Base URL of the current document
-                        href = new URL(href, baseUrl).pathname;
-                        href = href.startsWith('/') ? href.substring(1) : href; // Ensure it's relative to repo root
-                    } catch (e) {
-                        console.warn('Could not normalize relative link:', href, e);
-                        // Fallback to original href if normalization fails
-                    }
-                }
-                return originalLinkRenderer.call(renderer, href, title, text);
-            }
-        };
-
-        const originalImageRenderer = renderer.image;
-        renderer.image = (href, title, text) => {
-            if (href.startsWith('http://') || href.startsWith('https://') || href.startsWith('data:')) {
-                return originalImageRenderer.call(renderer, href, title, text);
-            }
-            // For relative paths, construct the full path from the root of the repository
-            const currentFileDir = currentViewingPath.substring(0, currentViewingPath.lastIndexOf('/') + 1);
-            let absoluteSrc = href;
-            if (!href.startsWith('/')) { // if not already an absolute path from site root
-                try {
-                    const baseUrl = new URL(currentFileDir, 'file://localhost/app/'); // Assuming 'app' is the root for resolving.
-                                                                                    // The 'file://localhost/' part is just to make URL constructor work.
-                    absoluteSrc = new URL(href, baseUrl).pathname;
-                    // The pathname might include the base if currentFileDir was empty, e.g. /app/img.png.
-                    // We want it relative to the repo root.
-                    // If currentViewingPath is './README.md', currentFileDir is './'. baseUrl becomes file://localhost/app/./
-                    // If href is 'img.png', resolved is file://localhost/app/img.png. pathname is /app/img.png
-                    // If currentViewingPath is './docs/file.md', currentFileDir is './docs/'. baseUrl is file://localhost/app/docs/
-                    // If href is 'img.png', resolved is file://localhost/app/docs/img.png. pathname is /app/docs/img.png
-                    // If href is '../img.png', resolved is file://localhost/app/img.png. pathname is /app/img.png
-
-                    // We need to make sure the path is relative to the actual web server root, not file system root.
-                    // Assuming index.html is at the repo root.
-                    // currentFileDir is like './docs/' or './'
-                    // href is like 'image.png' or '../image.png'
-                    // The goal is 'docs/image.png' or 'image.png'
-
-                    let pathParts = currentFileDir.replace(/^\.\//, '').split('/').filter(p => p.length > 0);
-                    let hrefParts = href.split('/');
-
-                    for (const part of hrefParts) {
-                        if (part === '.') continue;
-                        if (part === '..') {
-                            if (pathParts.length > 0) pathParts.pop();
-                        } else if (part.length > 0) {
-                            pathParts.push(part);
-                        }
-                    }
-                    absoluteSrc = pathParts.join('/');
-
-                } catch (e) {
-                    console.warn("Error resolving image src:", href, e);
-                    // Fallback to a simpler concatenation if URL construction fails
-                    absoluteSrc = currentFileDir + href;
-                     // Basic normalization for ../ and ./
-                    let parts = [];
-                    let currentDirParts = currentFileDir.replace(/^\.\//, '').split('/').filter(p => p.length > 0);
-                    parts.push(...currentDirParts);
-                    href.split('/').forEach(part => {
-                        if (part === '..') {
-                            if (parts.length > 0) parts.pop();
-                        } else if (part !== '.' && part.length > 0) {
-                            parts.push(part);
-                        }
-                    });
-                    absoluteSrc = parts.join('/');
-                }
-            } else { // href starts with '/'
-                 absoluteSrc = href.substring(1); // Make it relative to root
-            }
-            return originalImageRenderer.call(renderer, absoluteSrc, title, text);
-        };
-
-        marked.setOptions({ renderer });
-
-        function buildFileTree(paths) {
-            const tree = {};
-            paths.forEach(path => {
-                const normalizedPath = path.replace(/^\.\\//, '');
-                const parts = normalizedPath.split('/');
-                let currentLevel = tree;
-                parts.forEach((part, index) => {
-                    if (!currentLevel[part]) {
-                        currentLevel[part] = {};
-                    }
-                    if (index === parts.length - 1 && normalizedPath.endsWith('.md')) {
-                        currentLevel[part].__isMarkdownFile = true;
-                        currentLevel[part].__path = path;
-                    }
-                    currentLevel = currentLevel[part];
-                });
-            });
-            return tree;
+    async function loadFileList() {
+      const fileListElem = document.getElementById('file-list');
+      fileListElem.innerHTML = "로딩 중...";
+      try {
+        const files = await fetchMarkdownFiles();
+        if (files.length === 0) {
+          fileListElem.innerHTML = "markdown 파일이 없습니다.";
+          return;
         }
+        fileListElem.innerHTML = "";
+        files.forEach(file => {
+          const link = document.createElement('span');
+          link.textContent = file.name;
+          link.className = 'file-link';
+          link.onclick = () => viewMarkdown(file.download_url, file.name);
+          fileListElem.appendChild(link);
+          fileListElem.appendChild(document.createElement('br'));
+        });
+      } catch (e) {
+        fileListElem.innerHTML = "파일 목록을 불러오지 못했습니다.";
+      }
+    }
 
-        function renderFileTree(node, container) {
-            Object.keys(node).sort((a, b) => {
-                const aIsDir = !node[a].__isMarkdownFile;
-                const bIsDir = !node[b].__isMarkdownFile;
-                if (aIsDir && !bIsDir) return -1;
-                if (!aIsDir && bIsDir) return 1;
-                return a.localeCompare(b);
-            }).forEach(key => {
-                if (key === '__isMarkdownFile' || key === '__path') return;
-                const listItem = document.createElement('li');
-                if (node[key].__isMarkdownFile) {
-                    const link = document.createElement('a');
-                    link.href = '#';
-                    link.textContent = key;
-                    link.title = key;
-                    link.dataset.filePath = node[key].__path;
-                    link.classList.add('file');
-                    link.addEventListener('click', (event) => {
-                        event.preventDefault();
-                        document.querySelectorAll('#file-list a').forEach(el => el.style.fontWeight = 'normal');
-                        event.target.style.fontWeight = 'bold';
-                        loadFileContent(event.target.dataset.filePath);
-                    });
-                    listItem.appendChild(link);
-                } else {
-                    const dirSpan = document.createElement('span');
-                    dirSpan.textContent = key;
-                    dirSpan.classList.add('dir');
-                    listItem.appendChild(dirSpan);
-                    const subList = document.createElement('ul');
-                    renderFileTree(node[key], subList);
-                    if (subList.hasChildNodes()) {
-                        listItem.appendChild(subList);
-                        dirSpan.addEventListener('click', (event) => {
-                            event.stopPropagation();
-                            dirSpan.classList.toggle('open');
-                            subList.classList.toggle('visible');
-                        });
-                    } else {
-                        dirSpan.style.cursor = 'default';
-                    }
-                }
-                container.appendChild(listItem);
-            });
-        }
+    async function viewMarkdown(url, name) {
+      const viewer = document.getElementById('viewer');
+      viewer.innerHTML = "로딩 중...";
+      try {
+        const res = await fetch(url);
+        const text = await res.text();
+        viewer.innerHTML = `<h2>${name}</h2>` + marked.parse(text);
+      } catch (e) {
+        viewer.innerHTML = "파일을 불러오지 못했습니다.";
+      }
+    }
 
-        fetch('markdown_files.txt')
-            .then(response => {
-                if (!response.ok) throw new Error(`Failed to load markdown_files.txt. Status: ${response.status} ${response.statusText}`);
-                return response.text();
-            })
-            .then(text => {
-                markdownFilePaths = text.trim().split('\n').filter(path => path && path.endsWith('.md') && path.trim() !== '');
-                if (markdownFilePaths.length === 0) {
-                    fileListElement.innerHTML = '<li>No markdown files found or error in paths file.</li>';
-                    return;
-                }
-                const fileTree = buildFileTree(markdownFilePaths);
-                renderFileTree(fileTree, fileListElement);
-
-                if (window.location.hash) {
-                    const hashPath = window.location.hash.substring(1);
-                    const normalizedHashPath = hashPath.startsWith('./') ? hashPath : './' + hashPath;
-                    const searchPath = markdownFilePaths.find(p => p === normalizedHashPath || p.substring(2) === hashPath.replace(/^\.\//,'') );
-                    if (searchPath) {
-                        loadFileContent(searchPath);
-                        // Highlight the loaded file in the sidebar
-                        setTimeout(() => { // Timeout to ensure tree is rendered
-                            const linkToHighlight = document.querySelector(`#sidebar a[data-file-path="${searchPath}"]`);
-                            if (linkToHighlight) {
-                                linkToHighlight.style.fontWeight = 'bold';
-                                // Expand parent directories
-                                let parent = linkToHighlight.closest('ul');
-                                while(parent && parent.id !== 'file-list') {
-                                    if (parent.classList.contains('visible') === false) {
-                                        parent.classList.add('visible');
-                                        const dirSpan = parent.previousElementSibling;
-                                        if (dirSpan && dirSpan.classList.contains('dir')) {
-                                            dirSpan.classList.add('open');
-                                        }
-                                    }
-                                    parent = parent.parentElement.closest('ul');
-                                }
-                            }
-                        }, 100);
-                    } else if (markdownFilePaths.length > 0) {
-                        //loadFileContent(markdownFilePaths[0]); // Fallback if hash path not found
-                    }
-                }
-            })
-            .catch(error => {
-                console.error('Error populating file list:', error);
-                fileListElement.innerHTML = `<li>Error processing file list: ${error.message}</li>`;
-            });
-
-        window.loadFileContent = function(filePath) {
-            currentViewingPath = filePath.startsWith('./') ? filePath : './' + filePath; // Ensure it starts with ./
-            contentElement.innerHTML = '<h1>Loading...</h1>';
-
-            const hashPart = currentViewingPath.startsWith('./') ? currentViewingPath.substring(2) : currentViewingPath;
-            if (window.location.hash !== '#' + hashPart) { // Avoid pushing same hash
-                window.location.hash = hashPart;
-            }
-
-
-            fetch(currentViewingPath)
-                .then(response => {
-                    if (!response.ok) throw new Error(`Failed to load ${currentViewingPath}: ${response.status} ${response.statusText}`);
-                    return response.text();
-                })
-                .then(markdown => {
-                    if (typeof marked === 'undefined') {
-                        contentElement.innerHTML = '<h1>Error: Marked.js library is not loaded.</h1>';
-                        throw new Error('Marked.js not loaded.');
-                    }
-                    contentElement.innerHTML = marked.parse(markdown);
-                })
-                .catch(error => {
-                    console.error('Error loading file content:', error);
-                    contentElement.innerHTML = `<h1>Error loading file</h1><p>${error.message}</p><p>Path: ${currentViewingPath}</p>`;
-                });
-        }
-    });
-    </script>
+    loadFileList();
+  </script>
 </body>
 </html>
