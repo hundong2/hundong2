@@ -147,3 +147,19 @@ I'm software engineer<br>
 - [Tensorflow2.0 활용한 인공 신경망 구현](20.images/certicifate/muticampus/tensorflow.pdf)
 - [git,gitlab의 이해와 실무활용](20.images/certicifate/muticampus/git_gitlab.pdf)  
 - [AWS로 시작하는 클라우드 컴퓨팅](20.images/certicifate/muticampus/AWS.pdf)  
+
+
+## Markdown Web Viewer
+
+This repository now includes a web-based interface to easily browse and view all markdown files.
+
+To use it:
+1. Ensure your repository is configured to serve GitHub Pages from the `main` (or `master`) branch and the `/` (root) directory.
+2. Navigate to your GitHub Pages URL (e.g., `https://<your-username>.github.io/<repository-name>/`). This will load `index.html`.
+3. The `index.html` page provides a sidebar listing all markdown files and directories.
+    - Click on directory names to expand or collapse them.
+    - Click on a markdown file name to view its content rendered in the main area.
+4. Links to other markdown files and relative image paths within the documents should work correctly within this viewer.
+5. If you add new markdown files, they will automatically appear in the list after you commit and push the changes (GitHub Pages needs to rebuild).
+
+This viewer uses [Marked.js](https://marked.js.org/) to render markdown content dynamically in your browser.
