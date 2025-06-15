@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>Markdown 리스트와 뷰어</title>
+  <title>Repository File Viewer</title>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <style>
     body { font-family: Arial, sans-serif; margin: 2rem; }
@@ -12,54 +12,63 @@
   </style>
 </head>
 <body>
-  <h1>Markdown 파일 목록</h1>
-  <div id="file-list">로딩 중...</div>
+  <h1>Repository Files</h1>
+  <div id="file-list">Loading...</div>
   <hr>
-  <div id="viewer">파일을 선택하세요.</div>
+  <div id="viewer">Select a file to view its content.</div>
   <script>
-    // repo 정보 입력 (아래 두 줄을 반드시 자신의 repo에 맞게 수정)
     const owner = "hundong2";
     const repo = "hundong2";
 
-    // repo의 루트 내 모든 markdown 파일을 불러오는 함수 (GitHub API 사용)
-    async function fetchMarkdownFiles() {
-      const res = await fetch(`https://api.github.com/repos/${owner}/${repo}/contents`);
+    async function fetchFiles(path = "") {
+      const res = await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${path}`);
       const files = await res.json();
-      return files.filter(f => f.name.endsWith('.md'));
+      let all = [];
+      for (const file of files) {
+        if (file.type === "dir") {
+          const subFiles = await fetchFiles(file.path);
+          all = all.concat(subFiles);
+        } else {
+          all.push(file);
+        }
+      }
+      return all;
     }
 
     async function loadFileList() {
       const fileListElem = document.getElementById('file-list');
-      fileListElem.innerHTML = "로딩 중...";
+      fileListElem.innerHTML = "Loading...";
       try {
-        const files = await fetchMarkdownFiles();
-        if (files.length === 0) {
-          fileListElem.innerHTML = "markdown 파일이 없습니다.";
-          return;
-        }
+        const files = await fetchFiles();
         fileListElem.innerHTML = "";
         files.forEach(file => {
           const link = document.createElement('span');
-          link.textContent = file.name;
+          link.textContent = file.path;
           link.className = 'file-link';
-          link.onclick = () => viewMarkdown(file.download_url, file.name);
+          link.onclick = () => viewFile(file.download_url, file.path);
           fileListElem.appendChild(link);
           fileListElem.appendChild(document.createElement('br'));
         });
       } catch (e) {
-        fileListElem.innerHTML = "파일 목록을 불러오지 못했습니다.";
+        fileListElem.innerHTML = "Failed to load files.";
       }
     }
 
-    async function viewMarkdown(url, name) {
+    async function viewFile(url, name) {
       const viewer = document.getElementById('viewer');
-      viewer.innerHTML = "로딩 중...";
+      viewer.innerHTML = "Loading...";
       try {
         const res = await fetch(url);
         const text = await res.text();
-        viewer.innerHTML = `<h2>${name}</h2>` + marked.parse(text);
+        if (name.endsWith('.md')) {
+          viewer.innerHTML = `<h2>${name}</h2>` + marked.parse(text);
+        } else {
+          viewer.innerHTML = `<h2>${name}</h2><pre>${text.replace(/[<>&]/g, c => ({
+            '<': '&lt;', '>': '&gt;', '&': '&amp;'
+          }[c]))}</pre>`;
+        }
       } catch (e) {
-        viewer.innerHTML = "파일을 불러오지 못했습니다.";
+        viewer.innerHTML = "Failed to load file.";
       }
     }
 

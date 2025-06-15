@@ -1,0 +1,38 @@
+name: Append AI Summary to Changed Files
+
+on:
+  push:
+    paths:
+      - '**/*.md'
+      - '**/*.txt'
+  pull_request:
+    paths:
+      - '**/*.md'
+      - '**/*.txt'
+
+jobs:
+  summarize-and-commit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Append summary to changed files
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python .github/scripts/append_summary.py
+
+      - name: Commit & push
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: append AI summary to changed files"

@@ -1,0 +1,20 @@
+name: Update index.html on master change
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  refresh-index:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Regenerate index.html
+        run: |
+          # index.html 직접 관리라면 아래 단계는 생략
+          echo "index.html auto-update. (index.html 직접 관리 시 이 단계 생략 가능)"
+      - name: Commit & push index.html
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update index.html for file tree"
