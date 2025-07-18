@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>빅데이터 개념 이해 - 5지 선다형 문제집</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .quiz-container {
+            padding: 30px;
+        }
+
+        .quiz-item {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-left: 5px solid #4facfe;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .quiz-item:hover {
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .question {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        .question-number {
+            color: #4facfe;
+            font-weight: bold;
+        }
+
+        .options {
+            list-style: none;
+        }
+
+        .options li {
+            margin: 12px 0;
+            padding: 15px;
+            background: white;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            font-size: 1em;
+        }
+
+        .options li:hover {
+            border-color: #4facfe;
+            background: #f0f8ff;
+        }
+
+        .options li.selected {
+            border-color: #4facfe;
+            background: #e3f2fd;
+        }
+
+        .options li.correct {
+            border-color: #28a745;
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .options li.incorrect {
+            border-color: #dc3545;
+            background: #f8d7da;
+            color: #721c24;
+        }
+
+        .option-letter {
+            font-weight: bold;
+            color: #4facfe;
+            margin-right: 10px;
+        }
+
+        .check-answer {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: 600;
+            margin-top: 15px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(79, 172, 254, 0.3);
+        }
+
+        .check-answer:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(79, 172, 254, 0.4);
+        }
+
+        .check-answer:disabled {
+            background: #6c757d;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+
+        .explanation {
+            margin-top: 20px;
+            padding: 20px;
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 8px;
+            display: none;
+            line-height: 1.6;
+        }
+
+        .explanation.show {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .explanation h4 {
+            color: #856404;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .score-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .score-button {
+            background: white;
+            color: #667eea;
+            border: none;
+            padding: 15px 40px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1.1em;
+            font-weight: 600;
+            margin: 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+        }
+
+        .score-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 255, 255, 0.4);
+        }
+
+        .score-display {
+            font-size: 1.5em;
+            margin-top: 20px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            display: none;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .reset-button {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: 600;
+            margin-left: 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(245, 87, 108, 0.3);
+        }
+
+        .reset-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(245, 87, 108, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                border-radius: 10px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .quiz-container {
+                padding: 20px;
+            }
+            
+            .quiz-item {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔍 빅데이터 개념 이해</h1>
+            <p>5지 선다형 문제집 - 총 20문제</p>
+        </div>
+
+        <div class="quiz-container">
+            <!-- 문제 1 -->
+            <div class="quiz-item">
+                <div class="question">
+                    <span class="question-number">문제 1.</span>
+                    빅데이터의 3V 특징에 해당하지 않는 것은?
+                </div>
+                <ul class="options">
+                    <li data-value="a"><span class="option-letter">①</span> Volume (규모)</li>
+                    <li data-value="b"><span class="option-letter">②</span> Variety (다양성)</li>
+                    <li data-value="c"><span class="option-letter">③</span> Velocity (속도)</li>
+                    <li data-value="d"><span class="option-letter">④</span> Visibility (가시성)</li>
+                    <li data-value="e"><span class="option-letter">⑤</span> Veracity (정확성)</li>
+                </ul>
+                <button class="check-answer" onclick="checkAnswer(1, 'd')">정답 확인</button>
+                <button class="reset-button" onclick="resetQuestion(1)">다시 풀기</button>
+                <div class="explanation">
+                    <h4>📚 해설</h4>
+                    빅데이터의 기본 3V는 Volume(규모), Variety(다양성), Velocity(속도)입니다. 
+                    추가로 Veracity(정확성)와 Value(가치)를 포함하여 5V라고 하기도 하지만, 
+                    Visibility(가시성)는 빅데이터의 특징이 아닙니다.
+                </div>
+            </div>
+
+            <!-- 문제 2 -->
+            <div class="quiz-item">
+                <div class="question">
+                    <span class="question-number">문제 2.</span>
+                    다음 중 정형 데이터(Structured Data)의 특징으로 가장 적절한 것은?
+                </div>
+                <ul class="options">
+                    <li data-value="a"><span class="option-letter">①</span> 구조가 정해지지 않은 대부분의 데이터</li>
+                    <li data-value="b"><span class="option-letter">②</span> 정해진 형식과 구조에 맞게 구성되고 연산이 가능한 데이터</li>
+                    <li data-value="c"><span class="option-letter">③</span> 스키마 정보를 데이터와 함께 제공하는 데이터</li>
+                    <li data-value="d"><span class="option-letter">④</span> 동영상, 이미지, 음성 등의 멀티미디어 데이터</li>
+                    <li data-value="e"><span class="option-letter">⑤</span> JSON, XML, HTML 형태의 데이터</li>
+                </ul>
+                <button class="check-answer" onclick="checkAnswer(2, 'b')">정답 확인</button>
+                <button class="reset-button" onclick="resetQuestion(2)">다시 풀기</button>
+                <div class="explanation">
+                    <h4>📚 해설</h4>
+                    정형 데이터는 정해진 형식과 구조에 맞게 구성되어 있으며 연산이 가능한 데이터입니다. 
+                    ①번은 비정형 데이터, ③번과 ⑤번은 반정형 데이터, ④번은 비정형 데이터의 특징입니다.
+                </div>
+            </div>
+
+            <!-- 문제 3 -->
+            <div class="quiz-item">
+                <div class="question">
+                    <span class="question-number">문제 3.</span>
+                    데이터 웨어하우스(Data Warehouse)의 특성으로 올바르지 않은 것은?
+                </div>
+                <ul class="options">
+                    <li data-value="a"><span class="option-letter">①</span> 주제 지향성(Subject-orientation)</li>
+                    <li data-value="b"><span class="option-letter">②</span> 통합성(Integration)</li>
+                    <li data-value="c"><span class="option-letter">③</span> 시계열성(Time-variant)</li>
+                    <li data-value="d"><span class="option-letter">④</span> 비휘발성(Non-volatilization)</li>
+                    <li data-value="e"><span class="option-letter">⑤</span> 실시간 갱신성(Real-time Update)</li>
+                </ul>
+                <button class="check-answer" onclick="checkAnswer(3, 'e')">정답 확인</button>
+                <button class="reset-button" onclick="resetQuestion(3)">다시 풀기</button>
+                <div class="explanation">
+                    <h4>📚 해설</h4>
+                    데이터 웨어하우스의 4가지 특성은 주제 지향성, 통합성, 시계열성, 비휘발성입니다. 
+                    비휘발성은 일괄작업에 의한 갱신 이외에는 변경이 수행되지 않는다는 의미로, 
+                    실시간 갱신성은 데이터 웨어하우스의 특성이 아닙니다.
+                </div>
+            </div>
+
+            <!-- 문제 4 -->
+            <div class="quiz-item">
+                <div class="question">
+                    <span class="question-number">문제 4.</span>
+                    OLAP(OnLine Analytical Processing)에 대한 설명으로 가장 적절한 것은?
+                </div>
+                <ul class="options">
+                    <li data-value="a"><span class="option-letter">①</span> 호스트 컴퓨터와 여러 단말 간 접속된 실시간 트랜잭션 처리</li>
+                    <li data-value="b"><span class="option-letter">②</span> 정보 위주의 분석 처리로 OLTP 데이터를 분석하여 의사결정에 활용</li>
+                    <li data-value="c"><span class="option-letter">③</span> 데이터베이스를 수시로 갱신하는 처리 방식</li>
+                    <li data-value="d"><span class="option-letter">④</span> 단순한 데이터 조회만을 목적으로 하는 처리</li>
+                    <li data-value="e"><span class="option-letter">⑤</span> 웹 서버와 클라이언트 간의 HTTP 통신 처리</li>
+                </ul>
+                <button class="check-answer" onclick="checkAnswer(4, 'b')">정답 확인</button>
+                <button class="reset-button" onclick="resetQuestion(4)">다시 풀기</button>
+                <div class="explanation">
+                    <h4>📚 해설</h4>
+                    OLAP은 정보 위주의 분석 처리로, OLTP에서 처리된 트랜잭션 데이터를 분석하여 
+                    제품 판매추이, 구매 성향, 재무 회계 등의 프로세싱을 통해 다양한 비즈니스 관점에서 
+                    의사결정에 활용됩니다. ①번은 OLTP의 설명입니다.
+                </div>
+            </div>
+
+            <!-- 문제 5 -->
+            <div class="quiz-item">
+                <div class="question">
+                    <span class="question-number">문제 5.</span>
+                    지식창조 메커니즘의 4단계 중 암묵지가 형식지로 변환되는 과정은?
+                </div>
+                <ul class="options">
+                    <li data-value="a"><span class="option-letter">①</span> 공통화(Socialization)</li>
+                    <li data-value="b"><span class="option-letter">②</span> 표출화(Externalization)</li>
+                    <li data-value="c"><span class="option-letter">③</span> 연결화(Combination)</li>
+                    <li data-value="d"><span class="option-letter">④</span> 내면화(Internalization)</li>
+                    <li data-value="e"><span class="option-letter">⑤</span> 구조화(Structurization)</li>
+                </ul>
+                <button class="check-answer" onclick="checkAnswer(5, 'b')">정답 확인</button>
+                <button class="reset-button" onclick="resetQuestion(5)">다시 풀기</button>
+                <div class="explanation">
+                    <h4>📚 해설</h4>
+                    표출화(Externalization)는 암묵지가 구체화되어 외부 형식지로 표현되는 과정입니다. 
+                    공통화는 암묵지→암묵지, 연결화는 형식지→형식지, 내면화는 형식지→암묵지의 변환과정입니다.
+                </div>
+            </div>
+
+            <!-- 문제 6 -->
+            <div class="quiz-item">
+                <div class="question">
+                    <span class="question-number">문제 6.</span>
+                    빅데이터 등장으로 인한 변화로 올바르지 않은 것은?
+                </div>
+                <ul class="options">
+                    <li data-value="a"><span class="option-letter">①</span> 표본 조사에서 전수 조사로 변화</li>
+                    <li data-value="b"><span class="option-letter">②</span> 데이터 질(Quality)보다 양(Quantity)이 중요해짐</li>
+                    <li data-value="c"><span class="option-letter">③</span> 이론적 인과관계보다 단순한 상관관계 분석 증가</li>
+                    <li data-value="d"><span class="option-letter">④</span> 사전 처리(pre-processing)에서 사후 처리(post-processing)로 이동</li>
+                    <li data-value="e"><span class="option-letter">⑤</span> 정형 데이터 중심에서 비정형 데이터 중심으로 완전 전환</li>
+                </ul>
+                <button class="check-answer" onclick="checkAnswer(6, 'e')">정답 확인</button>
+                <button class="reset-button" onclick="resetQuestion(6)">다시 풀기</button>
+                <div class="explanation">
+                    <h4>📚 해설</h4>
+                    빅데이터 시대에는 정형, 반정형, 비정형 데이터를 모두 활용하며, 
+                    비정형 데이터 중심으로 완전 전환되는 것이 아닙니다. 
+                    다양한 형태의 데이터를 통합적으로 분석하는 것이 특징입니다.
+                </div>
+            </div>
+
+            <!-- 문제 7 -->
+            <div class="quiz-item">
+                <div class="question">
+                    <span class="question-number">문제 7.</span>
+                    다음 중 1TB(테라바이트)의 크기로 올바른 것은?
+                </div>
+                <ul class="options">
+                    <li data-value="a"><span class="option-letter">①</span> 2^20 바이트</li>
+                    <li data-value="b"><span class="option-letter">②</span> 2^30 바이트</li>
+                    <li data-value="c"><span class="option-letter">③</span> 2^40 바이트</li>
+                    <li data-value="d"><span class="option-letter">④</span> 2^50 바이트</li>
+                    <li data-value="e"><span class="option-letter">⑤</span> 2^60 바이트</li>
+                </ul>
+                <button class="check-answer" onclick="checkAnswer(7, 'c')">정답 확인</button>
+                <button class="reset-button" onclick="resetQuestion(7)">다시 풀기</button>
+                <div class="explanation">
+                    <h4>📚 해설</h4>
+                    데이터 단위는 다음과 같습니다: KB(2^10), MB(2^20), GB(2^30), TB(2^40), 
+                    PB(2^50), EB(2^60), ZB(2^70), YB(2^80). 따라서 1TB = 2^40 바이트입니다.
+                </div>
+            </div>
+
+            <!-- 문제 8 -->
+            <div class="quiz-item">
+                <div class="question">
+                    <span class="question-number">문제 8.</span>
+                    빅데이터 활용을 위한 3요소가 아닌 것은?
+                </div>
+                <ul class="options">
+                    <li data-value="a"><span class="option-letter">①</span> 자원(Resource)</li>
+                    <li data-value="b"><span class="option-letter">②</span> 기술(Technology)</li>
+                    <li data-value="c"><span class="option-letter">③</span> 인력(People)</li>
+                    <li data-value="d"><span class="option-letter">④</span> 보안(Security)</li>
+                    <li data-value="e"><span class="option-letter">⑤</span> 모두 3요소에 해당함</li>
+                </ul>
+                <button class="check-answer" onclick="checkAnswer(8, 'd')">정답 확인</button>
+                <button class="reset-button" onclick="resetQuestion(8)">다시 풀기</button>
+                <div class="explanation">
+                    <h4>📚 해설</h4>
+                    빅데이터 활용 3요소는 자원(Resource), 기술(Technology), 인력(People)입니다. 
+                    보안(Security)은 중요한 고려사항이지만 3요소에는 포함되지 않습니다.
+                </div>
+            </div>
+
+            <!-- 문제 9 -->
+            <div class="quiz-item">
+                <div class="question">
+                    <span class="question-number">문제 9.</span>
+                    데이터 조직 구성 유형 중 분석 전문 인력을 현업 부서에 배치하여 분석 업무를 수행하는 방식은?
+                </div>
+                <ul class="options">
+                    <li data-value="a"><span class="option-letter">①</span> 집중형</li>
+                    <li data-value="b"><span class="option-letter">②</span> 기능형</li>
+                    <li data-value="c"><span class="option-letter">③</span> 분산형</li>
+                    <li data-value="d"><span class="option-letter">④</span> 통합형</li>
+                    <li data-value="e"><span class="option-letter">⑤</span> 혼합형</li>
+                </ul>
+                <button class="check-answer" onclick="checkAnswer(9, 'c')">정답 확인</button>
+                <button class="reset-button" onclick="resetQuestion(9)">다시 풀기</button>
+                <div class="explanation">
+                    <h4>📚 해설</h4>
+                    분산형은 분석 전문 인력을 현업 부서에 배치하여 분석 업무를 수행하는 방식으로, 
+                    전사 차원에서 분석과제의 우선순위를 선정하고 수행하며, 
+                    분석 결과를 현업에 빠르게 적용할 수 있는 장점이 있습니다.
+                </div>
+            </div>
+
+            <!-- 문제 10 -->
+            <div class="quiz-item">
+                <div class="question">
+                    <span class="question-number">문제 10.</span>
+                    다음 중 반정형 데이터(Semi-structured Data)의 예로 가장 적절한 것은?
+                </div>
+                <ul class="options">
+                    <li data-value="a"><span class="option-letter">①</span> 관계형 데이터베이스의 테이블</li>
+                    <li data-value="b"><span class="option-letter">②</span> XML, JSON 형태의 데이터</li>
+                    <li data-value="c"><span class="option-letter">③</span> 동영상 파일</li>
+                    <li data-value="d"><span class="option-letter">④</span> 이미지 파일</li>
+                    <li data-value="e"><span class="option-letter">⑤</span> 음성 파일</li>
+                </ul>
+                <button class="check-answer" onclick="checkAnswer(10, 'b')">정답 확인</button>
+                <button class="reset-button" onclick="resetQuestion(10)">다시 풀기</button>
+                <div class="explanation">
+                    <h4>📚 해설</h4>
+                    반정형 데이터는 스키마 정보를 데이터와 함께 제공하는 형태로, 
+                    JSON, XML, RDF, HTML 등이 대표적인 예입니다. 
+                    ①번은 정형 데이터, ③④⑤번은 비정형 데이터입니다.
+                </div>
+            </div>
+
+            <!-- 문제 11 -->
+            <div class="quiz-item">
+                <div class="question">
+                    <span class="question-number">문제 11.</span>
+                    데이터 사이언스의 3가지 영역에 해당하지 않는 것은?
+                </div>
+                <ul class="options">
+                    <li data-value="a"><span class="option-letter">①</span> Analytics(분석적 영역)</li>
+                    <li data-value="b"><span class="option-letter">②</span> Business(비즈니스 컨설팅)</li>
+                    <li data-value="c"><span class="option-letter">③</span> IT(데이터 처리)</li>
+                    <li data-value="d"><span class="option-letter">④</span> Marketing(마케팅)</li>
+                    <li data-value="e"><span class="option-letter">⑤</span> 모두 해당함</li>
+                </ul>
+                <button class="check-answer" onclick="checkAnswer(11, 'd')">정답 확인</button>
+                <button class="reset-button" onclick="resetQuestion(11)">다시 풀기</button>
+                <div class="explanation">
+                    <h4>📚 해설</h4>
+                    데이터 사이언스의 3가지 영역은 Analytics(분석적 영역), Business(비즈니스 컨설팅), 
+                    IT(데이터 처리)입니다. Marketing은 별도의 독립적인 영역이 아닙니다.
+                </div>
+            </div>
+
+            <!-- 문제 12 -->
+            <div class="quiz-item">
+                <div class="question">
+                    <span class="question-number">문제 12.</span>
+                    ETL에서 'T'가 의미하는 것은?
+                </div>
+                <ul class="options">
+                    <li data-value="a"><span class="option-letter">①</span> Transfer (전송)</li>
+                    <li data-value="b"><span class="option-letter">②</span> Transform (변환)</li>
+                    <li data-value="c"><span class="option-letter">③</span> Transaction (트랜잭션)</li>
+                    <li data-value="d"><span class="option-letter">④</span> Translate (번역)</li>
+                    <li data-value="e"><span class="option-letter">⑤</span> Template (템플릿)</li>
+                </ul>
+                <button class="check-answer" onclick="checkAnswer(12, 'b')">정답 확인</button>
+                <button class="reset-button" onclick="resetQuestion(12)">다시 풀기</button>
+                <div class="explanation">
+                    <h4>📚 해설</h4>
+                    ETL은 Extract(추출), Transform(변환), Load(적재)의 줄임말로, 
+                    다양한 소스에서 데이터를 추출하여 정제, 가공한 후 데이터 웨어하우스에 적재하는 과정입니다.
+                </div>
+            </div>
+
+            <!-- 문제 13 -->
+            <div class="quiz-item">
+                <div class="question">
+                    <span class="question-number">문제 13.</span>
+                    다음 중 빅데이터 분석 기법이 아닌 것은?
+                </div>
+                <ul class="options">
+                    <li data-value="a"><span class="option-letter">①</span> 연관규칙학습</li>
+                    <li data-value="b"><span class="option-letter">②</span> 유전 알고리즘</li>
+                    <li data-value="c"><span class="option-letter">③</span> 기계학습</li>
+                    <li data-value="d"><span class="option-letter">④</span> 감정분석</li>
+                    <li data-value="e"><span class="option-letter">⑤</span> 워터폴 방법론</li>
+                </ul>
+                <button class="check-answer" onclick="checkAnswer(13, 'e')">정답 확인</button>
+                <button class="reset-button" onclick="resetQuestion(13)">다시 풀기</button>
+                <div class="explanation">
+                    <h4>📚 해설</h4>
+                    워터폴 방법론은 소프트웨어 개발 방법론 중 하나로, 빅데이터 분석 기법이 아닙니다. 
+                    연관규칙학습, 유전 알고리즘, 기계학습, 감정분석 등은 모두 빅데이터 분석에서 
+                    활용되는 기본 기술들입니다.
+                </div>
+            </div>
+
+            <!-- 문제 14 -->
+            <div class="quiz-item">
+                <div class="question">
+                    <span class="question-number">문제 14.</span>
+                    데이터 사이언스 실현을 위한 인문학적 요소로 언급되지 않은 것은?
+                </div>
+                <ul class="options">
+                    <li data-value="a"><span class="option-letter">①</span> 스토리텔링</li>
+                    <li data-value="b"><span class="option-letter">②</span> 커뮤니케이션</li>
+                    <li data-value="c"><span class="option-letter">③</span> 창의력과 직관력</li>
+                    <li data-value="d"><span class="option-letter">④</span> 비판적 시각과 열정</li>
+                    <li data-value="e"><span class="option-letter">⑤</span> 통계적 분석 능력</li>
+                </ul>
+                <button class="check-answer" onclick="checkAnswer(14, 'e')">정답 확인</button>
+                <button class="reset-button" onclick="resetQuestion(14)">다시 풀기</button>
+                <div class="explanation">
+                    <h4>📚 해설</h4>
+                    통계적 분석 능력은 기술적(Technical) 요소에 해당합니다. 
+                    인문학적 요소는 스토리텔링, 커뮤니케이션, 창의력과 직관력, 
+                    비판적 시각과 열정 등입니다.
+                </div>
+            </div>
+
+            <!-- 문제 15 -->
+            <div class="quiz-item">
+                <div class="question">
+                    <span class="question-number">문제 15.</span>
+                    지식의 피라미드에서 가장 상위에 위치하는 것은?
+                </div>
+                <ul class="options">
+                    <li data-value="a"><span class="option-letter">①</span> 데이터(Data)</li>
+                    <li data-value="b"><span class="option-letter">②</span> 정보(Information)</li>
+                    <li data-value="c"><span class="option-letter">③</span> 지식(Knowledge)</li>
+                    <li data-value="d"><span class="option-letter">④</span> 지혜(Wisdom)</li>
+                    <li data-value="e"><span class="option-letter">⑤</span> 통찰(Insight)</li>
+                </ul>
+                <button class="check-answer" onclick="checkAnswer(15, 'd')">정답 확인</button>
+                <button class="reset-button" onclick="resetQuestion(15)">다시 풀기</button>
+                <div class="explanation">
+                    <h4>📚 해설</h4>
+                    지식의 피라미드는 하위부터 데이터(Data) → 정보(Information) → 지식(Knowledge) → 지혜(Wisdom) 순으로 구성됩니다. 
+                    지혜는 축적된 지식을 통해 근본적 원리를 이해하고 아이디어를 결합하여 창의적 산물을 도출하는 최상위 단계입니다.
+                </div>
+            </div>
+
+            <!-- 문제 16 -->
+            <div class="quiz-item">
+                <div class="question">
+                    <span class="question-number">문제 16.</span>
+                    비가역 데이터의 특징으로 올바른 것은?
+                </div>
+                <ul class="options">
+                    <li data-value="a"><span class="option-letter">①</span> 데이터 원본으로 변환이 가능하다</li>
+                    <li data-value="b"><span class="option-letter">②</span> 원본 데이터와 1:1 관계를 갖는다</li>
+                    <li data-value="c"><span class="option-letter">③</span> 처리 과정은 '탐색'이다</li>
+                    <li data-value="d"><span class="option-letter">④</span> 원본 데이터와 독립된 객체이며 1:N, N:1, M:N 관계를 갖는다</li>
+                    <li data-value="e"><span class="option-letter">⑤</span> 데이터 마트, 데이터 웨어하우스가 대표적인 예이다</li>
+                </ul>
+                <button class="check-answer" onclick="checkAnswer(16, 'd')">정답 확인</button>
+                <button class="reset-button" onclick="resetQuestion(16)">다시 풀기</button>
+                <div class="explanation">
+                    <h4>📚 해설</h4>
+                    비가역 데이터는 데이터 원본으로 변환이 불가능하며, 원본 데이터와 독립된 객체로 
+                    1:N, N:1, M:N 관계를 갖습니다. 처리 과정은 '결합'이며, 
+                    데이터 전처리, 프로파일 구성 등이 대표적인 예입니다.
+                </div>
+            </div>
+
+            <!-- 문제 17 -->
+            <div class="quiz-item">
+                <div class="question">
+                    <span class="question-number">문제 17.</span>
+                    BI(Business Intelligence)에 대한 설명으로 가장 적절한 것은?
+                </div>
+                <ul class="options">
+                    <li data-value="a"><span class="option-letter">①</span> 지식 관리 시스템</li>
+                    <li data-value="b"><span class="option-letter">②</span> 의사결정 지원 시스템</li>
+                    <li data-value="c"><span class="option-letter">③</span> 데이터를 분석하여 기업의 의사결정에 활용하는 일련의 프로세스</li>
+                    <li data-value="d"><span class="option-letter">④</span> 온라인 분석 처리 시스템</li>
+                    <li data-value="e"><span class="option-letter">⑤</span> 데이터베이스 관리 시스템</li>
+                </ul>
+                <button class="check-answer" onclick="checkAnswer(17, 'c')">정답 확인</button>
+                <button class="reset-button" onclick="resetQuestion(17)">다시 풀기</button>
+                <div class="explanation">
+                    <h4>📚 해설</h4>
+                    BI(Business Intelligence)는 데이터를 분석하여 기업의 의사결정에 활용하는 
+                    일련의 프로세스입니다. ①번은 KMS, ②번은 DSS, ④번은 OLAP의 설명입니다.
+                </div>
+            </div>
+
+            <!-- 문제 18 -->
+            <div class="quiz-item">
+                <div class="question">
+                    <span class="question-number">문제 18.</span>
+                    데이터 사이언티스트의 Hard Skill에 해당하지 않는 것은?
+                </div>
+                <ul class="options">
+                    <li data-value="a"><span class="option-letter">①</span> 빅데이터에 대한 이론적 지식</li>
+                    <li data-value="b"><span class="option-letter">②</span> 분석기술에 대한 숙련도</li>
+                    <li data-value="c"><span class="option-letter">③</span> 최적의 분석 설계 능력</li>
+                    <li data-value="d"><span class="option-letter">④</span> 커뮤니케이션 능력</li>
+                    <li data-value="e"><span class="option-letter">⑤</span> 분석 노하우 축적</li>
+                </ul>
+                <button class="check-answer" onclick="checkAnswer(18, 'd')">정답 확인</button>
+                <button class="reset-button" onclick="resetQuestion(18)">다시 풀기</button>
+                <div class="explanation">
+                    <h4>📚 해설</h4>
+                    커뮤니케이션 능력은 Soft Skill에 해당합니다. 
+                    Hard Skill은 빅데이터에 대한 이론적 지식과 분석기술에 대한 숙련도를 의미하며, 
+                    Soft Skill은 통찰력 있는 분석, 설득력 있는 전달, 다분야 간 협력 능력을 포함합니다.
+                </div>
+            </div>
+
+            <!-- 문제 19 -->
+            <div class="quiz-item">
+                <div class="question">
+                    <span class="question-number">문제 19.</span>
+                    전통적 데이터와 빅데이터의 차이점으로 올바르지 않은 것은?
+                </div>
+                <ul class="options">
+                    <li data-value="a"><span class="option-letter">①</span> 전통적 데이터는 기가바이트 이하, 빅데이터는 테라바이트 이상</li>
+                    <li data-value="b"><span class="option-letter">②</span> 전통적 데이터는 시간/일 단위 처리, 빅데이터는 실시간 처리</li>
+                    <li data-value="c"><span class="option-letter">③</span> 전통적 데이터는 정형데이터, 빅데이터는 정형+반정형+비정형</li>
+                    <li data-value="d"><span class="option-letter">④</span> 전통적 데이터는 중앙집중, 빅데이터는 분산 처리</li>
+                    <li data-value="e"><span class="option-letter">⑤</span> 전통적 데이터는 NoSQL, 빅데이터는 Relational DBMS 사용</li>
+                </ul>
+                <button class="check-answer" onclick="checkAnswer(19, 'e')">정답 확인</button>
+                <button class="reset-button" onclick="resetQuestion(19)">다시 풀기</button>
+                <div class="explanation">
+                    <h4>📚 해설</h4>
+                    전통적 데이터는 Relational DBMS를 사용하고, 
+                    빅데이터는 Hadoop, HDFS, HBase, NoSQL 등을 사용합니다. 
+                    ⑤번의 설명이 반대로 되어 있습니다.
+                </div>
+            </div>
+
+            <!-- 문제 20 -->
+            <div class="quiz-item">
+                <div class="question">
+                    <span class="question-number">문제 20.</span>
+                    데이터 산업의 진화 과정을 올바른 순서로 나열한 것은?
+                </div>
+                <ul class="options">
+                    <li data-value="a"><span class="option-letter">①</span> 처리 → 통합 → 분석 → 연결 → 권리</li>
+                    <li data-value="b"><span class="option-letter">②</span> 통합 → 처리 → 분석 → 권리 → 연결</li>
+                    <li data-value="c"><span class="option-letter">③</span> 분석 → 처리 → 통합 → 연결 → 권리</li>
+                    <li data-value="d"><span class="option-letter">④</span> 처리 → 분석 → 통합 → 연결 → 권리</li>
+                    <li data-value="e"><span class="option-letter">⑤</span> 연결 → 처리 → 통합 → 분석 → 권리</li>
+                </ul>
+                <button class="check-answer" onclick="checkAnswer(20, 'a')">정답 확인</button>
+                <button class="reset-button" onclick="resetQuestion(20)">다시 풀기</button>
+                <div class="explanation">
+                    <h4>📚 해설</h4>
+                    데이터 산업의 진화는 데이터 처리 → 데이터 통합 → 데이터 분석 → 데이터 연결 → 데이터 권리 시대 순으로 발전해왔습니다. 
+                    현재는 My Data 개념이 등장하는 데이터 권리 시대로 접어들고 있습니다.
+                </div>
+            </div>
+        </div>
+
+        <div class="score-section">
+            <h2>🎯 성적 확인</h2>
+            <p>모든 문제를 풀어보고 점수를 확인해보세요!</p>
+            <button class="score-button" onclick="calculateScore()">점수 계산하기</button>
+            <button class="score-button" onclick="resetAllQuestions()">전체 다시 풀기</button>
+            <div class="score-display" id="scoreDisplay"></div>
+        </div>
+    </div>
+
+    <script>
+        let userAnswers = {};
+        let correctAnswers = {
+            1: 'd', 2: 'b', 3: 'e', 4: 'b', 5: 'b',
+            6: 'e', 7: 'c', 8: 'd', 9: 'c', 10: 'b',
+            11: 'd', 12: 'b', 13: 'e', 14: 'e', 15: 'd',
+            16: 'd', 17: 'c', 18: 'd', 19: 'e', 20: 'a'
+        };
+
+        function selectOption(questionNum, option) {
+            // Remove previous selections
+            const options = document.querySelectorAll(`.quiz-item:nth-child(${questionNum}) .options li`);
+            options.forEach(opt => opt.classList.remove('selected'));
+
+            // Add selection to clicked option
+            option.classList.add('selected');
+            userAnswers[questionNum] = option.getAttribute('data-value');
+        }
+
+        function checkAnswer(questionNum, correctAnswer) {
+            const selectedOption = document.querySelector(`.quiz-item:nth-child(${questionNum}) .options li.selected`);
+            
+            if (!selectedOption) {
+                alert('답을 선택해주세요!');
+                return;
+            }
+
+            const options = document.querySelectorAll(`.quiz-item:nth-child(${questionNum}) .options li`);
+            const explanation = document.querySelector(`.quiz-item:nth-child(${questionNum}) .explanation`);
+            const checkBtn = document.querySelector(`.quiz-item:nth-child(${questionNum}) .check-answer`);
+
+            // Disable options and button
+            options.forEach(opt => {
+                opt.style.pointerEvents = 'none';
+                if (opt.getAttribute('data-value') === correctAnswer) {
+                    opt.classList.add('correct');
+                } else if (opt.classList.contains('selected')) {
+                    opt.classList.add('incorrect');
+                }
+            });
+
+            checkBtn.disabled = true;
+            explanation.classList.add('show');
+
+            // Store user answer
+            userAnswers[questionNum] = selectedOption.getAttribute('data-value');
+        }
+
+        function resetQuestion(questionNum) {
+            const options = document.querySelectorAll(`.quiz-item:nth-child(${questionNum}) .options li`);
+            const explanation = document.querySelector(`.quiz-item:nth-child(${questionNum}) .explanation`);
+            const checkBtn = document.querySelector(`.quiz-item:nth-child(${questionNum}) .check-answer`);
+
+            // Reset options
+            options.forEach(opt => {
+                opt.classList.remove('selected', 'correct', 'incorrect');
+                opt.style.pointerEvents = 'auto';
+            });
+
+            // Reset button and explanation
+            checkBtn.disabled = false;
+            explanation.classList.remove('show');
+
+            // Remove user answer
+            delete userAnswers[questionNum];
+        }
+
+        function calculateScore() {
+            let score = 0;
+            let attempted = 0;
+
+            for (let i = 1; i <= 20; i++) {
+                if (userAnswers[i]) {
+                    attempted++;
+                    if (userAnswers[i] === correctAnswers[i]) {
+                        score++;
+                    }
+                }
+            }
+
+            const percentage = attempted > 0 ? Math.round((score / attempted) * 100) : 0;
+            const totalPercentage = Math.round((score / 20) * 100);
+
+            let gradeEmoji = '';
+            if (totalPercentage >= 90) gradeEmoji = '🏆';
+            else if (totalPercentage >= 80) gradeEmoji = '🥇';
+            else if (totalPercentage >= 70) gradeEmoji = '🥈';
+            else if (totalPercentage >= 60) gradeEmoji = '🥉';
+            else gradeEmoji = '📚';
+
+            const scoreDisplay = document.getElementById('scoreDisplay');
+            scoreDisplay.innerHTML = `
+                <h3>${gradeEmoji} 채점 결과</h3>
+                <p><strong>시도한 문제:</strong> ${attempted} / 20 문제</p>
+                <p><strong>정답 개수:</strong> ${score} / ${attempted} 문제</p>
+                <p><strong>정답률:</strong> ${percentage}%</p>
+                <p><strong>전체 점수:</strong> ${score} / 20 (${totalPercentage}%)</p>
+                <hr style="margin: 15px 0; border: 1px solid rgba(255,255,255,0.3);">
+                <p>${totalPercentage >= 80 ? '🎉 훌륭합니다!' : totalPercentage >= 60 ? '💪 조금 더 화이팅!' : '📖 복습이 필요해요!'}</p>
+            `;
+            scoreDisplay.style.display = 'block';
+        }
+
+        function resetAllQuestions() {
+            for (let i = 1; i <= 20; i++) {
+                resetQuestion(i);
+            }
+            document.getElementById('scoreDisplay').style.display = 'none';
+            window.scrollTo(0, 0);
+        }
+
+        // Add event listeners for option selection
+        document.addEventListener('DOMContentLoaded', function() {
+            const allOptions = document.querySelectorAll('.options li');
+            allOptions.forEach((option, index) => {
+                const questionNum = Math.floor(index / 5) + 1;
+                option.addEventListener('click', function() {
+                    selectOption(questionNum, this);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
