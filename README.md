@@ -8,6 +8,14 @@
 git submodule init 
 git submodule update 
 ```
+<a href="https://www.gitanimals.org/">
+      <img
+        src="https://render.gitanimals.org/guilds/741628573559326318/draw"
+        width="600"
+        height="300"
+        alt="gitanimals"
+      />
+    </a>
 <a href="https://www.gitanimals.org/en_US?utm_medium=image&utm_source=hundong2&utm_content=farm">
 <img
   src="https://render.gitanimals.org/farms/hundong2"
