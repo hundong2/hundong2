@@ -8,7 +8,9 @@
 git submodule init 
 git submodule update 
 ```
-
+<a href="https://github.com/devxb/gitanimals">
+  <img src="https://render.gitanimals.org/lines/{hundong2}?pet-id=1" width="1000" height="120"/>
+</a>
 <p align="center">
     <Strong>SNS list</Strong><br><br>
     <a href="https://physicalkingman.tistory.com/" target="_blank"><img src="https://img.shields.io/badge/PhysicalKingman Blog-0B2C4A?style=flat-square&logo=ActiGraph&logoColor=white"/>
