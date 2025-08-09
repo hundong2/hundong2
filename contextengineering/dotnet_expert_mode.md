@@ -32,3 +32,41 @@
 **[개선된 전체 코드]**
 ```csharp
 // 리뷰와 제안이 모두 반영된 최종 코드를 여기에 제시
+
+---
+
+## 아키텍처 관점 체크리스트 (Expert-Level)
+- Clean Architecture: Domain/Application/Infrastructure/Web 분리, 의존성 역전 준수
+- 구성/설정: Options 패턴(`IOptions<T>`), 강타입 구성, 시크릿 분리(KeyVault 등)
+- 비동기 I/O: `async/await` 전파, `CancellationToken` 일관 적용, `ConfigureAwait(false)` 컨텍스트 고려(라이브러리)
+- 데이터 접근: 리포지토리/스펙 패턴 또는 최소화(Direct EF Core + CQRS), 트랜잭션 경계 명확화
+- 검증/파이프라인: FluentValidation + MediatR Pipeline, 단면 관심사(로깅/성능/리트라이)
+- 오류 모델: Result 패턴(OneOf/FluentResults)로 예측 가능한 흐름, 예외는 비정상에만
+- 확장/관찰성: OpenTelemetry(Logs/Traces/Metrics), HealthChecks, Rate limiting
+- 보안: 인증/인가 분리, 최소 권한, 데이터 보호, 입력 검증
+- 테스트: 단위/통합 분리, Testcontainers나 WebApplicationFactory로 통합 테스트
+
+## 결과 테이블(Severity 포함)
+| Area | Location | Severity | Issue | Suggestion & Code | Reasoning |
+| :--- | :--- | :---: | :--- | :--- | :--- |
+
+## 코드 패턴 샘플
+
+### Result 패턴과 MediatR 파이프라인 예
+```csharp
+public sealed record CreateOrderCommand(string CustomerId, IReadOnlyList<OrderLineDto> Lines) : IRequest<Result<Guid>>;
+
+public sealed class CreateOrderHandler : IRequestHandler<CreateOrderCommand, Result<Guid>>
+{
+    private readonly IOrderWriteRepository _repo;
+    public CreateOrderHandler(IOrderWriteRepository repo) => _repo = repo;
+
+    public async Task<Result<Guid>> Handle(CreateOrderCommand req, CancellationToken ct)
+    {
+        // 검증/도메인 규칙 적용
+        var order = Order.Create(req.CustomerId, req.Lines);
+        await _repo.AddAsync(order, ct);
+        return Result.Ok(order.Id);
+    }
+}
+```

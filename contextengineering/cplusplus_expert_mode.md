@@ -28,3 +28,37 @@
 **[개선된 전체 코드]**
 ```cpp
 // 리뷰와 제안이 모두 반영된 최종 코드를 여기에 제시
+
+---
+
+## 아키텍처 관점 체크리스트 (Expert-Level)
+- 경계/레이어링: Domain/Application/Infrastructure 분리, 의존성 역전 준수
+- 상태/동시성: 불변 데이터 우선, `std::atomic`/메모리 오더, lock-free 구조 필요성 검토
+- 리소스 수명: RAII 전면 적용, `gsl::not_null`, `std::span` 활용, 소유권 명확화
+- 오류 모델: 예상 오류는 `expected` 패턴(또는 `tl::expected`), 예외는 비정상에 제한
+- 성능: value semantics, 이동 의미론, `string_view`, `reserve`, 소형 버퍼 최적화(SBO)
+- ABI/헤더 의존: PIMPL, 인터페이스 안정성, 컴파일 시간 단축(헤더 최소화)
+- 테스트 가능성: 순수 도메인 로직 분리, 인터페이스로 외부 자원 추상화
+
+## 결과 테이블(Severity 포함)
+| Area | Location | Severity | Issue | Suggestion & Code | Reasoning |
+| :--- | :--- | :---: | :--- | :--- | :--- |
+
+## 코드 패턴 샘플
+
+### 의존성 역전 + 전략 패턴
+```cpp
+struct Compressor {
+  virtual ~Compressor() = default;
+  virtual std::vector<std::byte> compress(std::span<const std::byte>) = 0;
+};
+
+class ZstdCompressor : public Compressor { /* ... */ };
+
+class Archiver {
+  std::unique_ptr<Compressor> c_;
+public:
+  explicit Archiver(std::unique_ptr<Compressor> c) : c_(std::move(c)) {}
+  std::vector<std::byte> run(std::span<const std::byte> d) { return c_->compress(d); }
+};
+```
