@@ -125,7 +125,7 @@ my-project/
   
   // 터미널 설정
   "terminal.integrated.fontSize": 13,
-  "terminal.integrated.shell.linux": "/bin/bash"
+  "terminal.integrated.defaultProfile.linux": "bash"
 }
 ```
 
@@ -173,8 +173,11 @@ my-project/
   "python.linting.flake8Args": ["--max-line-length=120"],
   
   // Formatting 설정
-  "python.formatting.provider": "black",
-  "python.formatting.blackArgs": ["--line-length=120"],
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true
+  },
+  "black-formatter.args": ["--line-length=120"],
   
   // Testing 설정
   "python.testing.pytestEnabled": true,
@@ -976,9 +979,9 @@ multi-workspace/
 
 ```json
 {
-  "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
-  "terminal.integrated.shell.linux": "/bin/bash",
-  "terminal.integrated.shell.osx": "/bin/zsh",
+  "terminal.integrated.defaultProfile.windows": "Command Prompt",
+  "terminal.integrated.defaultProfile.linux": "bash",
+  "terminal.integrated.defaultProfile.osx": "zsh",
   
   "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
   
@@ -1103,7 +1106,7 @@ echo $env:workspaceFolder
   // 개인 취향 설정
   "editor.fontSize": 14,
   "workbench.colorTheme": "Dark+ (default dark)",
-  "terminal.integrated.shell.linux": "/bin/zsh"
+  "terminal.integrated.defaultProfile.linux": "zsh"
 }
 ```
 
@@ -1146,13 +1149,11 @@ echo $env:workspaceFolder
   "recommendations": [
     "ms-python.python",
     "ms-python.vscode-pylance",
+    "ms-python.black-formatter",
     "ms-dotnettools.csharp",
     "esbenp.prettier-vscode",
     "dbaeumer.vscode-eslint",
     "eamodio.gitlens"
-  ],
-  "unwantedRecommendations": [
-    "ms-vscode.csharp"
   ]
 }
 ```
