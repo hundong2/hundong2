@@ -241,7 +241,8 @@ my-project/
 1. **UV 설치 및 프로젝트 설정:**
 
 ```bash
-# UV 설치
+# UV 설치 (스크립트 내용을 먼저 확인하는 것을 권장)
+# 스크립트 확인: curl -LsSf https://astral.sh/uv/install.sh | less
 curl -LsSf https://astral.sh/uv/install.sh | sh
 
 # 프로젝트 초기화
@@ -609,6 +610,10 @@ CSX 파일은 C# 스크립트 파일로, dotnet-script를 사용하여 실행합
 1. **dotnet-script 설치:**
 
 ```bash
+# 특정 버전 설치 권장 (예: 버전 0.1.0)
+dotnet tool install -g dotnet-script --version 1.5.0
+
+# 또는 최신 버전 설치
 dotnet tool install -g dotnet-script
 ```
 
@@ -1053,14 +1058,11 @@ VSCode 명령어를 변수로 사용할 수 있습니다.
 
 실제 변수 값을 확인하려면:
 
-1. **터미널에서 확인:**
-```bash
-# Linux/Mac
-echo ${workspaceFolder}
+**참고:** VSCode 변수는 VSCode 설정 파일에서만 사용 가능하며, 터미널의 환경변수가 아닙니다.
 
-# Windows (PowerShell)
-echo $env:workspaceFolder
-```
+1. **VSCode 내에서 변수 확인:**
+   - launch.json이나 tasks.json에서 변수를 사용하고 디버그 실행
+   - Debug Console에서 실제 경로 확인
 
 2. **launch.json에 로깅 추가:**
 ```json
@@ -1112,14 +1114,21 @@ echo $env:workspaceFolder
 
 ### 2. .gitignore에 개인 설정 제외
 
-```gitignore
-# 개인 설정은 커밋하지 않음
-.vscode/settings.json
+**개인 설정과 팀 설정 구분:**
 
-# 팀 공유 설정은 커밋
-!.vscode/launch.json
-!.vscode/tasks.json
+```gitignore
+# 개인적인 에디터 설정은 제외 (선택사항)
+# .vscode/settings.json
+
+# 팀 공유 설정은 항상 포함
+# .vscode/launch.json
+# .vscode/tasks.json
+# .vscode/extensions.json
 ```
+
+**권장 방법:** 
+- `settings.json`은 팀 공통 설정(코드 포맷, 린터 등)만 포함하고 커밋
+- 개인 설정(폰트 크기, 테마 등)은 User Settings에 저장
 
 ### 3. 설정 계층 구조
 
