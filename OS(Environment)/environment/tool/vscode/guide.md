@@ -985,8 +985,8 @@ multi-workspace/
   
   "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
   
-  // Windows 전용 설정
-  "python.defaultInterpreterPath.windows": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+  // 플랫폼별 Python 경로는 VSCode가 자동으로 처리
+  // Windows에서는 자동으로 .venv/Scripts/python.exe를 사용
   
   // 환경변수 사용
   "terminal.integrated.env.linux": {
@@ -1085,7 +1085,7 @@ echo $env:workspaceFolder
 
 ---
 
-## 추가 팁과 베스트 프랙티스
+## 추가 팁과 모범 사례
 
 ### 1. 팀 공유 설정 관리
 
