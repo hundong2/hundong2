@@ -396,7 +396,7 @@ I'm software engineer<br>
 
 <div align=center>
 
-![hundong's github stats](https://github-readme-stats.vercel.app/api?username=hundong2&show_icons=true)
+![hundong's github stats](https://github-stats-alpha.vercel.app/api?username=hundong2)
 
 </div>
 
