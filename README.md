@@ -43,48 +43,6 @@ My journey spans from low-level embedded programming (IoT, RTOS, defense systems
 to high-level AI-driven applications and cloud infrastructure.
 </p>
 
----
-
-## <p align="center">🏢 Work Experience</p>
-
-<table align="center" width="100%">
-  <tr>
-    <td width="30%" align="right"><strong>Feb 2023 – Present</strong></td>
-    <td width="5%" align="center">🔵</td>
-    <td width="65%">
-      <strong>Senior Research Engineer</strong> @ <a href="https://www.hyundai-autoever.com">Hyundai AutoEver</a><br>
-      <sub>CI/CD pipelines · Test Automation · AI Chatbot (Semantic Kernel) · Grafana Dashboard</sub><br>
-      <sub><code>C#</code> <code>.NET</code> <code>Python</code> <code>Docker</code> <code>Bamboo</code> <code>Grafana</code> <code>LLM</code></sub>
-    </td>
-  </tr>
-  <tr>
-    <td align="right"><strong>Nov 2022 – Jan 2023</strong></td>
-    <td align="center">🔵</td>
-    <td>
-      <strong>Application Developer</strong> @ Altair Engineering<br>
-      <sub>PCB Board GUI · Graphical Rendering Performance</sub><br>
-      <sub><code>C# WPF</code> <code>OpenGL</code></sub>
-    </td>
-  </tr>
-  <tr>
-    <td align="right"><strong>Jun 2020 – Nov 2022</strong></td>
-    <td align="center">🔵</td>
-    <td>
-      <strong>Senior Researcher</strong> @ LIG Nex1<br>
-      <sub>Defense DAS · Missile Simulator · Target Coordinate Algorithms</sub><br>
-      <sub><code>C++</code> <code>C</code> <code>C# WPF</code> <code>MFC</code> <code>Embedded Linux</code> <code>VxWorks</code></sub>
-    </td>
-  </tr>
-  <tr>
-    <td align="right"><strong>Jan 2017 – Jun 2020</strong></td>
-    <td align="center">🔵</td>
-    <td>
-      <strong>Embedded System Engineer</strong> @ Nuritelecom<br>
-      <sub>IoT Smart Gateway · LwM2M/DLMS Protocol · Wi-SUN Mesh Network</sub><br>
-      <sub><code>C</code> <code>C++</code> <code>Embedded Linux</code> <code>FreeRTOS</code> <code>LwM2M</code> <code>CoAP</code> <code>DTLS/TLS</code></sub>
-    </td>
-  </tr>
-</table>
 
 ---
 
