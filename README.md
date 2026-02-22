@@ -34,58 +34,142 @@ I'm software engineer<br>
 
 ---
 
-## <p align="center">🏢 CAREER</p>
+## <p align="center">👨‍💻 About Me</p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/network engineer-1BA0D7?style=for-the-badge&logo=cisco&logoColor=white">
-  <img src="https://img.shields.io/badge/embedded sw-3776AB?style=for-the-badge&logo=arm&logoColor=white">
-  <img src="https://img.shields.io/badge/DATA SCIENTIST-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white">
-  <img src="https://img.shields.io/badge/protocol-00629B?style=for-the-badge&logo=ieee&logoColor=white">
-  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=Linux&logoColor=white">
+With over <strong>9 years of experience</strong>, I am a versatile engineer specializing in<br>
+<strong>Test Automation · CI/CD · Embedded Systems · AI/LLM Applications</strong><br><br>
+My journey spans from low-level embedded programming (IoT, RTOS, defense systems)<br>
+to high-level AI-driven applications and cloud infrastructure.
 </p>
 
 ---
 
-## <p align="center">⚒️ Tech Stack ⚒️</p>
+## <p align="center">🏢 Work Experience</p>
 
-<p align="center"><strong>💡 Main Stack</strong></p>
+<table align="center" width="100%">
+  <tr>
+    <td width="30%" align="right"><strong>Feb 2023 – Present</strong></td>
+    <td width="5%" align="center">🔵</td>
+    <td width="65%">
+      <strong>Senior Research Engineer</strong> @ <a href="https://www.hyundai-autoever.com">Hyundai AutoEver</a><br>
+      <sub>CI/CD pipelines · Test Automation · AI Chatbot (Semantic Kernel) · Grafana Dashboard</sub><br>
+      <sub><code>C#</code> <code>.NET</code> <code>Python</code> <code>Docker</code> <code>Bamboo</code> <code>Grafana</code> <code>LLM</code></sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="right"><strong>Nov 2022 – Jan 2023</strong></td>
+    <td align="center">🔵</td>
+    <td>
+      <strong>Application Developer</strong> @ Altair Engineering<br>
+      <sub>PCB Board GUI · Graphical Rendering Performance</sub><br>
+      <sub><code>C# WPF</code> <code>OpenGL</code></sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="right"><strong>Jun 2020 – Nov 2022</strong></td>
+    <td align="center">🔵</td>
+    <td>
+      <strong>Senior Researcher</strong> @ LIG Nex1<br>
+      <sub>Defense DAS · Missile Simulator · Target Coordinate Algorithms</sub><br>
+      <sub><code>C++</code> <code>C</code> <code>C# WPF</code> <code>MFC</code> <code>Embedded Linux</code> <code>VxWorks</code></sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="right"><strong>Jan 2017 – Jun 2020</strong></td>
+    <td align="center">🔵</td>
+    <td>
+      <strong>Embedded System Engineer</strong> @ Nuritelecom<br>
+      <sub>IoT Smart Gateway · LwM2M/DLMS Protocol · Wi-SUN Mesh Network</sub><br>
+      <sub><code>C</code> <code>C++</code> <code>Embedded Linux</code> <code>FreeRTOS</code> <code>LwM2M</code> <code>CoAP</code> <code>DTLS/TLS</code></sub>
+    </td>
+  </tr>
+</table>
+
+---
+
+## <p align="center">⚒️ Tech Stack</p>
+
+**🖥️ Languages**
+
 <p align="center">
-  <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=C%2B%2B&logoColor=white">
-  <img src="https://img.shields.io/badge/C-6DB33F?style=for-the-badge&logo=C&logoColor=white">
-  <img src="https://img.shields.io/badge/Csharp-239120?style=for-the-badge&logo=Csharp&logoColor=white">
-  <img src="https://img.shields.io/badge/.NET_WPF-5C2D91?style=for-the-badge&logo=visualstudio&logoColor=white">
-  <img src="https://img.shields.io/badge/C++ MFC-5C2D91?style=for-the-badge&logo=visualstudio&logoColor=white">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=white">
-  <img src="https://img.shields.io/badge/linux-FCC624?style=for-the-badge&logo=Linux&logoColor=white">
-  <img src="https://img.shields.io/badge/GIT-F05032?style=for-the-badge&logo=git&logoColor=white">
-  <img src="https://img.shields.io/badge/GIT HUB-181717?style=for-the-badge&logo=github&logoColor=white">
-  <img src="https://img.shields.io/badge/shell script-5391FE?style=for-the-badge&logo=powershell&logoColor=white">
-  <img src="https://img.shields.io/badge/VxWorks-22314E?style=for-the-badge&logo=ros&logoColor=white">
-  <img src="https://img.shields.io/badge/wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white">
-  <img src="https://img.shields.io/badge/vs code-007ACC?style=for-the-badge&logo=Visual Studio Code&logoColor=white">
-  <img src="https://img.shields.io/badge/jira-0052CC?style=for-the-badge&logo=jira&logoColor=white">
-  <img src="https://img.shields.io/badge/confluence-0052CC?style=for-the-badge&logo=Atlassian&logoColor=white">
+  <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white">
+  <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white">
+  <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white">
+  <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white">
+  <img src="https://img.shields.io/badge/Shell_Script-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white">
 </p>
 
-<p align="center"><strong>💡 Also Used</strong></p>
+**🧩 Frameworks & Libraries**
+
 <p align="center">
-  <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
-  <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white">
-  <img src="https://img.shields.io/badge/html-E34F26?style=for-the-badge&logo=html5&logoColor=white">
-  <img src="https://img.shields.io/badge/zigbee-EB0443?style=for-the-badge&logo=zigbee&logoColor=white">
-  <img src="https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=node.js&logoColor=white">
-  <img src="https://img.shields.io/badge/boost(C++)-F7901E?style=for-the-badge&logo=boost&logoColor=white">
-  <img src="https://img.shields.io/badge/visual basic-5C2D91?style=for-the-badge&logo=visualstudio&logoColor=white">
-  <img src="https://img.shields.io/badge/lua-2C2D72?style=for-the-badge&logo=lua&logoColor=white">
+  <img src="https://img.shields.io/badge/.NET_WPF-5C2D91?style=for-the-badge&logo=dotnet&logoColor=white">
+  <img src="https://img.shields.io/badge/.NET_MAUI-512BD4?style=for-the-badge&logo=dotnet&logoColor=white">
+  <img src="https://img.shields.io/badge/ASP.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white">
+  <img src="https://img.shields.io/badge/Semantic_Kernel-5C2D91?style=for-the-badge&logo=microsoftazure&logoColor=white">
+  <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white">
+  <img src="https://img.shields.io/badge/C++_MFC-00599C?style=for-the-badge&logo=cplusplus&logoColor=white">
 </p>
 
-<p align="center"><strong>💡 Interests</strong></p>
+**🖥️ Platforms & OS**
+
 <p align="center">
-  <img src="https://img.shields.io/badge/kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white">
-  <img src="https://img.shields.io/badge/udemy-A435F0?style=for-the-badge&logo=udemy&logoColor=white">
-  <img src="https://img.shields.io/badge/Coursera-0056D2?style=for-the-badge&logo=Coursera&logoColor=white">
-  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=Node.js&logoColor=white">
-  <img src="https://img.shields.io/badge/Web3.js-F16822?style=for-the-badge&logo=Web3.js&logoColor=white">
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black">
+  <img src="https://img.shields.io/badge/Embedded_Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black">
+  <img src="https://img.shields.io/badge/VxWorks_RTOS-22314E?style=for-the-badge&logo=ros&logoColor=white">
+  <img src="https://img.shields.io/badge/FreeRTOS-003153?style=for-the-badge&logo=freertos&logoColor=white">
+  <img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white">
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white">
+</p>
+
+**🛠️ Tools & DevOps**
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white">
+  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white">
+  <img src="https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=jira&logoColor=white">
+  <img src="https://img.shields.io/badge/Confluence-172B4D?style=for-the-badge&logo=confluence&logoColor=white">
+  <img src="https://img.shields.io/badge/Bamboo_CI/CD-0052CC?style=for-the-badge&logo=bamboo&logoColor=white">
+  <img src="https://img.shields.io/badge/NGINX-009639?style=for-the-badge&logo=nginx&logoColor=white">
+  <img src="https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white">
+  <img src="https://img.shields.io/badge/Datadog-632CA6?style=for-the-badge&logo=datadog&logoColor=white">
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white">
+  <img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white">
+  <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white">
+  <img src="https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white">
+</p>
+
+**🤖 AI / LLM**
+
+<p align="center">
+  <img src="https://img.shields.io/badge/LLM_Application-412991?style=for-the-badge&logo=openai&logoColor=white">
+  <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white">
+  <img src="https://img.shields.io/badge/Claude_API-CC785C?style=for-the-badge&logo=anthropic&logoColor=white">
+  <img src="https://img.shields.io/badge/MCP-000000?style=for-the-badge&logo=anthropic&logoColor=white">
+  <img src="https://img.shields.io/badge/RAG-FF6F00?style=for-the-badge&logo=google&logoColor=white">
+  <img src="https://img.shields.io/badge/CrewAI-FF0000?style=for-the-badge&logo=robot&logoColor=white">
+</p>
+
+**📡 Protocols & Networking**
+
+<p align="center">
+  <img src="https://img.shields.io/badge/LwM2M-00629B?style=for-the-badge&logo=ieee&logoColor=white">
+  <img src="https://img.shields.io/badge/CoAP-00629B?style=for-the-badge&logo=ieee&logoColor=white">
+  <img src="https://img.shields.io/badge/DTLS/TLS-721412?style=for-the-badge&logo=letsencrypt&logoColor=white">
+  <img src="https://img.shields.io/badge/CAN_Bus-003366?style=for-the-badge&logo=ieee&logoColor=white">
+  <img src="https://img.shields.io/badge/Wi--SUN_RF-EB0443?style=for-the-badge&logo=zigbee&logoColor=white">
+  <img src="https://img.shields.io/badge/REST_API-FF6C37?style=for-the-badge&logo=postman&logoColor=white">
+</p>
+
+**💡 Concepts & Methodologies**
+
+<p align="center">
+  <img src="https://img.shields.io/badge/CI/CD-2088FF?style=for-the-badge&logo=githubactions&logoColor=white">
+  <img src="https://img.shields.io/badge/Test_Automation-25A162?style=for-the-badge&logo=testinglibrary&logoColor=white">
+  <img src="https://img.shields.io/badge/Agile-0052CC?style=for-the-badge&logo=jira&logoColor=white">
+  <img src="https://img.shields.io/badge/System_Architecture-FF6F00?style=for-the-badge&logo=blueprint&logoColor=white">
+  <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white">
 </p>
 
 ---
