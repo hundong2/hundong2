@@ -134,13 +134,13 @@ to high-level AI-driven applications and cloud infrastructure.
 
 ## <p align="center">📦 Repository Navigator</p>
 
-> 총 **153개** 레포지토리를 카테고리별로 정리했습니다. 🔀 는 Fork된 레포입니다.
+> 총 **154개** 레포지토리를 카테고리별로 정리했습니다. 🔀 는 Fork된 레포입니다.
 
 ### 🔍 Quick Jump
 
 | Category | Count |
 |---|---|
-| [🤖 AI / Machine Learning](#-ai--machine-learning) | 16 |
+| [🤖 AI / Machine Learning](#-ai--machine-learning) | 17 |
 | [🛠️ Claude Code & AI Tools](#️-claude-code--ai-tools) | 12 |
 | [🌐 Web / Frontend](#-web--frontend) | 19 |
 | [📱 Mobile / Android](#-mobile--android) | 4 |
@@ -176,6 +176,7 @@ to high-level AI-driven applications and cloud infrastructure.
 | 🔀 [Deep-Learning-Papers-Reading-Roadmap](https://github.com/hundong2/Deep-Learning-Papers-Reading-Roadmap) | 딥러닝 논문 읽기 로드맵 | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
 | 🔀 [dlaicourse](https://github.com/hundong2/dlaicourse) | 딥러닝 학습 노트북 | ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white) |
 | 🔀 [data-science-blogs](https://github.com/hundong2/data-science-blogs) | 데이터 사이언스 블로그 큐레이션 | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
+| 🔀 [stable-diffusion-videos](https://github.com/nateraw/stable-diffusion-videos) | 2026-07-19_Stable Diffusion 프롬프트 사이를 보간해 영상과 뮤직비디오를 생성하는 도구 | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
 
 </details>
 
