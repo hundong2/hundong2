@@ -134,24 +134,24 @@ to high-level AI-driven applications and cloud infrastructure.
 
 ## <p align="center">📦 Repository Navigator</p>
 
-> 총 **154개** 레포지토리를 카테고리별로 정리했습니다. 🔀 는 Fork된 레포입니다.
+> 총 **166개** 레포지토리를 카테고리별로 정리했습니다. 🔀 는 Fork된 레포입니다.
 
 ### 🔍 Quick Jump
 
 | Category | Count |
 |---|---|
-| [🤖 AI / Machine Learning](#-ai--machine-learning) | 17 |
+| [🤖 AI / Machine Learning](#-ai--machine-learning) | 26 |
 | [🛠️ Claude Code & AI Tools](#️-claude-code--ai-tools) | 12 |
-| [🌐 Web / Frontend](#-web--frontend) | 19 |
+| [🌐 Web / Frontend](#-web--frontend) | 20 |
 | [📱 Mobile / Android](#-mobile--android) | 4 |
 | [💻 C# / .NET](#-c--net) | 22 |
 | [⚙️ C++ / System](#️-c--system) | 11 |
 | [🐍 Python & Data Science](#-python--data-science) | 17 |
 | [🔐 Security](#-security) | 4 |
 | [🔌 Protocol / Network / Embedded](#-protocol--network--embedded) | 8 |
-| [🏗️ DevOps / Infrastructure](#️-devops--infrastructure) | 6 |
+| [🏗️ DevOps / Infrastructure](#️-devops--infrastructure) | 7 |
 | [☕ Java](#-java) | 3 |
-| [📚 Study & References](#-study--references) | 31 |
+| [📚 Study & References](#-study--references) | 32 |
 
 ---
 
@@ -177,6 +177,15 @@ to high-level AI-driven applications and cloud infrastructure.
 | 🔀 [dlaicourse](https://github.com/hundong2/dlaicourse) | 딥러닝 학습 노트북 | ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white) |
 | 🔀 [data-science-blogs](https://github.com/hundong2/data-science-blogs) | 데이터 사이언스 블로그 큐레이션 | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
 | 🔀 [stable-diffusion-videos](https://github.com/nateraw/stable-diffusion-videos) | 2026-07-19_Stable Diffusion 프롬프트 사이를 보간해 영상과 뮤직비디오를 생성하는 도구 | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
+| 🔀 [TripoSplat](https://github.com/hundong2/TripoSplat) | 2026-07-26_단일 2D 이미지에서 고품질 3D Gaussian Splat을 생성하는 도구 | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
+| 🔀 [transformer-explainer](https://github.com/hundong2/transformer-explainer) | 2026-07-26_GPT 계열 Transformer의 내부 동작을 실시간으로 살펴보는 대화형 시각화 도구 | ![JS](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) |
+| 🔀 [shepherd](https://github.com/hundong2/shepherd) | 2026-07-26_AI 에이전트 실행을 관찰·분기·재생·복구 가능한 추적으로 기록하는 런타임 | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
+| 🔀 [Unlimited-OCR](https://github.com/hundong2/Unlimited-OCR) | 2026-07-26_문서와 다중 페이지를 한 번에 장문 파싱하는 OCR 모델 | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
+| 🔀 [tabfm](https://github.com/hundong2/tabfm) | 2026-07-26_혼합형 표 데이터의 제로샷 분류와 회귀를 지원하는 기반 모델 | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
+| 🔀 [Hands-On-AI-Engineering](https://github.com/hundong2/Hands-On-AI-Engineering) | 2026-07-26_OCR·RAG·AI 에이전트 등 실전형 AI 프로젝트 모음 | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
+| 🔀 [autokernel](https://github.com/hundong2/autokernel) | 2026-07-26_PyTorch 모델의 병목을 찾아 Triton·CUDA 커널을 자율 최적화하는 도구 | - |
+| 🔀 [NeuralLog](https://github.com/LogIntelligence/NeuralLog) | 2026-07-26_로그 파싱 없이 BERT와 Transformer로 시스템 이상을 탐지하는 모델 | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
+| 🔀 [opd2](https://github.com/naver-ai/opd2) | 2026-07-26_추론 튜닝의 변화 신호를 전달하는 On-Policy Delta Distillation 연구 | - |
 
 </details>
 
@@ -228,6 +237,7 @@ to high-level AI-driven applications and cloud infrastructure.
 | [nginx_example](https://github.com/hundong2/nginx_example) | Nginx 예제 | ![HTML](https://img.shields.io/badge/HTML-E34F26?style=flat-square&logo=html5&logoColor=white) |
 | 🔀 [tabler](https://github.com/hundong2/tabler) | Bootstrap 기반 HTML 대시보드 UI 키트 | ![HTML](https://img.shields.io/badge/HTML-E34F26?style=flat-square&logo=html5&logoColor=white) |
 | 🔀 [jsonhero-web](https://github.com/hundong2/jsonhero-web) | 오픈소스 JSON 익스플로러 | ![TS](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) |
+| [shooting_survive](https://github.com/hundong2/shooting_survive) | 2026-07-26_픽셀 아트 기반 반응형 2D 좀비 생존 슈팅 게임 | ![TS](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) |
 
 </details>
 
@@ -370,6 +380,7 @@ to high-level AI-driven applications and cloud infrastructure.
 | 🔀 [n8n](https://github.com/hundong2/n8n) | AI 기능 내장 오픈소스 워크플로우 자동화 플랫폼 | ![TS](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) |
 | 🔀 [kubernetes](https://github.com/hundong2/kubernetes) | Kubernetes 컨테이너 오케스트레이션 | ![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white) |
 | 🔀 [dependency-review-action](https://github.com/hundong2/dependency-review-action) | PR 취약 의존성 감지 GitHub Action | ![TS](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) |
+| [all_in_one_env](https://github.com/hundong2/all_in_one_env) | 2026-07-26_여러 프로젝트에서 재사용하는 다중 언어 개발환경 설정 도구 | ![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=flat-square&logo=powershell&logoColor=white) |
 
 </details>
 
@@ -401,6 +412,7 @@ to high-level AI-driven applications and cloud infrastructure.
 | [my_local_proj](https://github.com/hundong2/my_local_proj) | 로컬 프로젝트 | ![Shell](https://img.shields.io/badge/Shell-4EAA25?style=flat-square&logo=gnu-bash&logoColor=white) |
 | [markdown-portfolio](https://github.com/hundong2/markdown-portfolio) | 마크다운 포트폴리오 | - |
 | [dotnet-codespaces](https://github.com/hundong2/dotnet-codespaces) | dotnet codespaces 테스트 | ![HTML](https://img.shields.io/badge/HTML-E34F26?style=flat-square&logo=html5&logoColor=white) |
+| [easy_easy_regex](https://github.com/hundong2/easy_easy_regex) | 2026-07-26_간단한 입력을 정규 표현식으로 변환하는 실험 저장소 | - |
 | 🔀 [leetcode](https://github.com/hundong2/leetcode) | LeetCode 문제 풀이 | ![JS](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) |
 | 🔀 [JavaScript](https://github.com/hundong2/JavaScript) | JavaScript 강의 소스 모음 | ![JS](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) |
 | 🔀 [fzf](https://github.com/hundong2/fzf) | 커맨드라인 퍼지 파인더 | ![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white) |
