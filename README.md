@@ -134,22 +134,22 @@ to high-level AI-driven applications and cloud infrastructure.
 
 ## <p align="center">📦 Repository Navigator</p>
 
-> 총 **178개** 레포지토리를 카테고리별로 정리했습니다. 🔀 는 Fork된 레포입니다.
+> 총 **188개** 레포지토리를 카테고리별로 정리했습니다. 🔀 는 Fork된 레포입니다.
 
 ### 🔍 Quick Jump
 
 | Category | Count |
 |---|---|
-| [🤖 AI / Machine Learning](#-ai--machine-learning) | 31 |
+| [🤖 AI / Machine Learning](#-ai--machine-learning) | 36 |
 | [🛠️ Claude Code & AI Tools](#️-claude-code--ai-tools) | 13 |
 | [🌐 Web / Frontend](#-web--frontend) | 21 |
 | [📱 Mobile / Android](#-mobile--android) | 4 |
 | [💻 C# / .NET](#-c--net) | 22 |
 | [⚙️ C++ / System](#️-c--system) | 12 |
-| [🐍 Python & Data Science](#-python--data-science) | 17 |
+| [🐍 Python & Data Science](#-python--data-science) | 20 |
 | [🔐 Security](#-security) | 6 |
 | [🔌 Protocol / Network / Embedded](#-protocol--network--embedded) | 8 |
-| [🏗️ DevOps / Infrastructure](#️-devops--infrastructure) | 8 |
+| [🏗️ DevOps / Infrastructure](#️-devops--infrastructure) | 10 |
 | [☕ Java](#-java) | 3 |
 | [📚 Study & References](#-study--references) | 33 |
 
@@ -191,6 +191,11 @@ to high-level AI-driven applications and cloud infrastructure.
 | 🔀 [GOT-OCR2.0](https://github.com/hundong2/GOT-OCR2.0) | 2026-08-02_다양한 문자와 문서 형식을 통합 처리하는 종단간 범용 OCR 모델 | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
 | 🔀 [detectron2](https://github.com/hundong2/detectron2) | 2026-08-02_객체 탐지·분할 등 시각 인식 연구와 배포를 지원하는 프레임워크 | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
 | 🔀 [Hands-On-Computer-Vision-with-Detectron2](https://github.com/PacktPublishing/Hands-On-Computer-Vision-with-Detectron2) | 2026-08-02_Detectron2로 객체 탐지와 분할 모델을 실습하는 예제 코드 모음 | ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white) |
+| 🔀 [OpenFabrik](https://github.com/hundong2/OpenFabrik) | 2026-08-09_객체 탐지·분할 모델용 합성 학습 데이터와 주석을 자동 생성하는 도구 | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
+| 🔀 [ijepa](https://github.com/hundong2/ijepa) | 2026-08-09_이미지 일부의 표현으로 가려진 영역의 의미 표현을 예측하는 자기지도 학습 모델 | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
+| 🔀 [ijepa](https://github.com/facebookresearch/ijepa) | 2026-08-09_이미지 변환이나 픽셀 복원 없이 의미 표현을 학습하는 I-JEPA 공식 PyTorch 구현 | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
+| 🔀 [awesome-free-ai-course-notes](https://github.com/hundong2/awesome-free-ai-course-notes) | 2026-08-09_세계 주요 대학의 무료 공식 AI·머신러닝 강의 노트를 엄선한 목록 | - |
+| 🔀 [image-pipes](https://github.com/hundong2/image-pipes) | 2026-08-09_컴퓨터 비전 파이프라인을 시각적으로 구성·미리보기하고 Python 코드로 내보내는 도구 | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
 
 </details>
 
@@ -340,6 +345,9 @@ to high-level AI-driven applications and cloud infrastructure.
 | 🔀 [mingrammer_diagrams](https://github.com/hundong2/mingrammer_diagrams) | 코드로 클라우드 아키텍처 다이어그램 생성 | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
 | 🔀 [mazassumnida](https://github.com/hundong2/mazassumnida) | GitHub 프로필에 BOJ 프로필 표시 | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
 | 🔀 [cpython](https://github.com/hundong2/cpython) | Python 프로그래밍 언어 소스 | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
+| 🔀 [marker](https://github.com/hundong2/marker) | 2026-08-09_PDF·이미지·오피스 문서를 Markdown·JSON·HTML로 빠르고 정확하게 변환하는 도구 | - |
+| 🔀 [memory_graph](https://github.com/hundong2/memory_graph) | 2026-08-09_Python 데이터 참조·가변성·호출 스택을 그래프로 시각화하는 학습 및 디버깅 도구 | - |
+| 🔀 [memory_graph](https://github.com/bterwijn/memory_graph) | 2026-08-09_Python 객체 구조와 프로그램 상태를 시각화해 학습과 디버깅을 돕는 도구 | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
 
 </details>
 
@@ -392,6 +400,8 @@ to high-level AI-driven applications and cloud infrastructure.
 | 🔀 [dependency-review-action](https://github.com/hundong2/dependency-review-action) | PR 취약 의존성 감지 GitHub Action | ![TS](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) |
 | [all_in_one_env](https://github.com/hundong2/all_in_one_env) | 2026-07-26_여러 프로젝트에서 재사용하는 다중 언어 개발환경 설정 도구 | ![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=flat-square&logo=powershell&logoColor=white) |
 | 🔀 [openship](https://github.com/hundong2/openship) | 2026-08-02_CI/CD·라우팅·TLS를 내장한 오픈소스 셀프호스팅 배포 플랫폼 | ![TS](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) |
+| 🔀 [monoscope](https://github.com/hundong2/monoscope) | 2026-08-09_S3에 로그·추적·메트릭을 저장하고 자연어로 탐색하는 오픈소스 관측 플랫폼 | - |
+| 🔀 [monoscope](https://github.com/monoscope-tech/monoscope) | 2026-08-09_S3 기반 텔레메트리 저장과 LLM 질의·이상 탐지 에이전트를 제공하는 관측 플랫폼 | ![Haskell](https://img.shields.io/badge/Haskell-5D4F85?style=flat-square&logo=haskell&logoColor=white) |
 
 </details>
 
