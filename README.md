@@ -134,22 +134,22 @@ to high-level AI-driven applications and cloud infrastructure.
 
 ## <p align="center">📦 Repository Navigator</p>
 
-> 총 **188개** 레포지토리를 카테고리별로 정리했습니다. 🔀 는 Fork된 레포입니다.
+> 총 **202개** 레포지토리를 카테고리별로 정리했습니다. 🔀 는 Fork된 레포입니다.
 
 ### 🔍 Quick Jump
 
 | Category | Count |
 |---|---|
-| [🤖 AI / Machine Learning](#-ai--machine-learning) | 36 |
-| [🛠️ Claude Code & AI Tools](#️-claude-code--ai-tools) | 13 |
+| [🤖 AI / Machine Learning](#-ai--machine-learning) | 42 |
+| [🛠️ Claude Code & AI Tools](#️-claude-code--ai-tools) | 19 |
 | [🌐 Web / Frontend](#-web--frontend) | 21 |
 | [📱 Mobile / Android](#-mobile--android) | 4 |
-| [💻 C# / .NET](#-c--net) | 22 |
+| [💻 C# / .NET](#-c--net) | 23 |
 | [⚙️ C++ / System](#️-c--system) | 12 |
 | [🐍 Python & Data Science](#-python--data-science) | 20 |
 | [🔐 Security](#-security) | 6 |
 | [🔌 Protocol / Network / Embedded](#-protocol--network--embedded) | 8 |
-| [🏗️ DevOps / Infrastructure](#️-devops--infrastructure) | 10 |
+| [🏗️ DevOps / Infrastructure](#️-devops--infrastructure) | 11 |
 | [☕ Java](#-java) | 3 |
 | [📚 Study & References](#-study--references) | 33 |
 
@@ -196,6 +196,12 @@ to high-level AI-driven applications and cloud infrastructure.
 | 🔀 [ijepa](https://github.com/facebookresearch/ijepa) | 2026-08-09_이미지 변환이나 픽셀 복원 없이 의미 표현을 학습하는 I-JEPA 공식 PyTorch 구현 | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
 | 🔀 [awesome-free-ai-course-notes](https://github.com/hundong2/awesome-free-ai-course-notes) | 2026-08-09_세계 주요 대학의 무료 공식 AI·머신러닝 강의 노트를 엄선한 목록 | - |
 | 🔀 [image-pipes](https://github.com/hundong2/image-pipes) | 2026-08-09_컴퓨터 비전 파이프라인을 시각적으로 구성·미리보기하고 Python 코드로 내보내는 도구 | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
+| 🔀 [pocket-tts](https://github.com/hundong2/pocket-tts) | 2026-08-16_CPU에서 저지연 스트리밍과 음성 복제를 지원하는 경량 다국어 TTS 도구 | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
+| 🔀 [h3.c](https://github.com/hundong2/h3.c) | 2026-08-16_Apple Silicon에서 MiniMax H3 영상·오디오 생성을 실행하는 네이티브 Metal 추론 엔진 | ![C](https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=black) |
+| 🔀 [h3.c](https://github.com/antirez/h3.c) | 2026-08-16_Apple Silicon용 MiniMax H3 영상·오디오 생성 및 조건부 추론 엔진 | ![C](https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=black) |
+| 🔀 [Attention-Residuals](https://github.com/hundong2/Attention-Residuals) | 2026-08-16_Transformer 각 층이 이전 표현을 선택적으로 결합하도록 학습하는 Attention Residuals 공식 구현 | - |
+| 🔀 [mousecrack](https://github.com/hundong2/mousecrack) | 2026-08-16_딥러닝으로 자연스럽고 다양한 사람형 마우스 움직임을 합성하는 실험 도구 | - |
+| 🔀 [kimodo](https://github.com/hundong2/kimodo) | 2026-08-16_텍스트와 운동학 제약으로 사람·로봇의 고품질 3D 동작을 생성하는 확산 모델 | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
 
 </details>
 
@@ -219,6 +225,12 @@ to high-level AI-driven applications and cloud infrastructure.
 | 🔀 [mdflow](https://github.com/hundong2/mdflow) | 마크다운 프롬프트(.md)를 Claude·Codex·Gemini 등으로 실행하는 멀티백엔드 CLI | ![TS](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) |
 | 🔀 [awesome-prompts](https://github.com/hundong2/awesome-prompts) | ChatGPT 최고 평점 프롬프트 & 프롬프트 엔지니어링 모음 | - |
 | 🔀 [graphify](https://github.com/hundong2/graphify) | 2026-08-02_코드·문서·스키마를 질의 가능한 로컬 지식 그래프로 변환하는 AI 코딩 도구 | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
+| 🔀 [Graft](https://github.com/hundong2/Graft) | 2026-08-16_코드베이스 지식 그래프로 AI 코딩 에이전트의 컨텍스트 검색과 작업 효율을 높이는 도구 | ![TS](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) |
+| 🔀 [openchamber](https://github.com/hundong2/openchamber) | 2026-08-16_여러 기기에서 AI 코딩 작업을 실행·감독·검토하는 오픈소스 워크스페이스 | ![TS](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) |
+| 🔀 [openchamber](https://github.com/openchamber/openchamber) | 2026-08-16_데스크톱·웹·모바일에서 AI 코딩 세션을 관리하고 변경을 검토하는 통합 워크스페이스 | ![TS](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) |
+| 🔀 [sync](https://github.com/AgriciDaniel/sync) | 2026-08-16_Claude Code와 Codex 작업을 역할·모델·검증 근거에 따라 라우팅하는 로컬 제어 도구 | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
+| 🔀 [labs-OO-Agents](https://github.com/hundong2/labs-OO-Agents) | 2026-08-16_상태·도구·프롬프트를 Python 객체로 통합해 신뢰성 높은 AI 에이전트를 만드는 프레임워크 | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
+| 🔀 [labs-OO-Agents](https://github.com/NVIDIA-NeMo/labs-OO-Agents) | 2026-08-16_타입이 지정된 Python 클래스와 메서드로 모델 독립적 AI 에이전트를 구성하는 프레임워크 | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
 
 </details>
 
@@ -296,6 +308,7 @@ to high-level AI-driven applications and cloud infrastructure.
 | 🔀 [Costura](https://github.com/hundong2/Costura) | 어셈블리 리소스 임베드 도구 | ![CSharp](https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white) |
 | 🔀 [Toemesl-Network](https://github.com/hundong2/Toemesl-Network) | C# 네트워크 라이브러리 | ![CSharp](https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white) |
 | 🔀 [ExcelToJsonConverter](https://github.com/hundong2/ExcelToJsonConverter) | Unity Excel → JSON 변환 플러그인 | ![CSharp](https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white) |
+| 🔀 [Maui](https://github.com/hundong2/Maui) | 2026-08-16_.NET MAUI 앱 개발에 공통 확장 기능과 고급 UI·UX 컨트롤을 제공하는 커뮤니티 툴킷 | ![CSharp](https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white) |
 
 </details>
 
@@ -402,6 +415,7 @@ to high-level AI-driven applications and cloud infrastructure.
 | 🔀 [openship](https://github.com/hundong2/openship) | 2026-08-02_CI/CD·라우팅·TLS를 내장한 오픈소스 셀프호스팅 배포 플랫폼 | ![TS](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) |
 | 🔀 [monoscope](https://github.com/hundong2/monoscope) | 2026-08-09_S3에 로그·추적·메트릭을 저장하고 자연어로 탐색하는 오픈소스 관측 플랫폼 | - |
 | 🔀 [monoscope](https://github.com/monoscope-tech/monoscope) | 2026-08-09_S3 기반 텔레메트리 저장과 LLM 질의·이상 탐지 에이전트를 제공하는 관측 플랫폼 | ![Haskell](https://img.shields.io/badge/Haskell-5D4F85?style=flat-square&logo=haskell&logoColor=white) |
+| 🔀 [rocky](https://github.com/rocky-linux/rocky) | 2026-08-16_CentOS의 뒤를 이어 Enterprise Linux와 호환되도록 만든 커뮤니티 엔터프라이즈 운영체제 | - |
 
 </details>
 
