@@ -134,21 +134,21 @@ to high-level AI-driven applications and cloud infrastructure.
 
 ## <p align="center">📦 Repository Navigator</p>
 
-> 총 **202개** 레포지토리를 카테고리별로 정리했습니다. 🔀 는 Fork된 레포입니다.
+> 총 **216개** 레포지토리를 카테고리별로 정리했습니다. 🔀 는 Fork된 레포입니다.
 
 ### 🔍 Quick Jump
 
 | Category | Count |
 |---|---|
-| [🤖 AI / Machine Learning](#-ai--machine-learning) | 42 |
+| [🤖 AI / Machine Learning](#-ai--machine-learning) | 51 |
 | [🛠️ Claude Code & AI Tools](#️-claude-code--ai-tools) | 19 |
-| [🌐 Web / Frontend](#-web--frontend) | 21 |
+| [🌐 Web / Frontend](#-web--frontend) | 22 |
 | [📱 Mobile / Android](#-mobile--android) | 4 |
 | [💻 C# / .NET](#-c--net) | 23 |
-| [⚙️ C++ / System](#️-c--system) | 12 |
+| [⚙️ C++ / System](#️-c--system) | 15 |
 | [🐍 Python & Data Science](#-python--data-science) | 20 |
 | [🔐 Security](#-security) | 6 |
-| [🔌 Protocol / Network / Embedded](#-protocol--network--embedded) | 8 |
+| [🔌 Protocol / Network / Embedded](#-protocol--network--embedded) | 9 |
 | [🏗️ DevOps / Infrastructure](#️-devops--infrastructure) | 11 |
 | [☕ Java](#-java) | 3 |
 | [📚 Study & References](#-study--references) | 33 |
@@ -202,6 +202,15 @@ to high-level AI-driven applications and cloud infrastructure.
 | 🔀 [Attention-Residuals](https://github.com/hundong2/Attention-Residuals) | 2026-08-16_Transformer 각 층이 이전 표현을 선택적으로 결합하도록 학습하는 Attention Residuals 공식 구현 | - |
 | 🔀 [mousecrack](https://github.com/hundong2/mousecrack) | 2026-08-16_딥러닝으로 자연스럽고 다양한 사람형 마우스 움직임을 합성하는 실험 도구 | - |
 | 🔀 [kimodo](https://github.com/hundong2/kimodo) | 2026-08-16_텍스트와 운동학 제약으로 사람·로봇의 고품질 3D 동작을 생성하는 확산 모델 | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
+| 🔀 [awesome-gemma](https://github.com/hundong2/awesome-gemma) | 2026-08-23_Google DeepMind의 경량 오픈 모델 Gemma 관련 모델·추론·튜토리얼·연구 자료를 모은 목록 | - |
+| 🔀 [awesome-gemma](https://github.com/google-gemma/awesome-gemma) | 2026-08-23_Gemma 모델의 시작 가이드부터 파인튜닝·데모·연구 자료까지 정리한 공식 큐레이션 | - |
+| 🔀 [x-algorithm](https://github.com/hundong2/x-algorithm) | 2026-08-23_네트워크 안팎의 게시물을 검색·필터링하고 Transformer로 순위를 매기는 X 추천 피드 알고리즘 | ![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white) |
+| 🔀 [netron](https://github.com/hundong2/netron) | 2026-08-23_ONNX·TensorFlow·PyTorch 등 다양한 신경망 모델 구조를 시각화하는 뷰어 | ![JS](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) |
+| 🔀 [netron](https://github.com/lutzroeder/netron) | 2026-08-23_여러 딥러닝 프레임워크의 모델 파일을 브라우저와 데스크톱에서 살펴보는 시각화 도구 | ![JS](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) |
+| 🔀 [modular](https://github.com/hundong2/modular) | 2026-08-23_MAX AI 프레임워크와 Mojo 언어를 통합해 AI 모델 개발·배포를 지원하는 플랫폼 | ![Mojo](https://img.shields.io/badge/Mojo-FF4C1D?style=flat-square&logoColor=white) |
+| 🔀 [modular](https://github.com/modular/modular) | 2026-08-23_Mojo 컴파일러·표준 라이브러리와 MAX 프레임워크를 제공하는 통합 AI 개발 플랫폼 | ![Mojo](https://img.shields.io/badge/Mojo-FF4C1D?style=flat-square&logoColor=white) |
+| 🔀 [kimi-k3-in-c](https://github.com/hundong2/kimi-k3-in-c) | 2026-08-23_2.78조 매개변수 Kimi K3를 GPU와 외부 프레임워크 없이 단일 CPU에서 실행하는 C99 추론 엔진 | ![C](https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=black) |
+| 🔀 [kimi-k3-in-c](https://github.com/FareedKhan-dev/kimi-k3-in-c) | 2026-08-23_Kimi K3를 약 8GB 메모리와 단일 CPU로 구동하도록 만든 이식성 높은 초경량 C99 엔진 | ![C](https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=black) |
 
 </details>
 
@@ -262,6 +271,7 @@ to high-level AI-driven applications and cloud infrastructure.
 | 🔀 [jsonhero-web](https://github.com/hundong2/jsonhero-web) | 오픈소스 JSON 익스플로러 | ![TS](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) |
 | [shooting_survive](https://github.com/hundong2/shooting_survive) | 2026-07-26_픽셀 아트 기반 반응형 2D 좀비 생존 슈팅 게임 | ![TS](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) |
 | 🔀 [PGSimCity](https://github.com/hundong2/PGSimCity) | 2026-08-02_PostgreSQL 내부 동작을 탐험 가능한 3D 도시로 설명하는 교육용 시각화 | ![TS](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) |
+| 🔀 [kaneo](https://github.com/usekaneo/kaneo) | 2026-08-23_칸반과 이슈 추적에 집중한 가볍고 셀프호스팅 가능한 오픈소스 프로젝트 관리 도구 | ![TS](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) |
 
 </details>
 
@@ -331,6 +341,9 @@ to high-level AI-driven applications and cloud infrastructure.
 | 🔀 [terminal](https://github.com/hundong2/terminal) | Windows Terminal + 콘솔 호스트 | ![Cpp](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white) |
 | 🔀 [turtlebot3_simulations](https://github.com/hundong2/turtlebot3_simulations) | TurtleBot3 시뮬레이션 | ![Cpp](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white) |
 | 🔀 [polka](https://github.com/hundong2/polka) | 2026-08-02_ROS 2 LiDAR 포인트 클라우드 전처리를 단순화하는 고성능 C++ 도구 | ![Cpp](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white) |
+| 🔀 [abseil-cpp](https://github.com/hundong2/abseil-cpp) | 2026-08-23_C++17 표준 라이브러리를 보완하는 Google의 검증된 공용 C++ 유틸리티 모음 | ![Cpp](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white) |
+| 🔀 [abseil-cpp](https://github.com/abseil/abseil-cpp) | 2026-08-23_Google 코드베이스에서 축적한 표준 보완 기능과 대안을 제공하는 C++17 공용 라이브러리 | ![Cpp](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white) |
+| 🔀 [mp11](https://github.com/boostorg/mp11) | 2026-08-23_템플릿 별칭과 가변 템플릿을 활용하며 Boost 의존성 없이도 쓸 수 있는 C++11 메타프로그래밍 라이브러리 | ![Cpp](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white) |
 
 </details>
 
@@ -395,6 +408,7 @@ to high-level AI-driven applications and cloud infrastructure.
 | 🔀 [OMA_LwM2M_for_Developers](https://github.com/hundong2/OMA_LwM2M_for_Developers) | OMA LightweightM2M 스펙 & 개발 키트 | - |
 | 🔀 [plantuml-1](https://github.com/hundong2/plantuml-1) | 텍스트로 다이어그램 생성 | ![Java](https://img.shields.io/badge/Java-007396?style=flat-square&logo=java&logoColor=white) |
 | 🔀 [gravizo](https://github.com/hundong2/gravizo) | GitHub README에 Graphviz 그래프 삽입 | - |
+| 🔀 [oomwoo](https://github.com/makerspet/oomwoo) | 2026-08-23_Raspberry Pi·LiDAR·ROS 2·3D 프린팅으로 직접 만드는 로컬 제어형 오픈소스 로봇청소기 | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
 
 </details>
 
