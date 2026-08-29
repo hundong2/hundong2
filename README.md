@@ -134,22 +134,22 @@ to high-level AI-driven applications and cloud infrastructure.
 
 ## <p align="center">📦 Repository Navigator</p>
 
-> 총 **216개** 레포지토리를 카테고리별로 정리했습니다. 🔀 는 Fork된 레포입니다.
+> 총 **224개** 레포지토리를 카테고리별로 정리했습니다. 🔀 는 Fork된 레포입니다.
 
 ### 🔍 Quick Jump
 
 | Category | Count |
 |---|---|
-| [🤖 AI / Machine Learning](#-ai--machine-learning) | 51 |
+| [🤖 AI / Machine Learning](#-ai--machine-learning) | 53 |
 | [🛠️ Claude Code & AI Tools](#️-claude-code--ai-tools) | 19 |
 | [🌐 Web / Frontend](#-web--frontend) | 22 |
 | [📱 Mobile / Android](#-mobile--android) | 4 |
 | [💻 C# / .NET](#-c--net) | 23 |
-| [⚙️ C++ / System](#️-c--system) | 15 |
+| [⚙️ C++ / System](#️-c--system) | 16 |
 | [🐍 Python & Data Science](#-python--data-science) | 20 |
 | [🔐 Security](#-security) | 6 |
-| [🔌 Protocol / Network / Embedded](#-protocol--network--embedded) | 9 |
-| [🏗️ DevOps / Infrastructure](#️-devops--infrastructure) | 11 |
+| [🔌 Protocol / Network / Embedded](#-protocol--network--embedded) | 12 |
+| [🏗️ DevOps / Infrastructure](#️-devops--infrastructure) | 13 |
 | [☕ Java](#-java) | 3 |
 | [📚 Study & References](#-study--references) | 33 |
 
@@ -204,6 +204,8 @@ to high-level AI-driven applications and cloud infrastructure.
 | 🔀 [kimodo](https://github.com/hundong2/kimodo) | 2026-08-16_텍스트와 운동학 제약으로 사람·로봇의 고품질 3D 동작을 생성하는 확산 모델 | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
 | 🔀 [awesome-gemma](https://github.com/hundong2/awesome-gemma) | 2026-08-23_Google DeepMind의 경량 오픈 모델 Gemma 관련 모델·추론·튜토리얼·연구 자료를 모은 목록 | - |
 | 🔀 [awesome-gemma](https://github.com/google-gemma/awesome-gemma) | 2026-08-23_Gemma 모델의 시작 가이드부터 파인튜닝·데모·연구 자료까지 정리한 공식 큐레이션 | - |
+| 🔀 [KoAlpaca](https://github.com/Beomi/KoAlpaca) | 2026-08-30_한국어 명령 이해와 대화를 위해 Polyglot-Ko를 학습·미세조정하는 오픈소스 언어 모델 | ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white) |
+| 🔀 [KULLM](https://github.com/nlpai-lab/KULLM) | 2026-08-30_고려대학교 NLP·AI 연구실이 개발하고 공개한 한국어 특화 대규모 언어 모델 | - |
 | 🔀 [x-algorithm](https://github.com/hundong2/x-algorithm) | 2026-08-23_네트워크 안팎의 게시물을 검색·필터링하고 Transformer로 순위를 매기는 X 추천 피드 알고리즘 | ![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white) |
 | 🔀 [netron](https://github.com/hundong2/netron) | 2026-08-23_ONNX·TensorFlow·PyTorch 등 다양한 신경망 모델 구조를 시각화하는 뷰어 | ![JS](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) |
 | 🔀 [netron](https://github.com/lutzroeder/netron) | 2026-08-23_여러 딥러닝 프레임워크의 모델 파일을 브라우저와 데스크톱에서 살펴보는 시각화 도구 | ![JS](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) |
@@ -344,6 +346,7 @@ to high-level AI-driven applications and cloud infrastructure.
 | 🔀 [abseil-cpp](https://github.com/hundong2/abseil-cpp) | 2026-08-23_C++17 표준 라이브러리를 보완하는 Google의 검증된 공용 C++ 유틸리티 모음 | ![Cpp](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white) |
 | 🔀 [abseil-cpp](https://github.com/abseil/abseil-cpp) | 2026-08-23_Google 코드베이스에서 축적한 표준 보완 기능과 대안을 제공하는 C++17 공용 라이브러리 | ![Cpp](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white) |
 | 🔀 [mp11](https://github.com/boostorg/mp11) | 2026-08-23_템플릿 별칭과 가변 템플릿을 활용하며 Boost 의존성 없이도 쓸 수 있는 C++11 메타프로그래밍 라이브러리 | ![Cpp](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white) |
+| 🔀 [DiligentEngine](https://github.com/hundong2/DiligentEngine) | 2026-08-30_Direct3D12·Vulkan·Metal·WebGPU를 아우르는 경량 크로스플랫폼 3D 그래픽 렌더링 프레임워크 | ![Cpp](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white) |
 
 </details>
 
@@ -409,6 +412,9 @@ to high-level AI-driven applications and cloud infrastructure.
 | 🔀 [plantuml-1](https://github.com/hundong2/plantuml-1) | 텍스트로 다이어그램 생성 | ![Java](https://img.shields.io/badge/Java-007396?style=flat-square&logo=java&logoColor=white) |
 | 🔀 [gravizo](https://github.com/hundong2/gravizo) | GitHub README에 Graphviz 그래프 삽입 | - |
 | 🔀 [oomwoo](https://github.com/makerspet/oomwoo) | 2026-08-23_Raspberry Pi·LiDAR·ROS 2·3D 프린팅으로 직접 만드는 로컬 제어형 오픈소스 로봇청소기 | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
+| 🔀 [bam](https://github.com/hundong2/bam) | 2026-08-30_강화학습 로봇의 현실 전이를 개선하도록 서보 액추에이터 마찰을 식별·시뮬레이션하는 도구 | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
+| 🔀 [bam](https://github.com/Rhoban/bam) | 2026-08-30_복합 마찰 현상을 반영한 액추에이터 모델을 식별하고 MuJoCo에서 시뮬레이션하는 도구 | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
+| 🔀 [Axioma_robot](https://github.com/hundong2/Axioma_robot) | 2026-08-30_ROS 2·SLAM·Nav2·Gazebo로 산업 물류 자율주행을 구현하는 4륜 모바일 로봇 | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
 
 </details>
 
@@ -430,6 +436,8 @@ to high-level AI-driven applications and cloud infrastructure.
 | 🔀 [monoscope](https://github.com/hundong2/monoscope) | 2026-08-09_S3에 로그·추적·메트릭을 저장하고 자연어로 탐색하는 오픈소스 관측 플랫폼 | - |
 | 🔀 [monoscope](https://github.com/monoscope-tech/monoscope) | 2026-08-09_S3 기반 텔레메트리 저장과 LLM 질의·이상 탐지 에이전트를 제공하는 관측 플랫폼 | ![Haskell](https://img.shields.io/badge/Haskell-5D4F85?style=flat-square&logo=haskell&logoColor=white) |
 | 🔀 [rocky](https://github.com/rocky-linux/rocky) | 2026-08-16_CentOS의 뒤를 이어 Enterprise Linux와 호환되도록 만든 커뮤니티 엔터프라이즈 운영체제 | - |
+| 🔀 [dbx](https://github.com/hundong2/dbx) | 2026-08-30_90여 개 데이터베이스를 데스크톱·Docker·CLI에서 관리하며 AI와 MCP를 지원하는 경량 클라이언트 | ![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white) |
+| 🔀 [dbx](https://github.com/t8y2/dbx) | 2026-08-30_다양한 SQL·NoSQL 데이터베이스를 하나의 GUI·CLI와 내장 AI 도우미로 관리하는 크로스플랫폼 도구 | ![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white) |
 
 </details>
 
