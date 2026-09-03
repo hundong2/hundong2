@@ -1,0 +1,2 @@
+date,device,os_or_jetpack,comfyui_version,model,width,height,batch,steps,sampler,seconds,max_memory,temp_c,result,notes
+2026-09-02,example-device,example-version,example-version,example-model.safetensors,512,512,1,20,euler,,,,PASS,replace this example row
