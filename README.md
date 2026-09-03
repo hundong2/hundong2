@@ -5,6 +5,34 @@
 I'm software engineer<br>
 </p>
 
+---
+
+<!-- ACTIVE_REPOS:START -->
+## <p align="center">🍽️ Developer Activity Guide</p>
+
+<p align="center">
+  <strong>Recently Active Repositories</strong><br>
+  <sub>Last 30 days · Public repositories only · Activity = pushes + unique pull requests</sub>
+</p>
+
+| Rank | Repository | Activity | Star Level |
+|:---:|---|---:|:---:|
+| 1 | ⚙️ [modern-cpp](https://github.com/hundong2/modern-cpp) | 65 pushes · 1 PR | ⭐⭐⭐⭐⭐ |
+| 2 | 🔷 [csharp_study](https://github.com/hundong2/csharp_study) | 34 pushes | ⭐⭐⭐⭐⭐ |
+| 3 | 🧠 [machine_learning](https://github.com/hundong2/machine_learning) | 28 pushes · 1 PR | ⭐⭐⭐⭐☆ |
+| 4 | 🧪 [laboratory](https://github.com/hundong2/laboratory) | 24 pushes | ⭐⭐⭐⭐☆ |
+| 5 | 🤖 [RoboticsStudy](https://github.com/hundong2/RoboticsStudy) | 12 pushes · 2 PRs | ⭐⭐⭐☆☆ |
+| 6 | 🏠 [hundong2](https://github.com/hundong2/hundong2) | 4 pushes | ⭐⭐⭐☆☆ |
+| 7 | 🧩 [leetcode](https://github.com/hundong2/leetcode) | 3 pushes · 1 PR | ⭐⭐☆☆☆ |
+| 8 | 🍓 [rasberry_pi](https://github.com/hundong2/rasberry_pi) | 3 pushes | ⭐⭐☆☆☆ |
+| 9 | 💡 [idea_bank](https://github.com/hundong2/idea_bank) | 2 pushes | ⭐☆☆☆☆ |
+| 10 | 🟣 [blazor](https://github.com/hundong2/blazor) | 1 push · 1 PR | ⭐☆☆☆☆ |
+
+<p align="center">
+  <sub>⭐ Activity tier within this list · Not GitHub stars or a quality rating</sub>
+</p>
+<!-- ACTIVE_REPOS:END -->
+
 <a href="https://www.gitanimals.org/">
   <img src="https://render.gitanimals.org/guilds/741628573559326318/draw" width="600" height="300" alt="gitanimals"/>
 </a>
